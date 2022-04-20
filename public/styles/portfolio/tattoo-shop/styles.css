@@ -1,0 +1,468 @@
+:root {
+    --yellow-color: #F9C22E;
+    --text-color: #e8e8e8;
+    --muted-text-color: #bebebe;
+    --main-color: #181818;
+    --secondary-color: #131313;
+}
+
+.nav-color-change {
+    background-color: var(--secondary-color);
+}
+
+.worker-img-hover {
+    box-shadow: 0px 20px 21px -7px rgba(0, 0, 0, 0.75);
+}
+
+.hide-height {
+    height: 0;
+}
+
+.worker-gallery-margin {
+    margin-bottom: 7rem;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 2.75em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+.heading {
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto 3rem auto;
+}
+
+.muted-p {
+    text-transform: uppercase;
+    font-weight: 200;
+    color: var(--muted-text-color);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 1.1em;
+}
+
+.btn {
+    height: 100%;
+    transition: color 0.3s ease-in, font-size 0.3s ease-in;
+}
+
+.btn::after {
+    content: '';
+    width: 100%;
+    height: 0.1rem;
+    display: block;
+    background-color: var(--text-color);
+    transition: background-color 0.3s ease-in, transform 0.1s ease-in, height 0.3s ease-in;
+}
+
+.btn:hover {
+    color: var(--yellow-color);
+}
+
+.btn:hover::after {
+    transform: translateY(0.2rem);
+    background-color: var(--yellow-color);
+}
+
+.btn-lg {
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    text-transform: capitalize;
+    color: var(--text-color);
+    border: solid 1px var(--text-color);
+    background-color: transparent;
+    transition: color 0.3s ease-in, border-color 0.3s ease-in;
+}
+
+.btn-lg:hover {
+    color: var(--yellow-color);
+    border-color: var(--yellow-color);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+body {
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    overflow-x: hidden;
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+header,
+main,
+footer {
+    width: 100%;
+}
+
+header {
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sect {
+    padding: 5rem 0;
+}
+
+.sect:first-of-type {
+    padding-bottom: 0;
+}
+
+.main-nav {
+    width: 100%;
+    padding: 1.75rem 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    transition: background-color 0.3s ease-in;
+}
+
+.nav-links {
+    display: inline-block;
+    margin-left: 1.25rem;
+}
+
+.main-nav button {
+    display: none;
+}
+
+.intro-container {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+    background-image: url(https://images.unsplash.com/photo-1563305589-e4995799dba3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+}
+
+.intro-container h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'Lobster', sans-serif;
+}
+
+.intro-container p {
+    width: 40%;
+}
+
+.intro-container::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.worker-container {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.worker-container img {
+    width: 10rem;
+    height: 15rem;
+    border-radius: 0.25rem;
+    object-fit: cover;
+    object-position: 50%;
+    transition: box-shadow 0.3s ease-in;
+}
+
+.worker-info {
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.worker-about {
+    margin-top: 0.5rem;
+}
+
+.worker-info .btn-lg {
+    margin-top: 1.5rem;
+}
+
+.worker-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: margin-bottom 0.5s ease-in;
+}
+
+.tiles {
+    height: 15rem;
+    width: 15rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: height 0.75s ease-in;
+}
+
+.tiles.hide-height {
+    height: 0;
+}
+
+.tiles img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50%;
+    transition: transform 0.5s ease;
+}
+
+.tiles img:hover {
+    transform: scale(1.1);
+}
+
+.picture-container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.picture-container .close {
+    margin: 1rem 1rem 0 0;
+    position: absolute;
+}
+
+.picture-viewer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.picture-viewer button {
+    height: 5rem;
+}
+
+.picture-viewer img {
+    width: 80%;
+    height: 80%;
+    display: block;
+    object-fit: contain;
+    object-position: 50%;
+}
+
+form label {
+    display: none;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    font-size: 1.25em;
+    padding: 0.25rem 0.4rem;
+    outline: none;
+    border: none;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--muted-text-color);
+    background-color: var(--main-color);
+    transition: border 0.3s ease-in, color 0.3s ease-in;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+    outline: none;
+    border-bottom: 1px solid var(--yellow-color);
+    color: var(--yellow-color);
+}
+
+.radio-group input[type="radio"]::before {
+    width: 25px;
+    height: 25px;
+    background-color: var(--muted-text-color);
+}
+
+.radio-group {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-group p {
+    margin-bottom: 0.5rem;
+}
+
+.radio-group label {
+    display: block;
+}
+
+.radio-group div {
+    width: 100%;
+    margin-bottom: 0.25rem;
+    display: flex;
+}
+
+form .btn-lg {
+    margin-top: 1rem;
+}
+
+footer {
+    padding: 3rem 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+footer::before {
+    content: '';
+    width: 90%;
+    height: 0.01rem;
+    margin: 0 auto;
+    position: absolute;
+    display: block;
+    top: 0;
+    border-radius: 0 0 5rem 5rem;
+    background-color: var(--muted-text-color);
+}
+
+footer ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+footer ul li {
+    display: inline;
+}
+
+@media (max-width: 700px) {
+    .main-nav {
+        padding: 1.75rem 1.75rem;
+        justify-content: space-between;
+    }
+
+    .main-nav div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .nav-links {
+        margin: 1rem 0;
+        display: block;
+        text-align: center;
+    }
+
+    .nav-links.hide-height {
+        font-size: 0;
+    }
+
+    .nav-links.hide-height .btn::after {
+        height: 0;
+    }
+
+    .main-nav button {
+        display: block;
+    }
+
+    .intro-container p {
+        width: 80%;
+    }
+
+    .worker-container {
+        width: 95%;
+    }
+
+    .worker-container img {
+        width: 7rem;
+        height: 20rem;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input[type="text"],
+    form input[type="email"] {
+        width: 95%;
+        margin: 0 auto 1rem auto;
+    }
+
+    .radio-group {
+        align-items: center;
+    }
+
+    .radio-group div {
+        width: fit-content;
+        text-align: center;
+    }
+
+    form button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .picture-container .btn-lg {
+        padding: 0.25rem 0.5rem;
+
+    }
+}
