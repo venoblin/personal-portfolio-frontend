@@ -1,31 +1,14 @@
-const calendar = document.getElementById('calendar');
+const dateP = document.querySelector('p.todays-date');
 
-function isWeekend(day) {
-    return day % 7 === 6 || day % 7 === 0;
+const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thr', 'Fri', 'Sat'];
+const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+function getTodaysDate() {
+  const today = new Date();
+  const dayName = days[today.getDay()];
+  const dd = today.getDate();
+  const month = months[today.getMonth()];
+  const year = today.getFullYear();
+
+  return `${dayName} | ${month} ${dd} ${year}`;
 }
-function weekdayName(day) {
-    return day === 1 ? 'Monday'
-        : day === 2 ? 'Tuesday'
-            : day === 3 ? 'Wednesday'
-                : day === 4 ? 'Thursday'
-                    : day === 5 ? 'Friday'
-                        : day === 6 ? 'Saturday'
-                            : day === 7 ? 'Sunday'
-                                : '';
-}
-
-for (let day = 1; day <= 31; day++) {
-    const weekend = isWeekend(day);
-    const dayName = weekdayName(day);
-
-    calendar.insertAdjacentHTML('beforeend',
-        `<div class="day ${weekend ? "weekend" : ""}"><p>${dayName}</p><p>${day}</p></div>`);
-}
-
-const days = document.querySelectorAll('#calendar .day');
-
-days.forEach(day => {
-    day.addEventListener('click', () => {
-
-    });
-});
+dateP.innerHTML = getTodaysDate();
