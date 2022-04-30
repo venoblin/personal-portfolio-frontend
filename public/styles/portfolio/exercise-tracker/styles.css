@@ -56,3 +56,25 @@ header p.todays-date {
 main {
     padding: 1rem;
 }
+
+.week-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.day {
+  height: 10rem;
+  border: 1px solid black;
+  text-align: center;
+}
+.day:hover {
+  cursor: pointer;
+  border-color: crimson;
+}
+.weekend {
+  border-color: cadetblue;
+  color: cadetblue;
+}
