@@ -130,7 +130,5 @@ workersGallery.forEach((gallery, galleryIndex) => {
             pictureContainer.style.display = 'flex';
             html.classList.add('overflow-hidden');
         });
-    })
+    });
 });
-
-

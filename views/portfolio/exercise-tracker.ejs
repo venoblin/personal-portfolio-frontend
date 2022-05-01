@@ -5,7 +5,24 @@
             <%- include('../partials/exercise-tracker-navbar') %>
         </header>
         <main>
-          <a href="/portfolio/exercise-tracker/new">Create New Routine</a>
+
+            <%- include('../partials/exercise-tracker-calendar') %>
+
+                <h1>Todays Workout</h1>
+                <div>
+                    <% if(exerciseRoutine[`${todaysDate.dayName.toLowerCase()}`].workouts.length) { %>
+                        <ul>
+                            <% exerciseRoutine[`${todaysDate.dayName.toLowerCase()}`].workouts.forEach((workout)=> { %>
+                                <li>
+                                    <%= workout %>
+                                </li>
+                                <% }); %>
+
+                                    <% } %>
+                        </ul>
+                </div>
+
+                <a href="/portfolio/exercise-tracker/modify">Modify Routine</a>
 
         </main>
         <footer>

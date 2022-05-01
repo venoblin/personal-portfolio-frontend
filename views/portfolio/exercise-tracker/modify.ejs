@@ -1,0 +1,42 @@
+<% layout('layouts/boilerplate') %>
+
+  <body>
+    <header>
+      <%- include('../../partials/exercise-tracker-navbar') %>
+
+    </header>
+    <main>
+
+      <%- include('../../partials/exercise-tracker-calendar') %>
+
+
+        <form action="/portfolio/exercise-tracker" method="post">
+          <label for="day">Day</label>
+          <select name="day" id="day">
+            <option value="sun">Sunday</option>
+            <option value="mon">Monday</option>
+            <option value="tue">Tuesday</option>
+            <option value="wed">Wednesday</option>
+            <option value="thu">Thursday</option>
+            <option value="fri">Friday</option>
+            <option value="sat">Saturday</option>
+          </select>
+
+          <label for="exercise">Exercise</label>
+          <input type="text" name="exercise" id="exercise">
+
+          <label for="sets">Sets</label>
+          <input type="number" name="sets" id="sets">
+
+          <label for="reps">Reps</label>
+          <input type="number" name="reps" id="reps">
+
+          <button>Add</button>
+        </form>
+        <a href="/portfolio/exercise-tracker">Looks Good</a>
+
+    </main>
+    <footer>
+
+    </footer>
+  </body>
