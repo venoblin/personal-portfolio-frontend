@@ -3,7 +3,7 @@ const app = express();
 const engine = require('ejs-mate');
 const methodOverride = require('method-override');
 const path = require('path');
-const portfolioRoutes = require('./routes/portfolio');
+const portfolioRoutes = require('./routes/portfolioRoutes');
 
 app.engine('ejs', engine);
 app.set('view engine', 'ejs');

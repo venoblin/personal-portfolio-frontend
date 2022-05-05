@@ -90,7 +90,8 @@ main {
     width: 85%;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tweet-form {
@@ -119,4 +120,14 @@ main {
     outline: none;
     overflow-y: hidden;
     resize: none;
+}
+
+.tweet-container {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid black;
+}
+
+.tweet-container .tweet {
+    margin-top: 0.5rem;
 }

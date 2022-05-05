@@ -15,6 +15,19 @@
                     </div>
                     <button class="btn">Tweet</button>
                 </form>
+
+                <% if (twitterStorage.length) { %>
+                    <% twitterStorage.forEach((tweet)=> { %>
+                        <div class="tweet-container">
+                            <p class="user">
+                                @<%= tweet.user %>
+                            </p>
+                            <p class="tweet">
+                                <%= tweet.text %>
+                            </p>
+                        </div>
+                        <% }); %>
+                            <% } %>
             </div>
 
 
