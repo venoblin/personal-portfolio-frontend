@@ -105,13 +105,10 @@ main {
     display: flex;
 }
 
-body {
-    background-color: bisque;
-}
-
 .tweet-form img {
-    width: 5rem;
-    object-fit: cover;
+    width: 2.5rem;
+    margin-right: 1rem;
+    object-fit: scale-down;
     object-position: 50%;
 }
 
