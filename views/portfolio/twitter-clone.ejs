@@ -8,7 +8,7 @@
             <div class="main-head"><a href="">Home</a></div>
 
             <div class="main-container">
-                <form action="/" method="post" class="tweet-form">
+                <form action="/portfolio/<%= `${project}` %>" method="post" class="tweet-form">
                     <div>
                         <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="profile picture">
                         <textarea name="text" id="text" required></textarea>
@@ -25,6 +25,10 @@
                             <p class="tweet">
                                 <%= tweet.text %>
                             </p>
+                            <form action="/portfolio/<%= `${project}` %>/<%= `${tweet.id}` %>?_method=DELETE"
+                                method="post">
+                                <button>Delete</button>
+                            </form>
                         </div>
                         <% }); %>
                             <% } %>
