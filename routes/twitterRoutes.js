@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const { v4: uuid } = require('uuid');
-const twitterStorage = require('../utils/twitterStorage');
 const project = 'twitter-clone';
+let twitterStorage = require('../utils/twitterStorage');
 
 
 router.get('/', (req, res) => {
@@ -20,7 +20,9 @@ router.post('/', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
-
+    const { id } = req.params;
+    twitterStorage = twitterStorage.filter(t => t.id !== id);
+    res.redirect(`/portfolio/${project}`);
 });
 
 module.exports = router;

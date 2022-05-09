@@ -1,6 +1,6 @@
 const { v4: uuid } = require('uuid');
 
-const twitterStorage = [
+let twitterStorage = [
     {
         id: uuid(),
         user: 'jvh',
