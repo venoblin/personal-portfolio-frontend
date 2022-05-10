@@ -3,8 +3,10 @@ const router = express.Router();
 const { v4: uuid } = require('uuid');
 const project = 'twitter-clone';
 let twitterStorage = require('../utils/twitter-clone/twitterStorage');
+const generateUsers = require('../seeds/generateUsers');
 
 router.get('/', (req, res) => {
+    generateUsers();
     res.render(`portfolio/${project}`, { project, twitterStorage });
 });
 
