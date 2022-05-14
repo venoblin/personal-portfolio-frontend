@@ -25,10 +25,13 @@
                             <p class="tweet">
                                 <%= tweet.text %>
                             </p>
-                            <form action="/portfolio/<%= `${project}` %>/<%= `${tweet.id}` %>?_method=DELETE"
-                                method="post">
-                                <button>Delete</button>
-                            </form>
+
+                            <% if(tweet.user === 'adminUser') { %>
+                              <form action="/portfolio/<%= `${project}` %>/<%= `${tweet.id}` %>?_method=DELETE"
+                                  method="post">
+                                  <button>Delete</button>
+                              </form>
+                              <% } %>
                         </div>
                         <% }); %>
                             <% } %>
