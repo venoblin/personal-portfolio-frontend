@@ -5,8 +5,9 @@ const project = 'twitter-clone';
 let twitterStorage = require('../utils/twitter-clone/twitterStorage');
 const generateUsers = require('../seeds/generateUsers');
 
+generateUsers(50);
+
 router.get('/', (req, res) => {
-    generateUsers();
     res.render(`portfolio/${project}`, { project, twitterStorage });
 });
 
