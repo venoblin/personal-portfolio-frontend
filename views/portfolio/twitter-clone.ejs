@@ -16,17 +16,17 @@
                     <button class="btn">Tweet</button>
                 </form>
 
-                <% if (twitterStorage.length) { %>
-                    <% twitterStorage.forEach((tweet)=> { %>
+                <% if (twitterTweets.length) { %>
+                    <% twitterTweets.forEach((tweet)=> { %>
                         <div class="tweet-container">
                             <p class="user">
-                                @<%= tweet.user %>
+                                @<%= twitterUsers.find(twitterTweets.userId) %>
                             </p>
                             <p class="tweet">
                                 <%= tweet.text %>
                             </p>
 
-                            <% if(tweet.user === 'adminUser') { %>
+                            <% if(tweet.id === 0) { %>
                               <form action="/portfolio/<%= `${project}` %>/<%= `${tweet.id}` %>?_method=DELETE"
                                   method="post">
                                   <button>Delete</button>

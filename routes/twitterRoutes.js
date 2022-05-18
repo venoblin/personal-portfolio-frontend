@@ -2,13 +2,13 @@ const express = require('express');
 const router = express.Router();
 const { v4: uuid } = require('uuid');
 const project = 'twitter-clone';
-let twitterStorage = require('../utils/twitter-clone/twitterStorage');
+const { twitterUsers, twitterTweets } = require('../utils/twitter-clone/twitterStorage');
 const generateUsers = require('../seeds/generateUsers');
 
 generateUsers(50);
 
 router.get('/', (req, res) => {
-    res.render(`portfolio/${project}`, { project, twitterStorage });
+    res.render(`portfolio/twitter-clone`, { project, twitterUsers, twitterTweets });
 });
 
 router.post('/', (req, res) => {
@@ -17,14 +17,18 @@ router.post('/', (req, res) => {
         user: 'adminUser',
         text: req.body.text
     }
-    twitterStorage.unshift(newTweet);
-    res.redirect(`/portfolio/${project}`)
+    twitterUsers.unshift(newTweet);
+    res.redirect(`/portfolio/twitter-clone`)
 });
 
 router.delete('/:id', (req, res) => {
     const { id } = req.params;
-    twitterStorage = twitterStorage.filter(t => t.id !== id);
-    res.redirect(`/portfolio/${project}`);
+    twitterUsers = twitterUsers.filter(t => t.id !== id);
+    res.redirect(`/portfolio/twitter-clone`);
+});
+
+router.get('/users', (req, res) => {
+  res.render('portfolio/twitter-clone/users', { project, twitterUsers });
 });
 
 module.exports = router;

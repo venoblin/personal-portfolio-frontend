@@ -1,6 +1,6 @@
 const { adjectives, nouns } = require('./userSeeds');
 const { v4: uuid } = require('uuid');
-const twitterStorage = require('../utils/twitter-clone/twitterStorage');
+const { twitterUsers } = require('../utils/twitter-clone/twitterStorage');
 
 function generateUsers(amount) {
   for (let i = 1; i < amount; i++) {
@@ -9,10 +9,9 @@ function generateUsers(amount) {
 
     const username = `${adjectives[randAdj]}${nouns[randNou]}`
 
-    twitterStorage.push({
+    twitterUsers.push({
       id: uuid(),
       user: username,
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor'
     });
 
   }

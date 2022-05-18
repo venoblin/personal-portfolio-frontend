@@ -1,21 +1,35 @@
 const { v4: uuid } = require('uuid');
 
-let twitterStorage = [
+module.exports.twitterUsers = [
     {
-        id: uuid(),
+      id: 0,
+      user: 'adminAccount'
+    },
+    {
+        id: 1,
         user: 'jvh',
-        text: 'lol'
     },
     {
-        id: uuid(),
+        id: 2,
         user: 'mvh',
-        text: 'hi'
     },
     {
-        id: uuid(),
+        id: 3,
         user: 'cvh',
-        text: 'wtf'
     }
 ]
 
-module.exports = twitterStorage;
+module.exports.twitterTweets = [
+  {
+    userId: 1,
+    text: 'I am jvh'
+  },
+  {
+    userId: 2,
+    text: 'I am mvh'
+  },
+  {
+    userId: 3,
+    text: 'I am cvh'
+  }
+]

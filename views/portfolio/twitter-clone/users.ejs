@@ -1,0 +1,23 @@
+<% layout('layouts/boilerplate') %>
+
+    <body>
+        <header>
+          <%- include('../../partials/twitter-clone-navbar') %>
+        </header>
+        <main>
+          <div class="main-head"><a href="">Users</a></div>
+
+          <% if (twitterUsers.length) { %>
+              <% twitterUsers.forEach((person) => { %>
+                  <div class="tweet-container">
+                      <p class="user">
+                          @<%= person.user %>
+                      </p>
+                  </div>
+                  <% }); %>
+                      <% } %>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
