@@ -26,6 +26,11 @@ module.exports.twitterTweets = [
     userId: 2
   },
   {
+    id: 4,
+    text: 'my second tweet',
+    userId: 2
+  },
+  {
     id: 2,
     text: 'I am mvh',
     userId: 3

@@ -22,15 +22,23 @@ router.post('/', (req, res) => {
     res.redirect(`/portfolio/twitter-clone`)
 });
 
+router.get('/users', (req, res) => {
+  res.render('portfolio/twitter-clone/users', { project, twitterUsers });
+});
+
+router.get('/:userId', (req, res) => {
+  const { userId } = req.params;
+  const person = twitterUsers.find(u => u.id === parseInt(userId));
+  const tweets = twitterTweets.find(t => t.userId === parseInt(userId));
+  console.log(twitterTweets.find(t => t.userId === 2));
+  res.render('portfolio/twitter-clone/profile', { project, person, tweets });
+});
+
 router.delete('/:userId/:tweetId', (req, res) => {
     const { tweetId } = req.params;
     twitterTweets = twitterTweets.filter(t => t.id !== tweetId);
     console.log(twitterTweets);
     res.redirect(`/portfolio/twitter-clone`);
-});
-
-router.get('/users', (req, res) => {
-  res.render('portfolio/twitter-clone/users', { project, twitterUsers });
 });
 
 module.exports = router;
