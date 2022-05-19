@@ -22,9 +22,9 @@ router.post('/', (req, res) => {
     res.redirect(`/portfolio/twitter-clone`)
 });
 
-router.delete('/:id', (req, res) => {
-    const { id } = req.params;
-    twitterTweets = twitterTweets.filter(t => t.id !== id);
+router.delete('/:userId/:tweetId', (req, res) => {
+    const { tweetId } = req.params;
+    twitterTweets = twitterTweets.filter(t => t.id !== tweetId);
     console.log(twitterTweets);
     res.redirect(`/portfolio/twitter-clone`);
 });

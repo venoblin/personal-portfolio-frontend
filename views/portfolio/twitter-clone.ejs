@@ -27,7 +27,8 @@
                             </p>
 
                             <% if(tweet.userId === 1) { %>
-                              <form action="/portfolio/<%= `${project}` %>/<%= `${tweet.id}` %>?_method=DELETE"
+                              <a href="/portfolio/twitter-clone/<%= `${twitterUsers.find(x => x.id === tweet.userId).id}` %>/<%= `${tweet.id}` %>">Edit</a>
+                              <form action="/portfolio/twitter-clone/<%= `${twitterUsers.find(x => x.id === tweet.userId).id}` %>/<%= `${tweet.id}` %>?_method=DELETE"
                                   method="post">
                                   <button>Delete</button>
                               </form>
