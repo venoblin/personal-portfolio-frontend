@@ -2,34 +2,37 @@ const { v4: uuid } = require('uuid');
 
 module.exports.twitterUsers = [
     {
-      id: 0,
+      id: 1,
       user: 'adminAccount'
     },
     {
-        id: 1,
+        id: 2,
         user: 'jvh',
     },
     {
-        id: 2,
+        id: 3,
         user: 'mvh',
     },
     {
-        id: 3,
+        id: 4,
         user: 'cvh',
     }
 ]
 
 module.exports.twitterTweets = [
   {
-    userId: 1,
-    text: 'I am jvh'
+    id: 1,
+    text: 'I am jvh',
+    userId: 2
   },
   {
-    userId: 2,
-    text: 'I am mvh'
+    id: 2,
+    text: 'I am mvh',
+    userId: 3
   },
   {
-    userId: 3,
-    text: 'I am cvh'
+    id: 3,
+    text: 'I am cvh',
+    userId: 4
   }
 ]

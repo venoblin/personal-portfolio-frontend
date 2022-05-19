@@ -8,7 +8,7 @@
             <div class="main-head"><a href="">Home</a></div>
 
             <div class="main-container">
-                <form action="/portfolio/<%= `${project}` %>" method="post" class="tweet-form">
+                <form action="/portfolio/twitter-clone" method="post" class="tweet-form">
                     <div>
                         <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="profile picture">
                         <textarea name="text" id="text" placeholder="What's happening?" required></textarea>
@@ -20,13 +20,13 @@
                     <% twitterTweets.forEach((tweet)=> { %>
                         <div class="tweet-container">
                             <p class="user">
-                                @<%= twitterUsers.find(twitterTweets.userId) %>
+                                @<%= twitterUsers.find(x => x.id === tweet.userId).user %>
                             </p>
                             <p class="tweet">
                                 <%= tweet.text %>
                             </p>
 
-                            <% if(tweet.id === 0) { %>
+                            <% if(tweet.userId === 1) { %>
                               <form action="/portfolio/<%= `${project}` %>/<%= `${tweet.id}` %>?_method=DELETE"
                                   method="post">
                                   <button>Delete</button>

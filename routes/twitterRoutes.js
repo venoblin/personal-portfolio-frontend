@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { v4: uuid } = require('uuid');
 const project = 'twitter-clone';
-const { twitterUsers, twitterTweets } = require('../utils/twitter-clone/twitterStorage');
+let { twitterUsers, twitterTweets } = require('../utils/twitter-clone/twitterStorage');
 const generateUsers = require('../seeds/generateUsers');
 
 generateUsers(50);
@@ -14,16 +14,18 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     const newTweet = {
         id: uuid(),
-        user: 'adminUser',
-        text: req.body.text
+        text: req.body.text,
+        userId: 1
     }
-    twitterUsers.unshift(newTweet);
+    twitterTweets.unshift(newTweet);
+    console.log(twitterTweets);
     res.redirect(`/portfolio/twitter-clone`)
 });
 
 router.delete('/:id', (req, res) => {
     const { id } = req.params;
-    twitterUsers = twitterUsers.filter(t => t.id !== id);
+    twitterTweets = twitterTweets.filter(t => t.id !== id);
+    console.log(twitterTweets);
     res.redirect(`/portfolio/twitter-clone`);
 });
 
