@@ -1,6 +1,6 @@
-const { adjectives, nouns } = require('./userSeeds');
+const { adjectives, nouns, statements } = require('./userSeeds');
 const { v4: uuid } = require('uuid');
-const { twitterUsers } = require('../utils/twitter-clone/twitterStorage');
+const { twitterUsers, twitterTweets } = require('../utils/twitter-clone/twitterStorage');
 
 function generateUsers(amount) {
   for (let i = 1; i < amount; i++) {
@@ -13,8 +13,23 @@ function generateUsers(amount) {
       id: uuid(),
       user: username,
     });
-
   }
+
+  twitterUsers.forEach(user => {
+    if (user.id.length !== 1) {
+      const tweetAmount = Math.floor(Math.random() * 10) + 1;
+
+      for (let i = 0; i < tweetAmount; i++) {
+        const randTweet = Math.floor(Math.random() * statements.length);
+
+        twitterTweets.push({
+          id: uuid(),
+          text: statements[randTweet],
+          userId: user.id
+        });
+      }
+    }
+  });
 }
 
 module.exports = generateUsers;

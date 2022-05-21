@@ -419,3 +419,14 @@ module.exports.nouns = [
     'Garage',
     'Ghost'
 ]
+
+module.exports.statements = [
+  'Lorem ipsum dolor sit amet',
+  'Tristique nulla aliquet enim tortor at auctor urna nunc. Vel fringilla est ullamcorper eget nulla facilisi. Ullamcorper a lacus vestibulum sed arcu. Nibh sed pulvinar proin',
+  'A pellentesque',
+  'Urna nec tincidunt praesent semper feugiat nibh. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Ultricies leo integer malesuada',
+  'Turpis nunc eget lorem dolor sed viverra ipsum nunc. Massa id neque aliquam vestibulum morbi',
+  'Commodo viverra maecenas',
+  'Enim eu turpis egestas pretium aenean pharetra. Pulvinar mattis nunc sed blandit libero',
+  'Pulvinar sapien et ligula ullamcorper malesuada. Enim blandit'
+]
