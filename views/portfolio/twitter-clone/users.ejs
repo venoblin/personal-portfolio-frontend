@@ -5,13 +5,13 @@
           <%- include('../../partials/twitter-clone-navbar') %>
         </header>
         <main>
-          <div class="main-head"><a href="">Users</a></div>
+          <div class="main-head"><p>Users</p></div>
 
           <% if (twitterUsers.length) { %>
               <% twitterUsers.forEach((person) => { %>
                   <div class="tweet-container">
                       <p class="user">
-                          @<%= person.user %>
+                          <a href="/portfolio/twitter-clone/<%= `${person.id}` %>">@<%= person.user %></a>
                       </p>
                   </div>
                   <% }); %>

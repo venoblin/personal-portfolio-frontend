@@ -27,7 +27,7 @@ header nav {
 }
 
 header nav,
-.main-head a {
+.main-head {
     font-size: 1.5em;
 }
 
@@ -41,7 +41,7 @@ header nav,
 }
 
 .links,
-.main-head a {
+.main-head {
     color: black;
 }
 
@@ -81,7 +81,7 @@ main {
     align-items: center;
 }
 
-.main-head a {
+.main-head p {
     display: inline-block;
     font-weight: bold;
 }

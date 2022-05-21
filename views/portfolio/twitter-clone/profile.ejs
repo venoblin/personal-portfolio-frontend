@@ -5,6 +5,29 @@
           <%- include('../../partials/twitter-clone-navbar') %>
         </header>
         <main>
+          <div class="main-head"><p><%= person.user %></p></div>
+
+          <% if (tweets.length) { %>
+              <% tweets.forEach(tweet => { %>
+                  <div class="tweet-container">
+                      <p class="user">
+                          @<%= person.user %>
+                      </p>
+                      <p class="tweet">
+                          <%= tweet.text %>
+                      </p>
+
+                      <% if(tweet.userId === '1') { %>
+                        <a href="/portfolio/twitter-clone/<%= `${person.id}` %>/<%= `${tweet.id}` %>">Edit</a>
+                        <form action="/portfolio/twitter-clone/<%= `${person.id}` %>/<%= `${tweet.id}` %>?_method=DELETE"
+                            method="post">
+                            <button>Delete</button>
+                        </form>
+                        <% } %>
+                  </div>
+                  <% }); %>
+                      <% } %>
+
 
         </main>
         <footer>

@@ -15,10 +15,9 @@ router.post('/', (req, res) => {
     const newTweet = {
         id: uuid(),
         text: req.body.text,
-        userId: 1
+        userId: '1'
     }
     twitterTweets.unshift(newTweet);
-    console.log(twitterTweets);
     res.redirect(`/portfolio/twitter-clone`)
 });
 
@@ -28,16 +27,14 @@ router.get('/users', (req, res) => {
 
 router.get('/:userId', (req, res) => {
   const { userId } = req.params;
-  const person = twitterUsers.find(u => u.id === parseInt(userId));
-  const tweets = twitterTweets.find(t => t.userId === parseInt(userId));
-  console.log(twitterTweets.find(t => t.userId === 2));
+  const person = twitterUsers.find(u => u.id === userId);
+  const tweets = twitterTweets.filter(t => t.userId === userId);
   res.render('portfolio/twitter-clone/profile', { project, person, tweets });
 });
 
 router.delete('/:userId/:tweetId', (req, res) => {
     const { tweetId } = req.params;
     twitterTweets = twitterTweets.filter(t => t.id !== tweetId);
-    console.log(twitterTweets);
     res.redirect(`/portfolio/twitter-clone`);
 });
 
