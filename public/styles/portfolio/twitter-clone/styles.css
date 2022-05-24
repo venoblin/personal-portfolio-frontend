@@ -89,6 +89,12 @@ header nav,
   margin-top: 0.5rem;
 }
 
+p.no-tweets {
+  width: 100%;
+  text-align: center;
+  padding: 10rem 0;
+}
+
 main {
     padding-left: 20rem;
 }
