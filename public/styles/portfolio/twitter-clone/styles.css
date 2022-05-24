@@ -66,8 +66,21 @@ header nav,
     border: none;
 }
 
+.btn-red {
+  background-color: crimson;
+}
+
 .btn:hover {
     background-color: #1a8ad4;
+}
+
+.btn-red:hover {
+  background-color: #c11010;
+}
+
+.edit-links {
+  display: inline-block;
+  margin-top: 0.5rem;
 }
 
 main {
@@ -94,8 +107,16 @@ main {
     align-items: center;
 }
 
+.delete-form {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tweet-form, .delete-form {
+  width: 85%;
+}
+
 .tweet-form {
-    width: 85%;
     display: flex;
     margin-bottom: 1.5rem;
     flex-direction: column;

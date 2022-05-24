@@ -18,7 +18,7 @@
                       </p>
 
                       <% if(tweet.userId === '1') { %>
-                        <a href="/portfolio/twitter-clone/<%= `${person.id}` %>/<%= `${tweet.id}` %>">Edit</a>
+                        <a class="edit-links" href="/portfolio/twitter-clone/<%= `${person.id}` %>/<%= `${tweet.id}` %>">Edit</a>
                         <% } %>
                   </div>
                   <% }); %>
