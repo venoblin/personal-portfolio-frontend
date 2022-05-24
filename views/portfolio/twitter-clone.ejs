@@ -20,7 +20,7 @@
                     <% twitterTweets.forEach(tweet => { %>
                         <div class="tweet-container">
                             <p class="user">
-                                @<%= twitterUsers.find(u => u.id === tweet.userId).user %>
+                                <a href="/portfolio/twitter-clone/<%= `${twitterUsers.find(u => u.id === tweet.userId).id}` %>">@<%= twitterUsers.find(u => u.id === tweet.userId).user %></a>
                             </p>
                             <p class="tweet">
                                 <%= tweet.text %>
