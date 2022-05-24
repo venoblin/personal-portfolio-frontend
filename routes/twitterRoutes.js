@@ -5,7 +5,7 @@ const project = 'twitter-clone';
 let { twitterUsers, twitterTweets } = require('../utils/twitter-clone/twitterStorage');
 const generateUsers = require('../seeds/generateUsers');
 
-generateUsers(10);
+generateUsers(20, 15);
 
 router.get('/', (req, res) => {
     res.render(`portfolio/twitter-clone`, { project, twitterUsers, twitterTweets });
@@ -32,10 +32,24 @@ router.get('/:userId', (req, res) => {
   res.render('portfolio/twitter-clone/profile', { project, person, tweets });
 });
 
+router.get('/:userId/:tweetId', (req, res) => {
+  const { userId, tweetId } = req.params;
+  const person = twitterUsers.find(u => u.id === userId);
+  const tweet = twitterTweets.find(t => t.id === tweetId);
+  res.render('portfolio/twitter-clone/edit', { project, person, tweet });
+});
+
+router.patch('/:userId/:tweetId', (req, res) => {
+  const { userId, tweetId } = req.params;
+  const tweet = twitterTweets.find(t => t.id === tweetId);
+  tweet.text = req.body.text;
+  res.redirect(`/portfolio/twitter-clone/${ userId }`);
+});
+
 router.delete('/:userId/:tweetId', (req, res) => {
-    const { tweetId } = req.params;
+    const { userId, tweetId } = req.params;
     twitterTweets = twitterTweets.filter(t => t.id !== tweetId);
-    res.redirect(`/portfolio/twitter-clone`);
+    res.redirect(`/portfolio/twitter-clone/${ userId }`);
 });
 
 module.exports = router;

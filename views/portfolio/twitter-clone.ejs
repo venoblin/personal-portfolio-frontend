@@ -28,10 +28,6 @@
 
                             <% if(tweet.userId === '1') { %>
                               <a href="/portfolio/twitter-clone/<%= `${twitterUsers.find(u => u.id === tweet.userId).id}` %>/<%= `${tweet.id}` %>">Edit</a>
-                              <form action="/portfolio/twitter-clone/<%= `${twitterUsers.find(u => u.id === tweet.userId).id}` %>/<%= `${tweet.id}` %>?_method=DELETE"
-                                  method="post">
-                                  <button>Delete</button>
-                              </form>
                               <% } %>
                         </div>
                         <% }); %>
