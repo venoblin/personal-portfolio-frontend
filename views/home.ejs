@@ -1,120 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Personal Portolio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/styles/reset.css">
-    <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="/styles/styles.css">
 </head>
-
 <body>
-    <header>
-        <nav id="main-nav">
-            <a href="#welcome-section" id="logo">Jon</a>
-            <div>
-                <a href="#about-section" class="btn">About</a>
-                <a href="#work-section" class="btn">Work</a>
-                <a href="#contact-section" class="btn">Contact</a>
-            </div>
-            <button id="nav-toggle">|||</button>
+  <header>
+    <section id="welcome-section">
+      <h1>Jonathan,<span class="primary-color">Website Developer</span></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
 
-        </nav>
-        <div id="nav-collapse" class="nav-translate">
-            <a href="#about-section" class="btn-collapse">About</a>
-            <a href="#work-section" class="btn-collapse">Work</a>
-            <a href="#contact-section" class="btn-collapse">Contact</a>
+    <nav class="blur">
+        <a class="logo" href="/">Jon</a>
+
+        <div>
+          <a class="links" href="">About</a>
+          <a class="links" href="">Work</a>
+          <a class="links" href="">Contact</a>
         </div>
-    </header>
-    <main>
-        <section id="welcome-section">
-            <h1>Jon</h1>
-            <h2>Freelance Web Developer</h2>
-            <p class="main-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. A beatae ab harum. Ad beatae
-                natus
-                repudiandae esse mollitia aliquid quod a quo quasi officia cum alias, veritatis doloremque
-                voluptatibus ipsum!</p>
-        </section>
-        <section id="about-section" class="section-container">
-            <h2 class="section-heading">About</h2>
-            <p class="main-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. A beatae ab harum. Ad beatae
-                natus
-                repudiandae esse mollitia aliquid quod a quo quasi officia cum alias, veritatis doloremque
-                voluptatibus ipsum!</p>
-        </section>
+    </nav>
+  </header>
 
-        <section id="work-section" class="section-container">
-            <h2 class="section-heading">Work</h2>
+  <main>
+    <section id="about-section" class="section-container">
+      <h2 class="section-heading">About</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-            <div id="work-grid">
-                <a class="work-tiles" href="/portfolio/tattoo-shop">
-                    <img src="https://ceblog.s3.amazonaws.com/wp-content/uploads/2018/11/21175318/best-website-layouts-8.png"
-                        alt="">
-                    <div>
-                        <h3 class="work-statuses">Completed</h3>
-                        <h3 class="work-titles">Tattoo Shop</h3>
-                    </div>
-                </a>
-                <a class="work-tiles" href="/portfolio/twitter-clone">
-                    <div>
-                        <h3 class="work-statuses">Completed</h3>
-                        <h3 class="work-titles">Twitter Clone</h3>
-                    </div>
-                </a>
-                <a class="work-tiles" href="">
-                    <div>
-                        <h3 class="work-statuses">Completed</h3>
-                        <h3 class="work-titles">Title</h3>
-                    </div>
-                </a>
-                <a class="work-tiles" href="">
-                    <div>
-                        <h3 class="work-statuses">Completed</h3>
-                        <h3 class="work-titles">Title</h3>
-                    </div>
-                </a>
-                <a class="work-tiles" href="">
-                    <div>
-                        <h3 class="work-statuses">Completed</h3>
-                        <h3 class="work-titles">Title</h3>
-                    </div>
-                </a>
-                <a class="work-tiles" href="">
-                    <div>
-                        <h3 class="work-statuses">Completed</h3>
-                        <h3 class="work-titles">Title</h3>
-                    </div>
-                </a>
-            </div>
-        </section>
+      <div class="techs-container">
 
-    </main>
-    <footer>
-        <section id="contact-section" class="section-container">
-            <h2 class="section-heading">Contact</h2>
-            <form action="" method="post">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="email">
-                <button type="button">SEND</button>
-            </form>
-        </section>
-        <nav>
-            <ul>
-                <li class="footer-links"><a href="#">Link</a></li>
-                <li class="footer-links"><a href="#">Link</a></li>
-                <li class="footer-links"><a href="#">Link</a></li>
-            </ul>
-        </nav>
-    </footer>
+      </div>
+    </section>
 
-    <script src="/scripts/script.js"></script>
+  </main>
+
+  <script src="/scripts/script.js"></script>
 </body>
-
 </html>
