@@ -13,6 +13,15 @@ a {
     text-decoration: none;
 }
 
+.tweet-container a {
+  color: #1885cf;
+  font-weight: bold;
+}
+
+.tweet-container a:hover {
+  text-decoration: underline;
+}
+
 header {
     height: 100vh;
     width: 20rem;
@@ -39,6 +48,7 @@ header nav,
 
 .logo {
     margin: 1rem 0 0.75rem 0;
+    color: var(--blue-color);
 }
 
 .links {

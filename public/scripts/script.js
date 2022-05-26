@@ -1,5 +1,6 @@
 const headerNav = document.querySelector('header nav');
 const workTiles = document.querySelectorAll('.work-tiles');
+const headerLinks = document.querySelectorAll('header .links');
 
 let lastScrollTop = 0;
 document.addEventListener('scroll', () => {
@@ -37,5 +38,19 @@ workTiles.forEach((tile) => {
     }
 
     projectInfo.classList.remove('show-project-info');
+  });
+});
+
+headerLinks.forEach((link, i) => {
+  link.addEventListener('mouseover', () => {
+    headerLinks.forEach((link) => {
+      link.classList.add('muted-color');
+    });
+  });
+
+  link.addEventListener('mouseout', () => {
+    headerLinks.forEach((link) => {
+      link.classList.remove('muted-color');
+    });
   });
 });
