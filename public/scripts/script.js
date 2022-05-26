@@ -1,7 +1,26 @@
 const headerNav = document.querySelector('header nav');
 const workTiles = document.querySelectorAll('.work-tiles');
 const headerLinks = document.querySelectorAll('header .links');
+const mainHeader = document.querySelector('#welcome-section h1');
+const mainSubHeader = document.querySelector('#welcome-section h2');
 
+
+if (window.innerWidth > 800) {
+    mainHeader.textContent = 'Jonathan,';
+    mainSubHeader.textContent = 'Website Developer';
+} else {
+    mainHeader.textContent = 'Jon,';
+    mainSubHeader.textContent = 'Web Dev';
+}
+window.addEventListener('resize', () => {
+    if (this.innerWidth > 800) {
+      mainHeader.textContent = 'Jonathan,';
+      mainSubHeader.textContent = 'Website Developer';
+    } else {
+      mainHeader.textContent = 'Jon,';
+      mainSubHeader.textContent = 'Web Dev';
+    }
+});
 let lastScrollTop = 0;
 document.addEventListener('scroll', () => {
   if (window.scrollY > 75) {

@@ -67,10 +67,11 @@
 
 .logo {
   font-weight: bold;
+  transition: color 0.5s ease;
 }
 
 .logo:hover {
-  transform: scale(1.02);
+  color: var(--primary-color);
 }
 
 .logo::after {
@@ -113,7 +114,7 @@
   width: 20rem;
   height: 0.25rem;
   margin-top: 2.5rem;
-  background-color: var(--secondary-color);
+  background-color: var(--muted-text-color);
 }
 
 .section-container p {
@@ -133,9 +134,16 @@
   padding: 0.5rem 0;
   margin-bottom: 1rem;
   text-align: center;
-  border-top: 2px solid var(--primary-color);
-  border-bottom: 2px solid var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0;
   color: var(--primary-color);
+}
+
+.techs-container div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .techs-logos {
@@ -206,11 +214,9 @@
 }
 
 .contact-form {
-  width: 50%;
-  padding: 0 1rem;
+  width: 75%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-column: 1;
   grid-gap: 0.5rem;
 }
 
@@ -263,7 +269,7 @@
 body {
     font-family: 'Rubik', sans-serif;
     background: var(--bg-color);
-    color: var(--text-color);
+    color: var(--muted-text-color);
 }
 
 h1 {
@@ -325,23 +331,34 @@ header nav div {
   margin-left: 1.5rem;
 }
 
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#welcome-section h1, #welcome-section h2 {
+  text-transform: uppercase;
+}
+
 #welcome-section h1 {
   display: flex;
   text-align: center;
   flex-direction: column;
-  text-transform: uppercase;
   font-weight: 300;
+  color: var(--text-color);
 }
 
-#welcome-section h1 span {
+#welcome-section h2 {
   font-weight: 700;
-  font-size: 0.25em;
+  font-size: 2em;
   letter-spacing: 0;
+  color: var(--primary-color);
 }
 
 #welcome-section p {
   width: 50%;
-  margin: 0.5rem auto 0 auto;
+  margin-top: 0.5rem;
 }
 
 footer {
@@ -360,4 +377,34 @@ footer div {
 
 footer p {
   font-size:1em;
+}
+
+@media (max-width: 500px) {
+  h2 {
+    font-size: 2.5em;
+  }
+  .section-heading::after {
+    width: 11rem;
+  }
+}
+
+@media (max-width: 800px) {
+
+
+  .section-container p, #welcome-section p {
+    width: 85%;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form div {
+    grid-template-columns: 1fr;
+  }
+
 }
