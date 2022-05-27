@@ -21,7 +21,6 @@ burgerMenu.addEventListener('click', () => {
   burgerMenu.classList.toggle('open');
   headerNav.classList.toggle('open');
   headerLinksContainer.classList.toggle('open');
-  console.log(window.scrollY);
   if (window.scrollY < 75) {
     headerNav.classList.toggle('nav-scroll-bg');
   }
