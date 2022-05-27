@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #FF5964;
-    --secondary-color: #e0e0e0;
-    --bg-color: #22333B;
-    --bg-shadow: #19252a;
-    --text-color: #e0e0e0;
-    --muted-text-color: #a3a3a3;
+  --primary-color: #FF5964;
+  --secondary-color: #e0e0e0;
+  --bg-color: #22333B;
+  --bg-shadow: #19252a;
+  --text-color: #e0e0e0;
+  --muted-text-color: #a3a3a3;
 }
 
 /* CLASSES */
@@ -145,6 +145,7 @@
   bottom: 0;
   transform-origin: left center;
 }
+
 .burger-menu.open span:nth-child(1) {
   transform: rotate(36deg);
 }
@@ -331,53 +332,53 @@
 }
 
 .triangle {
-      width: 100%;
-      height: 6rem;
-      margin-bottom: 6rem;
-      border-radius: 0 0 50% 50%;
-      background-color: var(--bg-color);
-    }
-/* END OF CLASSES */
+  width: 100%;
+  height: 6rem;
+  margin-bottom: 6rem;
+  border-radius: 0 0 50% 50%;
+  background-color: var(--bg-color);
+}
 
+/* END OF CLASSES */
 body {
-    font-family: 'Rubik', sans-serif;
-    background: var(--bg-color);
-    color: var(--muted-text-color);
+  font-family: 'Rubik', sans-serif;
+  background: var(--bg-color);
+  color: var(--muted-text-color);
 }
 
 h1 {
-    font-size: 7.5em;
+  font-size: 7.5em;
 }
 
 h2 {
-    font-size: 3em;
-    letter-spacing: 0.125em;
+  font-size: 3em;
+  letter-spacing: 0.125em;
 }
 
 h3 {
-    font-size: 1.75em;
+  font-size: 1.75em;
 }
 
 p {
-    font-size: 1.5em;
-    color: var(--muted-text-color);
+  font-size: 1.5em;
+  color: var(--muted-text-color);
 }
 
 a {
-    text-decoration: none;
-    cursor: pointer;
-    color: var(--text-color);
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--text-color);
 }
 
 button {
-    cursor: pointer;
-    border: none;
+  cursor: pointer;
+  border: none;
 }
 
 header,
 main,
 footer {
-    width: 100%;
+  width: 100%;
 }
 
 header {
@@ -457,11 +458,10 @@ footer div {
 }
 
 footer p {
-  font-size:1em;
+  font-size: 1em;
 }
 
 @media (max-width: 500px) {
-
   h1 {
     font-size: 5em;
   }
@@ -469,6 +469,7 @@ footer p {
   h2 {
     font-size: 2.5em;
   }
+
   .section-heading::after {
     width: 11rem;
   }
@@ -530,6 +531,4 @@ footer p {
   .contact-form div {
     grid-template-columns: 1fr;
   }
-
-
 }

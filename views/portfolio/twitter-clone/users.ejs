@@ -1,23 +1,26 @@
 <% layout('layouts/boilerplate') %>
 
-    <body>
-        <header>
-          <%- include('../../partials/twitter-clone-navbar') %>
-        </header>
-        <main>
-          <div class="main-head"><p>Users</p></div>
+<body>
+  <header>
+    <%- include('../../partials/twitter-clone-navbar') %>
+  </header>
+  <main>
+    <div class="main-head">
+      <p>Users</p>
+    </div>
 
-          <% if (twitterUsers.length) { %>
-              <% twitterUsers.forEach((person) => { %>
-                  <div class="tweet-container">
-                      <p class="user">
-                          <a href="/portfolio/twitter-clone/<%= `${person.id}` %>">@<%= person.user %></a>
-                      </p>
-                  </div>
-                  <% }); %>
-                      <% } %>
-        </main>
-        <footer>
+    <!-- DISPLAYS ALL USERS -->
+    <% if (twitterUsers.length) { %>
+    <% twitterUsers.forEach((person) => { %>
+    <div class="tweet-container">
+      <p class="user">
+        <a href="/portfolio/twitter-clone/<%= `${person.id}` %>">@<%= person.user %></a>
+      </p>
+    </div>
+    <% }); %>
+    <% } %>
+  </main>
+  <footer>
 
-        </footer>
-    </body>
+  </footer>
+</body>

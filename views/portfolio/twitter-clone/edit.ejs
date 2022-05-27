@@ -1,27 +1,31 @@
 <% layout('layouts/boilerplate') %>
 
-    <body>
-        <header>
-          <%- include('../../partials/twitter-clone-navbar') %>
-        </header>
-        <main>
-          <div class="main-head"><p>Edit</p></div>
+<body>
+  <header>
+    <%- include('../../partials/twitter-clone-navbar') %>
+  </header>
+  <main>
+    <div class="main-head">
+      <p>Edit</p>
+    </div>
 
-          <div class="main-container">
-            <form action="/portfolio/twitter-clone/<%= `${person.id}` %>/<%= `${tweet.id}` %>?_method=PATCH" method="post" class="tweet-form">
-                <div>
-                    <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="profile picture">
-                    <textarea name="text" id="text" placeholder="What's happening?" required><%= tweet.text %></textarea>
-                </div>
-                <button class="btn">Edit</button>
-            </form>
-            <form action="/portfolio/twitter-clone/<%= `${person.id}` %>/<%= `${tweet.id}` %>?_method=DELETE"
-                method="post" class="delete-form">
-                <button class="btn btn-red">Delete</button>
-            </form>
-          </div>
-        </main>
-        <footer>
+    <div class="main-container">
+      <!-- EDIT FORM -->
+      <form action="/portfolio/twitter-clone/<%= `${person.id}` %>/<%= `${tweet.id}` %>?_method=PATCH" method="post" class="tweet-form">
+        <div>
+          <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="profile picture">
+          <textarea name="text" id="text" placeholder="What's happening?" required><%= tweet.text %></textarea>
+        </div>
+        <button class="btn">Edit</button>
+      </form>
 
-        </footer>
-    </body>
+      <!-- DELETE BUTTON -->
+      <form action="/portfolio/twitter-clone/<%= `${person.id}` %>/<%= `${tweet.id}` %>?_method=DELETE" method="post" class="delete-form">
+        <button class="btn btn-red">Delete</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+</body>

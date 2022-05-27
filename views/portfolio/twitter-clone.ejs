@@ -1,42 +1,47 @@
 <% layout('layouts/boilerplate') %>
 
-    <body>
-        <header>
-            <%- include('../partials/twitter-clone-navbar') %>
-        </header>
-        <main>
-            <div class="main-head"><p>Home</p></div>
+<body>
+  <header>
+    <%- include('../partials/twitter-clone-navbar') %>
+  </header>
+  <main>
+    <div class="main-head">
+      <p>Home</p>
+    </div>
 
-            <div class="main-container">
-                <form action="/portfolio/twitter-clone" method="post" class="tweet-form">
-                    <div>
-                        <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="profile picture">
-                        <textarea name="text" id="text" placeholder="What's happening?" required></textarea>
-                    </div>
-                    <button class="btn">Tweet</button>
-                </form>
+    <div class="main-container">
+      <!-- TWEET FORM -->
+      <form action="/portfolio/twitter-clone" method="post" class="tweet-form">
+        <div>
+          <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="profile picture">
+          <textarea name="text" id="text" placeholder="What's happening?" required></textarea>
+        </div>
+        <button class="btn">Tweet</button>
+      </form>
 
-                <% if (twitterTweets.length) { %>
-                    <% twitterTweets.forEach(tweet => { %>
-                        <div class="tweet-container">
-                            <p class="user">
-                                <a href="/portfolio/twitter-clone/<%= `${twitterUsers.find(u => u.id === tweet.userId).id}` %>">@<%= twitterUsers.find(u => u.id === tweet.userId).user %></a>
-                            </p>
-                            <p class="tweet">
-                                <%= tweet.text %>
-                            </p>
+      <!-- DISPLAYS ALL TWEETS -->
+      <% if (twitterTweets.length) { %>
+      <% twitterTweets.forEach(tweet => { %>
+      <div class="tweet-container">
+        <p class="user">
+          <a href="/portfolio/twitter-clone/<%= `${twitterUsers.find(u => u.id === tweet.userId).id}` %>">@<%= twitterUsers.find(u => u.id === tweet.userId).user %></a>
+        </p>
+        <p class="tweet">
+          <%= tweet.text %>
+        </p>
 
-                            <% if(tweet.userId === '1') { %>
-                              <a class="edit-links" href="/portfolio/twitter-clone/<%= `${twitterUsers.find(u => u.id === tweet.userId).id}` %>/<%= `${tweet.id}` %>">Edit</a>
-                              <% } %>
-                        </div>
-                        <% }); %>
-                            <% } %>
-            </div>
+        <!-- ADDS EDIT BUTTON IF THE USER IS ADMIN -->
+        <% if(tweet.userId === '1') { %>
+        <a class="edit-links" href="/portfolio/twitter-clone/<%= `${twitterUsers.find(u => u.id === tweet.userId).id}` %>/<%= `${tweet.id}` %>">Edit</a>
+        <% } %>
+      </div>
+      <% }); %>
+      <% } %>
+    </div>
 
 
-        </main>
-        <footer>
+  </main>
+  <footer>
 
-        </footer>
-    </body>
+  </footer>
+</body>

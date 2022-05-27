@@ -1,34 +1,39 @@
 <% layout('layouts/boilerplate') %>
 
-    <body>
-        <header>
-          <%- include('../../partials/twitter-clone-navbar') %>
-        </header>
-        <main>
-          <div class="main-head"><p><%= person.user %></p></div>
+<body>
+  <header>
+    <%- include('../../partials/twitter-clone-navbar') %>
+  </header>
+  <main>
+    <div class="main-head">
+      <p><%= person.user %></p>
+    </div>
 
-          <% if (tweets.length) { %>
-              <% tweets.forEach(tweet => { %>
-                  <div class="tweet-container">
-                      <p class="user">
-                          @<%= person.user %>
-                      </p>
-                      <p class="tweet">
-                          <%= tweet.text %>
-                      </p>
+    <!-- DISPLAYS TWEETS IF ANY -->
+    <% if (tweets.length) { %>
+    <% tweets.forEach(tweet => { %>
+    <div class="tweet-container">
+      <p class="user">
+        @<%= person.user %>
+      </p>
+      <p class="tweet">
+        <%= tweet.text %>
+      </p>
 
-                      <% if(tweet.userId === '1') { %>
-                        <a class="edit-links" href="/portfolio/twitter-clone/<%= `${person.id}` %>/<%= `${tweet.id}` %>">Edit</a>
-                        <% } %>
-                  </div>
-                  <% }); %>
-                      <% } else { %>
-                        <p class="no-tweets">No Tweets!</p>
-                        <% } %>
+      <!-- ADDS EDIT BUTTON IF THE USER IS ADMIN -->
+      <% if(tweet.userId === '1') { %>
+      <a class="edit-links" href="/portfolio/twitter-clone/<%= `${person.id}` %>/<%= `${tweet.id}` %>">Edit</a>
+      <% } %>
+    </div>
+    <% }); %>
+    <% } else { %>
+      <!-- DISPLAYS IF NO TWEETS ARE FOUND -->
+    <p class="no-tweets">No Tweets!</p>
+    <% } %>
 
 
-        </main>
-        <footer>
+  </main>
+  <footer>
 
-        </footer>
-    </body>
+  </footer>
+</body>
