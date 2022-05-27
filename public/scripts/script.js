@@ -19,6 +19,12 @@ burgerMenu.addEventListener('mouseout', () => {
 });
 burgerMenu.addEventListener('click', () => {
   burgerMenu.classList.toggle('open');
+  headerNav.classList.toggle('open');
+  headerLinksContainer.classList.toggle('open');
+  console.log(window.scrollY);
+  if (window.scrollY < 75) {
+    headerNav.classList.toggle('nav-scroll-bg');
+  }
 });
 
 
@@ -40,15 +46,17 @@ window.addEventListener('resize', () => {
 });
 let lastScrollTop = 0;
 document.addEventListener('scroll', () => {
-  if (window.scrollY > 75 || burgerMenu.classList.contains('open')) {
+  if (window.scrollY > 75) {
     headerNav.classList.add('nav-scroll-bg');
   } else {
     headerNav.classList.remove('nav-scroll-bg');
   }
 
-  // if (burgerMenu.classList.contains('open')) {
-  //   burgerMenu.classList.toggle('open');
-  // }
+  if (burgerMenu.classList.contains('open')) {
+    burgerMenu.classList.remove('open');
+    headerNav.classList.remove('open');
+    headerLinksContainer.classList.remove('open');
+  }
 
   const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
   if (currentScrollTop > lastScrollTop && !burgerMenu.classList.contains('open')){
