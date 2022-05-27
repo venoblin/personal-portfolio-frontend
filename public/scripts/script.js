@@ -1,6 +1,7 @@
 const headerNav = document.querySelector('header nav');
 const headerLinksContainer = headerNav.querySelector('.links-container');
 const headerLinks = headerNav.querySelectorAll('.links');
+const headerLogos = headerNav.querySelectorAll('.header-logos');
 const burgerMenu = headerNav.querySelector('.burger-menu');
 const burgerMenuSpans = burgerMenu.querySelectorAll('span');
 const workTiles = document.querySelectorAll('.work-tiles');
@@ -88,16 +89,30 @@ workTiles.forEach((tile) => {
   });
 });
 
-headerLinks.forEach((link, i) => {
+headerLinks.forEach((link, linkIdx) => {
   link.addEventListener('mouseover', () => {
     headerLinks.forEach((link) => {
       link.classList.toggle('muted-color');
+    });
+    headerLogos.forEach((logo, logoIdx) => {
+      if (logoIdx !== linkIdx) {
+        logo.classList.toggle('muted-fill');
+      } else {
+        logo.classList.toggle('primary-fill');
+      }
     });
   });
 
   link.addEventListener('mouseout', () => {
     headerLinks.forEach((link) => {
       link.classList.toggle('muted-color');
+    });
+    headerLogos.forEach((logo, logoIdx) => {
+      if (logoIdx !== linkIdx) {
+        logo.classList.toggle('muted-fill');
+      } else {
+        logo.classList.toggle('primary-fill');
+      }
     });
   });
 });

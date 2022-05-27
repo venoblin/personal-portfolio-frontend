@@ -16,6 +16,14 @@
   color: var(--primary-color);
 }
 
+.header-logos.primary-fill {
+  fill: var(--primary-color);
+}
+
+.header-logos.muted-fill {
+  fill: var(--muted-text-color);
+}
+
 .nav-scroll-hide {
   transform: translateY(-100px);
 }
@@ -87,6 +95,13 @@
 
 .links:hover {
   color: var(--primary-color);
+}
+
+.header-logos {
+  width: 1.5rem;
+  display: none;
+  fill: var(--text-color);
+  transition: fill 0.5s ease;
 }
 
 .burger-menu {
@@ -392,6 +407,11 @@ header nav .links-container {
   transition: opacity 0.5s ease;
 }
 
+header .links-container div {
+  display: flex;
+  align-items: center;
+}
+
 #welcome-section {
   display: flex;
   flex-direction: column;
@@ -459,6 +479,10 @@ footer p {
     justify-content: space-between;
   }
 
+  .header-logos {
+    display: block;
+  }
+
   header nav.open {
     width: auto;
     height: 100%;
@@ -478,7 +502,6 @@ footer p {
   header nav .links-container.open {
     margin: 0;
     flex-direction: column;
-    align-items: flex-end;
     position: static;
     opacity: 1;
     transform: translateY(0);
