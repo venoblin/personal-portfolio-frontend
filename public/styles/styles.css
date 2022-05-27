@@ -1,13 +1,10 @@
 :root {
-
     --primary-color: #FF5964;
     --secondary-color: #e0e0e0;
     --bg-color: #22333B;
     --bg-shadow: #19252a;
     --text-color: #e0e0e0;
     --muted-text-color: #a3a3a3;
-
-    --section-border-radius: 0.5rem;
 }
 
 /* CLASSES */
