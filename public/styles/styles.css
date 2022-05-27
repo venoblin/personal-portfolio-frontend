@@ -92,6 +92,59 @@
   color: var(--primary-color);
 }
 
+.burger-menu {
+  width: 1.5rem;
+  height: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.burger-menu span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: var(--secondary-color);
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease;
+}
+
+.burger-menu span.primary-color-bg {
+  background-color: var(--primary-color);
+}
+
+.burger-menu span:nth-child(1) {
+  top: 0;
+  transform-origin: left center;
+}
+
+.burger-menu span:nth-child(2) {
+  transform-origin: left center;
+}
+
+.burger-menu span:nth-child(3) {
+  bottom: 0;
+  transform-origin: left center;
+}
+.burger-menu.open span:nth-child(1) {
+  transform: rotate(36deg);
+}
+
+.burger-menu.open span:nth-child(2) {
+  width: 0;
+}
+
+.burger-menu.open span:nth-child(3) {
+  transform: rotate(-36deg);
+}
+
 .section-container {
   width: 100%;
   display: flex;
@@ -176,14 +229,14 @@
 }
 
 .project-info.show-project-info {
-  height: 100%;
-  padding: 1.5rem 1.25rem;
+  opacity: 1;
 }
 
 .project-info {
   width: 100%;
-  height: 0;
-  padding: 0;
+  height: 100%;
+  opacity: 0;
+  padding: 1.5rem 1.25rem;
   overflow: hidden;
   position: absolute;
   bottom: 0;
@@ -192,7 +245,7 @@
   justify-content: flex-end;
   background-color: rgb(34, 51, 59, 0.75);
   /* backdrop-filter: blur(10px); */
-  transition: height 0.5s ease, padding 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 
 .project-info p {
@@ -252,7 +305,7 @@
 }
 
 .contact-form button {
-  margin: 0.5rem 0;
+  margin: 0 1rem;
 }
 
 .footer-logos {
@@ -319,6 +372,7 @@ header nav {
   height: 5rem;
   width: 100%;
   padding: 0 2rem;
+  z-index: 10;
   display: flex;
   align-items: center;
   position: fixed;
@@ -326,7 +380,7 @@ header nav {
   transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
 }
 
-header nav div {
+header nav .links-container {
   display: flex;
   margin-left: 1.5rem;
 }
@@ -389,7 +443,13 @@ footer p {
 }
 
 @media (max-width: 800px) {
+  header nav {
+    justify-content: space-between;
+  }
 
+  header nav .links-container {
+    display: none;
+  }
 
   .section-container p, #welcome-section p {
     width: 85%;
@@ -406,5 +466,6 @@ footer p {
   .contact-form div {
     grid-template-columns: 1fr;
   }
+
 
 }

@@ -24,10 +24,16 @@
     <nav>
         <a class="logo" href="/">Jon</a>
 
-        <div>
+        <div class="links-container">
           <a class="links" href="#about-section">About</a>
           <a class="links" href="#work-section">Work</a>
           <a class="links" href="#contact-section">Contact</a>
+        </div>
+
+        <div class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
     </nav>
   </header>
@@ -87,16 +93,16 @@
       <form class="contact-form" action="index.html" method="post">
         <div>
           <label for="name" class="hide">Name</label>
-          <input type="text" name="name" id="name" placeholder="Name">
+          <input type="text" name="name" id="name" placeholder="Name" required>
 
           <label for="email" class="hide">Email</label>
-          <input type="text" name="email" id="email" placeholder="Email">
+          <input type="email" name="email" id="email" placeholder="Email" required>
         </div>
         <label for="subject" class="hide">Subject</label>
-        <input type="text" name="subject" id="subject" placeholder="Subject">
+        <input type="text" name="subject" id="subject" placeholder="Subject" required>
 
         <label for="message" class="hide">Message</label>
-        <textarea name="message" id="message" placeholder="Message"></textarea>
+        <textarea name="message" id="message" placeholder="Message" required></textarea>
 
         <button class="btn">Send</button>
       </form>

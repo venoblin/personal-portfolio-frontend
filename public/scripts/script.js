@@ -1,8 +1,25 @@
 const headerNav = document.querySelector('header nav');
+const headerLinksContainer = headerNav.querySelector('.links-container');
+const headerLinks = headerNav.querySelectorAll('.links');
+const burgerMenu = headerNav.querySelector('.burger-menu');
+const burgerMenuSpans = burgerMenu.querySelectorAll('span');
 const workTiles = document.querySelectorAll('.work-tiles');
-const headerLinks = document.querySelectorAll('header .links');
 const mainHeader = document.querySelector('#welcome-section h1');
 const mainSubHeader = document.querySelector('#welcome-section h2');
+
+burgerMenu.addEventListener('mouseover', () => {
+  burgerMenuSpans.forEach((span) => {
+    span.classList.toggle('primary-color-bg');
+  });
+});
+burgerMenu.addEventListener('mouseout', () => {
+  burgerMenuSpans.forEach((span) => {
+    span.classList.toggle('primary-color-bg');
+  });
+});
+burgerMenu.addEventListener('click', () => {
+  burgerMenu.classList.toggle('open');
+});
 
 
 if (window.innerWidth > 800) {
@@ -23,14 +40,18 @@ window.addEventListener('resize', () => {
 });
 let lastScrollTop = 0;
 document.addEventListener('scroll', () => {
-  if (window.scrollY > 75) {
+  if (window.scrollY > 75 || burgerMenu.classList.contains('open')) {
     headerNav.classList.add('nav-scroll-bg');
   } else {
     headerNav.classList.remove('nav-scroll-bg');
   }
 
+  // if (burgerMenu.classList.contains('open')) {
+  //   burgerMenu.classList.toggle('open');
+  // }
+
   const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  if (currentScrollTop > lastScrollTop){
+  if (currentScrollTop > lastScrollTop && !burgerMenu.classList.contains('open')){
      // downscroll code
      headerNav.classList.add('nav-scroll-hide');
   } else {
@@ -46,30 +67,30 @@ workTiles.forEach((tile) => {
 
   tile.addEventListener('mouseover', () => {
     if (img) {
-      img.classList.add('scale-hover');
+      img.classList.toggle('scale-hover');
     }
 
-    projectInfo.classList.add('show-project-info');
+    projectInfo.classList.toggle('show-project-info');
   });
   tile.addEventListener('mouseout', () => {
     if (img) {
-      img.classList.remove('scale-hover');
+      img.classList.toggle('scale-hover');
     }
 
-    projectInfo.classList.remove('show-project-info');
+    projectInfo.classList.toggle('show-project-info');
   });
 });
 
 headerLinks.forEach((link, i) => {
   link.addEventListener('mouseover', () => {
     headerLinks.forEach((link) => {
-      link.classList.add('muted-color');
+      link.classList.toggle('muted-color');
     });
   });
 
   link.addEventListener('mouseout', () => {
     headerLinks.forEach((link) => {
-      link.classList.remove('muted-color');
+      link.classList.toggle('muted-color');
     });
   });
 });
