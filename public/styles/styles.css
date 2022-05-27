@@ -317,6 +317,14 @@
 .footer-logos:hover {
   fill: var(--primary-color);
 }
+
+.triangle {
+      width: 100%;
+      margin-bottom: 6rem;
+      border-left: 500px solid transparent;
+      border-right: 500px solid transparent;
+      border-top: 100px solid var(--bg-color);
+    }
 /* END OF CLASSES */
 
 body {
@@ -418,8 +426,8 @@ header nav .links-container {
 }
 
 footer {
-  height: 10rem;
   margin-top: 6rem;
+  padding-bottom: 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -458,8 +466,10 @@ footer p {
     align-items: flex-end;
 
   }
+
   header nav .links-container {
     opacity: 0;
+    transform: translateY(-100px);
   }
 
   header nav .links-container.open {
@@ -467,6 +477,7 @@ footer p {
     flex-direction: column;
     align-items: flex-end;
     opacity: 1;
+    transform: translateY(0);
   }
 
   header nav .links-container.open .links {
