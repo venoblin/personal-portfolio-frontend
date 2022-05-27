@@ -12,20 +12,19 @@ const navLinksToggle = mainNav.querySelector('button');
 const mainNavUl = mainNav.querySelector('ul');
 const mainNavLinks = document.querySelectorAll('.nav-links');
 
+//NAV LINKS MEDIA QUERY USING JS
 function onNavLinks() {
   for (let link of mainNavLinks) {
     link.classList.remove('hide-height');
   }
   mainNavUl.classList.remove('hide-height');
 }
-
 function offNavLinks() {
   for (let link of mainNavLinks) {
     link.classList.add('hide-height');
   }
   mainNavUl.classList.add('hide-height');
 }
-
 if (window.innerWidth < 700) {
   offNavLinks();
 } else {
