@@ -12,7 +12,7 @@ const navLinksToggle = mainNav.querySelector('button');
 const mainNavUl = mainNav.querySelector('ul');
 const mainNavLinks = document.querySelectorAll('.nav-links');
 
-//NAV LINKS MEDIA QUERY USING JS
+//Nav links media query using JS
 function onNavLinks() {
   for (let link of mainNavLinks) {
     link.classList.remove('hide-height');
@@ -46,14 +46,13 @@ navLinksToggle.addEventListener('click', () => {
 });
 
 document.addEventListener('scroll', () => {
-  //ADDS OR REMOVES NAV BACKGROUND DEPENDING ON SCROLL POSITION
   if (this.scrollY > 75) {
     mainNav.classList.add('nav-color-change');
   } else {
     mainNav.classList.remove('nav-color-change');
   }
 
-  //MAKES SURE IMAGE VIEWER IS ALWAYS UP TOP
+  //Makes sure image viewer stays on top of screen
   pictureContainer.style.top = `${window.scrollY}px`;
 });
 
@@ -61,7 +60,6 @@ workersDiv.forEach((workerDiv) => {
   const button = workerDiv.querySelector('button');
   const img = workerDiv.querySelector('img');
 
-  //HOVER EFFECT ON WORKER PROFILE PIC WHEN HOVERING OVER BUTTON
   button.addEventListener('mouseover', () => {
     const img = workerDiv.querySelector('img');
     img.classList.add('worker-img-hover');
@@ -71,10 +69,10 @@ workersDiv.forEach((workerDiv) => {
   });
 });
 
-//TOGGLES WORKER PORTFOLIO
+
 toggleGallery.forEach((btn, i) => {
   btn.addEventListener('click', () => {
-    //GRABS ALL TILES AND HIDES OR SHOWS THEM
+    //Grabs tiles and hides or shows them
     const tiles = workersGallery[i].querySelectorAll('.tiles');
     for (let tile of tiles) {
       if (tile.classList.contains('hide-height')) {
@@ -84,7 +82,6 @@ toggleGallery.forEach((btn, i) => {
       }
     }
 
-    //REMOVES OR ADDS TILES PARENTS MARGIN AND CHANGES BUTTON TEXT
     if (workersGallery[i].classList.contains('worker-gallery-margin')) {
       workersGallery[i].classList.remove('worker-gallery-margin');
       btn.innerHTML = 'View My Work';
@@ -97,28 +94,25 @@ toggleGallery.forEach((btn, i) => {
 
 
 /*
-IMAGE VIEWER
+Image viewer code: Using the current gallery and tile
+counters we can tracked the selected tile from the
+selected gallery
+workersGallery[currentGallery].tiles[currentTile]
 */
 let currentGallery = 0;
 let currentTile = 0;
 
 function updateImage() {
-  //GRABS SELECTED WORKER GALLERY USING currentGallery
   const tiles = workersGallery[currentGallery].querySelectorAll('.tiles');
-
-  //GRABS SELECTED TILE USING currentTile
-  const tilesImg = tiles[currentTile].querySelector('img');
-
-  //IMAGE VIEWER DISPLAYS TILE IMAGE
-  viewerImg.src = tilesImg.src;
+  const tileImg = tiles[currentTile].querySelector('img');
+  viewerImg.src = tileImg.src;
 }
 
 workersGallery.forEach((gallery, galleryIndex) => {
   const tiles = gallery.querySelectorAll('.tiles');
-  //ADDS CLICK LISTENERS TO ALL TILES FOR EACH GALLERY
+
   tiles.forEach((tile, tileIndex) => {
     tile.addEventListener('click', () => {
-      //SETS currentGallery and currentTile TO THE SELECTED GALLERY AND TILE
       currentTile = tileIndex;
       currentGallery = galleryIndex;
       updateImage();
@@ -131,7 +125,6 @@ workersGallery.forEach((gallery, galleryIndex) => {
 nextBtn.addEventListener('click', () => {
   const tiles = workersGallery[currentGallery].querySelectorAll('.tiles');
 
-  //ADDS TO currentTile WITHOUT GOING OVER tiles.length
   if (currentTile === tiles.length - 1) {
     currentTile = tiles.length - 1;
   } else {
@@ -141,7 +134,6 @@ nextBtn.addEventListener('click', () => {
 });
 
 prevBtn.addEventListener('click', () => {
-  //SUBTRACTS FROM currentTile WITHOUT GOING UNDER 0
   if (currentTile === 0) {
     currentTile = 0;
   } else {
@@ -154,7 +146,6 @@ closeBtn.addEventListener('click', () => {
   pictureContainer.style.display = 'none';
   html.classList.remove('overflow-hidden');
 
-  //RESETS INDEXES
   currentTile = 0;
   currentGallery = 0;
 });

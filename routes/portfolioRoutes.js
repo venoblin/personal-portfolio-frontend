@@ -6,9 +6,9 @@ router.use('/twitter-clone', twitterRoutes)
 
 router.get('/:project', (req, res) => {
   const { project } = req.params;
-  /* 
-  PROJECT NAME IS FED TO views/layouts/boilerplate.ejs SO IT CAN GRAB
-  THE PROJECTS CORRESPONDING JS FILE AND CSS FILE
+  /*
+  Project name is fed to views/layouts/boilerplate.ejs 
+  so it can grab the corresponding stylesheet and script
   */
   res.render(`portfolio/${project}`, { project });
 });
