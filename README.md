@@ -20,7 +20,7 @@ router.get('/:project', (req, res) => {
   res.render(`portfolio/${project}`, { project });
 });
 ```
-As long as we use the /public/styles/project-name/style.css & /public/scripts/project-name/script.css conventions the layout will grab the correct files for each project.
+As long as we use the **/public/styles/project-name/style.css** & **/public/scripts/project-name/script.css** file path conventions the layout will grab the correct files for each project.
 
 In our boilerplate file:
 ```
