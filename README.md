@@ -1,5 +1,16 @@
 # Personal-Portfolio
-This is my personal web portfolio showcasing my skills as a website developer. All of my projects are set up to be inserted as the body of [views/layouts/boilerplate.ejs](views/layouts/boilerplate.ejs),  in the server-side when rendering the page; the project name is passed to the boilerplate so it can get the corresponding stylesheat and script.<br/>
+This is my personal web portfolio showcasing my skills as a website developer. 
+
+Technologies used:
+* NodeJs
+* Express
+* EJS
+* Html
+* Css
+* Javascript
+
+# Projects
+All of my projects are set up to be inserted as the body of [views/layouts/boilerplate.ejs](views/layouts/boilerplate.ejs),  in the server-side when rendering the page; the project name is passed to the boilerplate so it can get the corresponding stylesheat and script.
 
 Server-side:
 ```
@@ -9,5 +20,28 @@ router.get('/:project', (req, res) => {
   res.render(`portfolio/${project}`, { project });
 });
 ```
+As long as we use the /public/styles/project-name/style.css & /public/scripts/project-name/script.css conventions the layout will grab the correct files for each project.
+
+In our boilerplate file:
+```
+<link rel="stylesheet" href="/styles/portfolio/<%= project %>/styles.css">
+<script src="/scripts/portfolio/<%= project %>/script.js"></script>
+```
+
+## Tattoo Shop Mock-Up
+Main Page: [/views/portfolio/tattoo-shop.ejs](/views/portfolio/tattoo-shop.ejs)
+
+Style: [/public/styles/portfolio/tattoo-shop/styles.css](/public/styles/portfolio/tattoo-shop/styles.css)
+
+Script: [/public/scripts/portfolio/tattoo-shop/script.js](/public/scripts/portfolio/tattoo-shop/script.js)
+
+## Twitter Clone CRUD
+Main Page: [/views/portfolio/twitter-clone.ejs](/views/portfolio/twitter-clone.ejs)
+
+Other Pages: [/views/portfolio/twitter-clone](/views/portfolio/twitter-clone/)
+
+Style: [/public/styles/portfolio/twitter-clone/styles.css](/public/styles/portfolio/twitter-clone/styles.css)
+
+Script: [/public/scripts/portfolio/twitter-clone/script.js](/public/scripts/portfolio/twitter-clone/script.js)
 
 
