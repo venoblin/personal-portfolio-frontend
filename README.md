@@ -29,16 +29,20 @@ In our boilerplate file:
 ```
 
 ## Tattoo Shop Mock-Up
-Main Page: [/views/portfolio/tattoo-shop.ejs](/views/portfolio/tattoo-shop.ejs)
+Main page: [/views/portfolio/tattoo-shop.ejs](/views/portfolio/tattoo-shop.ejs)
 
 Style: [/public/styles/portfolio/tattoo-shop/styles.css](/public/styles/portfolio/tattoo-shop/styles.css)
 
 Script: [/public/scripts/portfolio/tattoo-shop/script.js](/public/scripts/portfolio/tattoo-shop/script.js)
 
 ## Twitter Clone CRUD
-Main Page: [/views/portfolio/twitter-clone.ejs](/views/portfolio/twitter-clone.ejs)
+Main page: [/views/portfolio/twitter-clone.ejs](/views/portfolio/twitter-clone.ejs)
 
-Other Pages: [/views/portfolio/twitter-clone](/views/portfolio/twitter-clone/)
+Users page: [/views/portfolio/twitter-clone/users.ejs](/views/portfolio/twitter-clone/users.ejs)
+
+Profile page: [/views/portfolio/twitter-clone/profile.ejs](/views/portfolio/twitter-clone/profile.ejs)
+
+Edit page: [/views/portfolio/twitter-clone/edit.ejs](/views/portfolio/twitter-clone/edit.ejs)
 
 Style: [/public/styles/portfolio/twitter-clone/styles.css](/public/styles/portfolio/twitter-clone/styles.css)
 
