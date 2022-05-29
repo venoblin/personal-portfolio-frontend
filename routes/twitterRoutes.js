@@ -19,38 +19,38 @@ router.post('/', (req, res) => {
         userId: '1'
     }
     twitterTweets.unshift(newTweet);
-    res.redirect(`/portfolio/twitter-clone`)
+    res.redirect('/portfolio/twitter-clone')
 });
 
 router.get('/users', (req, res) => {
   res.render('portfolio/twitter-clone/users', { project, twitterUsers });
 });
 
-router.get('/:userId', (req, res) => {
+router.get('/users/:userId', (req, res) => {
   const { userId } = req.params;
   const person = twitterUsers.find(u => u.id === userId);
   const tweets = twitterTweets.filter(t => t.userId === userId);
   res.render('portfolio/twitter-clone/profile', { project, person, tweets });
 });
 
-router.get('/:userId/:tweetId', (req, res) => {
+router.get('/users/:userId/:tweetId', (req, res) => {
   const { userId, tweetId } = req.params;
   const person = twitterUsers.find(u => u.id === userId);
   const tweet = twitterTweets.find(t => t.id === tweetId);
   res.render('portfolio/twitter-clone/edit', { project, person, tweet });
 });
 
-router.patch('/:userId/:tweetId', (req, res) => {
+router.patch('/users/:userId/:tweetId', (req, res) => {
   const { userId, tweetId } = req.params;
   const tweet = twitterTweets.find(t => t.id === tweetId);
   tweet.text = req.body.text;
-  res.redirect(`/portfolio/twitter-clone/${ userId }`);
+  res.redirect(`/portfolio/twitter-clone/users/${ userId }`);
 });
 
-router.delete('/:userId/:tweetId', (req, res) => {
+router.delete('/users/:userId/:tweetId', (req, res) => {
     const { userId, tweetId } = req.params;
     twitterTweets = twitterTweets.filter(t => t.id !== tweetId);
-    res.redirect(`/portfolio/twitter-clone/${ userId }`);
+    res.redirect(`/portfolio/twitter-clone/users/${ userId }`);
 });
 
 module.exports = router;
