@@ -28,14 +28,14 @@ In our boilerplate file:
 <script src="/scripts/portfolio/<%= project %>/script.js"></script>
 ```
 
-## Tattoo Shop Mock-Up
+### Tattoo Shop Mock-Up
 Main page: [/views/portfolio/tattoo-shop.ejs](/views/portfolio/tattoo-shop.ejs)
 
 Style: [/public/styles/portfolio/tattoo-shop/styles.css](/public/styles/portfolio/tattoo-shop/styles.css)
 
 Script: [/public/scripts/portfolio/tattoo-shop/script.js](/public/scripts/portfolio/tattoo-shop/script.js)
 
-## Twitter Clone CRUD
+### Twitter Clone CRUD
 Main page: [/views/portfolio/twitter-clone.ejs](/views/portfolio/twitter-clone.ejs)
 
 Users page: [/views/portfolio/twitter-clone/users.ejs](/views/portfolio/twitter-clone/users.ejs)
@@ -47,5 +47,20 @@ Edit page: [/views/portfolio/twitter-clone/edit.ejs](/views/portfolio/twitter-cl
 Style: [/public/styles/portfolio/twitter-clone/styles.css](/public/styles/portfolio/twitter-clone/styles.css)
 
 Script: [/public/scripts/portfolio/twitter-clone/script.js](/public/scripts/portfolio/twitter-clone/script.js)
+
+#### Restful Routes
+[/routes/twitterRoutes.js](/routes/twitterRoutes.js)
+| URL                          | HTTP verb | Desc                                    |
+| ---------------------------- | --------- | --------------------------------------- |
+| /tweets                      | GET       | Displays all tweets                     |
+| /tweets                      | POST      | Posts a new tweet                       |
+| /users                       | GET       | Displays all users                      |
+| /users/:userId               | GET       | Displays a specific user                |
+| /users/:userId/:tweetId/edit | GET       | Shows edit form                         |
+| /users/:userId/:tweetId      | PATCH     | Patches a specific tweet then redirects |
+| /users/:userId/:tweetId      | DELETE    | Deletes a specific tweet then redirects |
+
+
+
 
 
