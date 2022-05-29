@@ -9,10 +9,14 @@ const generateUsers = require('../seeds/generateUsers');
 generateUsers(20, 15);
 
 router.get('/', (req, res) => {
+  res.redirect('/portfolio/twitter-clone/tweets');
+});
+
+router.get('/tweets', (req, res) => {
     res.render(`portfolio/twitter-clone`, { project, twitterUsers, twitterTweets });
 });
 
-router.post('/', (req, res) => {
+router.post('/tweets', (req, res) => {
     const newTweet = {
         id: uuid(),
         text: req.body.text,
