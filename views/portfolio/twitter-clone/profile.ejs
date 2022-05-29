@@ -22,7 +22,7 @@
 
       <!-- ADDS EDIT BUTTON IF THE USER IS ADMIN -->
       <% if(tweet.userId === '1') { %>
-      <a class="edit-links" href="/portfolio/twitter-clone/users/<%= `${person.id}` %>/<%= `${tweet.id}` %>">Edit</a>
+      <a class="edit-links" href="/portfolio/twitter-clone/users/<%= `${person.id}` %>/<%= `${tweet.id}` %>/edit">Edit</a>
       <% } %>
     </div>
     <% }); %>

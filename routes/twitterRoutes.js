@@ -33,7 +33,7 @@ router.get('/users/:userId', (req, res) => {
   res.render('portfolio/twitter-clone/profile', { project, person, tweets });
 });
 
-router.get('/users/:userId/:tweetId', (req, res) => {
+router.get('/users/:userId/:tweetId/edit', (req, res) => {
   const { userId, tweetId } = req.params;
   const person = twitterUsers.find(u => u.id === userId);
   const tweet = twitterTweets.find(t => t.id === tweetId);
