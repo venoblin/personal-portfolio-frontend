@@ -48,7 +48,7 @@ Style: [/public/styles/portfolio/twitter-clone/styles.css](/public/styles/portfo
 
 Script: [/public/scripts/portfolio/twitter-clone/script.js](/public/scripts/portfolio/twitter-clone/script.js)
 
-Restful Routes: [/routes/twitterRoutes.js](/routes/twitterRoutes.js)
+RESTful routes: [/routes/twitterRoutes.js](/routes/twitterRoutes.js)
 | URL                          | HTTP verb | Desc                                    |
 | ---------------------------- | --------- | --------------------------------------- |
 | /tweets                      | GET       | Displays all tweets                     |
