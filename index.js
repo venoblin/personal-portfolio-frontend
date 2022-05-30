@@ -20,6 +20,10 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
+app.get('/resume', (req, res) => {
+  res.render('resume');
+});
+
 app.all('*', (req, res, next) => {
     next(new AppError('Page Not Found', 404));
 })
