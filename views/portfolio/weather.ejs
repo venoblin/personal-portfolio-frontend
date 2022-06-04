@@ -7,8 +7,8 @@
       <input type="number" name="zip" id="zip" placeholder="Enter Zip-Code" required>
       <button class="btn">Submit</button>
     </form>
+    <p id="date"></p>
     <% if (data) { %>
-      <p id="date"></p>
       <h1 id="weather-header"><%= data.current_observation.condition.temperature %></h1>
       <p id="summary"><%= data.current_observation.condition.text %></p>
       <p id="location"><%= `${data.location.city}, ${data.location.region}` %></p>
