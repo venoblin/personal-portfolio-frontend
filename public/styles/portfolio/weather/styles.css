@@ -83,3 +83,9 @@ h1 {
   color: var(--primary-color);
   background-color: transparent;
 }
+
+@media (max-width: 300px) {
+    form input, form {
+      width: 100%;
+    }
+}
