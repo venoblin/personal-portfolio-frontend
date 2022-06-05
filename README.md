@@ -49,7 +49,7 @@ Style: [/public/styles/portfolio/twitter-clone/styles.css](/public/styles/portfo
 
 Script: [/public/scripts/portfolio/twitter-clone/script.js](/public/scripts/portfolio/twitter-clone/script.js)
 
-Generate users script: [/utils/twitter-clone/twitterStorage.js](/utils/twitter-clone/twitterStorage.js)
+Generate users script: [/seeds/generateUsers.js](/seeds/generateUsers.js)
 
 RESTful routes: [/routes/twitterRoutes.js](/routes/twitterRoutes.js)
 | URL                          | HTTP verb | Desc                                    |
