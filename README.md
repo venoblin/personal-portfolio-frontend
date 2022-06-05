@@ -30,6 +30,8 @@ In our boilerplate file:
 ```
 
 ### Tattoo Shop Mock-Up
+A tattoo shop mock-up website with worker info and a gallery with all their work. Has an image viewer to view the images and cycle through them using Javascript.
+
 Main page: [/views/portfolio/tattoo-shop.ejs](/views/portfolio/tattoo-shop.ejs)
 
 Style: [/public/styles/portfolio/tattoo-shop/styles.css](/public/styles/portfolio/tattoo-shop/styles.css)
@@ -37,6 +39,8 @@ Style: [/public/styles/portfolio/tattoo-shop/styles.css](/public/styles/portfoli
 Script: [/public/scripts/portfolio/tattoo-shop/script.js](/public/scripts/portfolio/tattoo-shop/script.js)
 
 ### Twitter Clone CRUD
+A twitter clone with full CRUD and randomly generated users with randomly generated tweets.
+
 Main page: [/views/portfolio/twitter-clone.ejs](/views/portfolio/twitter-clone.ejs)
 
 Users page: [/views/portfolio/twitter-clone/users.ejs](/views/portfolio/twitter-clone/users.ejs)
