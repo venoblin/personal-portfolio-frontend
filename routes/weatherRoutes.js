@@ -25,7 +25,6 @@ const weatherApiOptions = {
 router.get('/', (req, res, next) => {
   axios.request(weatherApiOptions).then(function(response) {
     const data = response.data;
-
     weatherApiOptions.params.location = '';
     res.render('portfolio/weather', { project, data });
   }).catch(function(error) {
