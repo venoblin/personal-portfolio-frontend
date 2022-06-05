@@ -8,6 +8,7 @@ Technologies used:
 * Html
 * Css
 * Javascript
+* Axios
 
 # Projects
 All of my projects are set up to be inserted as the body of [views/layouts/boilerplate.ejs](views/layouts/boilerplate.ejs),  in the server-side when rendering the page; the project name is passed to the boilerplate so it can be used to get the corresponding stylesheet and script.
@@ -48,6 +49,8 @@ Style: [/public/styles/portfolio/twitter-clone/styles.css](/public/styles/portfo
 
 Script: [/public/scripts/portfolio/twitter-clone/script.js](/public/scripts/portfolio/twitter-clone/script.js)
 
+Generate users script: [/utils/twitter-clone/twitterStorage.js](/utils/twitter-clone/twitterStorage.js)
+
 RESTful routes: [/routes/twitterRoutes.js](/routes/twitterRoutes.js)
 | URL                          | HTTP verb | Desc                                    |
 | ---------------------------- | --------- | --------------------------------------- |
@@ -58,6 +61,17 @@ RESTful routes: [/routes/twitterRoutes.js](/routes/twitterRoutes.js)
 | /users/:userId/:tweetId/edit | GET       | Shows edit form                         |
 | /users/:userId/:tweetId      | PATCH     | Patches a specific tweet then redirects |
 | /users/:userId/:tweetId      | DELETE    | Deletes a specific tweet then redirects |
+
+### Weather App
+Weather app that uses an api (Yahoo Weather) to look up the weather in a location using a zip-code and display it along with the date, location, and summary.
+
+Main page: [/views/portfolio/weather.ejs](/views/portfolio/weather.ejs)
+
+Style: [/public/styles/portfolio/weather/styles.css](/public/styles/portfolio/weather/styles.css)
+
+Script: [/public/scripts/portfolio/weather/script.js](/public/scripts/portfolio/weather/script.js)
+
+Routes: [/routes/weatherRoutes.js](/routes/weatherRoutes.js)
 
 
 
