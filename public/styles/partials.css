@@ -17,7 +17,7 @@
   right: 0;
   bottom: 0;
   z-index: 100;
-  margin: 0.75rem 1rem;
+  margin: 0.5rem;
   background-color: rgb(34, 51, 59, 0.5);
 }
 
@@ -27,6 +27,12 @@
   transition: fill 0.5s ease;
 }
 
-.navbar .home-logo:hover {
+.home-logo.hover {
   fill: var(--primary-color);
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0.5rem;
+  }
 }

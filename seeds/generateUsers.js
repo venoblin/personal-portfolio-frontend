@@ -6,8 +6,8 @@ function generateUsers(amount, maxTweets) {
   //Generates random users with a random username
   for (let i = 1; i < amount; i++) {
 
-    const randAdj = Math.floor(Math.random() * adjectives.length);
-    const randNou = Math.floor(Math.random() * nouns.length);
+    const randAdj = Math.floor(Math.random() * (adjectives.length - 1));
+    const randNou = Math.floor(Math.random() * (nouns.length - 1));
 
     const username = `${adjectives[randAdj]}${nouns[randNou]}`;
 
@@ -23,7 +23,7 @@ function generateUsers(amount, maxTweets) {
     if (user.id.length !== 1) {
       const randAmount = Math.floor(Math.random() * maxTweets) + 1;
       for (let i = 0; i < randAmount; i++) {
-        const randTweet = Math.floor(Math.random() * statements.length);
+        const randTweet = Math.floor(Math.random() * (statements.length - 1));
         twitterTweets.push({
           id: uuid(),
           text: statements[randTweet],
