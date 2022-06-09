@@ -9,7 +9,7 @@
     </form>
     <p id="date"></p>
     <% if (data) { %>
-      <h1 id="weather-header"><%= data.current_observation.condition.temperature %></h1>
+      <h1 id="weather-header"><%= data.current_observation.condition.temperature %>&#176;</h1>
       <p id="summary"><%= data.current_observation.condition.text %></p>
       <p id="location"><%= `${data.location.city}, ${data.location.region}` %></p>
     <% } %>
