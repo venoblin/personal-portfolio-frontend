@@ -7,7 +7,7 @@
     --muted-text-color: #a3a3a3;
 }
 
-.navbar {
+.custom-navbar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@
   background-color: rgb(34, 51, 59, 0.5);
 }
 
-.navbar .home-logo {
+.custom-navbar .home-logo {
   width: 1.5rem;
   fill: var(--text-color);
   transition: fill 0.5s ease;

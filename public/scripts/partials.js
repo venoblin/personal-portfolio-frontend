@@ -1,4 +1,4 @@
-const nav = document.querySelector('.navbar');
+const nav = document.querySelector('.custom-navbar');
 const homeLogo = nav.querySelector('.home-logo');
 
 nav.addEventListener('mouseenter', () => {
