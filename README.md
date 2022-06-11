@@ -77,6 +77,16 @@ Script: [/public/scripts/portfolio/weather/script.js](/public/scripts/portfolio/
 
 Routes: [/routes/weatherRoutes.js](/routes/weatherRoutes.js)
 
+### Bootstrap Landing Page
+A simple landing page made with Bootstrap.
+
+Main page: [/views/portfolio/landing-page.ejs](/views/portfolio/landing-page.ejs)
+
+Style: [/public/styles/portfolio/landing-page/styles.css](/public/styles/portfolio/landing-page/styles.css)
+
+Script: [/public/scripts/portfolio/landing-page/script.js](/public/scripts/portfolio/landing-page/script.js)
+
+
 
 
 
