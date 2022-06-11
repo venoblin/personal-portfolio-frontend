@@ -1,5 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;700&family=Teko:wght@700&display=swap');
 
-h1 {
-  font-family: 'Exo 2', sans-serif;
+body {
+  background-color: #182125;
+  font-family: 'Kanit', sans-serif;
+}
+
+body, i, a.nav-link {
+  color: #EAEAEA;
+}
+
+a.nav-link:active {
+  color: inherit;
+}
+
+a.nav-link:hover {
+  color: #EAEAEA;
+}
+
+.nav-link i {
+  font-size: 1.5rem;
+}
+
+.lg-icon {
+  font-size: 15rem;
+}
+
+.md-icon {
+  font-size: 10rem;
+}
+
+@media (max-width: 400px) {
+  .lg-icon {
+    font-size: 7.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .md-icon {
+    font-size: 5rem;
+  }
 }
