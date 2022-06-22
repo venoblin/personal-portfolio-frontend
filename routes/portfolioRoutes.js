@@ -2,9 +2,11 @@ const express = require('express');
 const router = express.Router();
 const twitterRoutes = require('./twitterRoutes');
 const weatherRoutes = require('./weatherRoutes');
+const tattooShopV2 = require('./tattooShopV2');
 
 router.use('/twitter-clone', twitterRoutes)
 router.use('/weather', weatherRoutes);
+router.use('/tattoo-shop-v2', tattooShopV2);
 router.get('/:project', (req, res) => {
   const { project } = req.params;
   /*

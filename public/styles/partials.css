@@ -1,13 +1,13 @@
 :root {
-    --primary-color: #FF5964;
-    --secondary-color: #e0e0e0;
-    --bg-color: #22333B;
-    --bg-shadow: #19252a;
-    --text-color: #e0e0e0;
-    --muted-text-color: #a3a3a3;
+    --primary-color-partial: #FF5964;
+    --secondary-color-partial: #e0e0e0;
+    --bg-color-partial: #22333B;
+    --bg-shadow-partial: #19252a;
+    --text-color-partial: #e0e0e0;
+    --muted-text-color-partial: #a3a3a3;
 }
 
-.custom-navbar {
+.partial-navbar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,18 +21,18 @@
   background-color: rgb(34, 51, 59, 0.5);
 }
 
-.custom-navbar .home-logo {
+.partial-navbar .partial-home-logo {
   width: 1.5rem;
-  fill: var(--text-color);
+  fill: var(--text-color-partial);
   transition: fill 0.5s ease;
 }
 
-.home-logo.hover {
-  fill: var(--primary-color);
+.partial-home-logo.hover {
+  fill: var(--primary-color-partial);
 }
 
 @media (max-width: 600px) {
-  .navbar {
+  .partial-navbar {
     padding: 0.75rem;
   }
 }

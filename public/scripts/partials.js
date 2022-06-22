@@ -1,5 +1,5 @@
-const nav = document.querySelector('.custom-navbar');
-const homeLogo = nav.querySelector('.home-logo');
+const nav = document.querySelector('.partial-navbar');
+const homeLogo = nav.querySelector('.partial-home-logo');
 
 nav.addEventListener('mouseenter', () => {
   homeLogo.classList.toggle('hover');
