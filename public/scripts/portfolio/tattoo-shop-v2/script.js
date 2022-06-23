@@ -45,6 +45,9 @@ mainNavLinks.forEach((link, i) => {
       mainNav.classList.remove('expand');
       body.classList.remove('expand');
     }
+    if (mainNavToggle.classList.contains('open')) {
+      mainNavToggle.classList.remove('open');
+    }
   });
 });
 

@@ -109,8 +109,7 @@ button[disabled] i {
 }
 
 header {
-  height: 93vh;
-  padding: 6.5rem 0;
+  padding: 15rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -496,7 +495,7 @@ footer nav .link {
     height: 100%;
     z-index: 0;
     position: absolute;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
     background-color: rgba(0, 0, 0, 0.7);
     transition: backdrop-filter 0.3s ease;
   }
