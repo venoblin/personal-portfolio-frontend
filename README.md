@@ -1,5 +1,5 @@
 # Personal-Portfolio
-This is my personal web portfolio showcasing my skills as a website developer. 
+This is my personal web portfolio showcasing my skills as a website developer.
 
 Technologies used:
 * NodeJs
@@ -17,7 +17,7 @@ Server-side:
 ```
 router.get('/:project', (req, res) => {
   const { project } = req.params;
-  
+
   res.render(`portfolio/${project}`, { project });
 });
 ```
@@ -29,14 +29,24 @@ In our boilerplate file:
 <script src="/scripts/portfolio/<%= project %>/script.js"></script>
 ```
 
-### Tattoo Shop Mock-Up
+### Tattoo Shop Mock-Up V2
 A tattoo shop mock-up website with worker info and a gallery with all their work. Has an image viewer to view the images and cycle through them using Javascript.
 
-Main page: [/views/portfolio/tattoo-shop.ejs](/views/portfolio/tattoo-shop.ejs)
+Main page: [/views/portfolio/tattoo-shop-v2.ejs](/views/portfolio/tattoo-shop-v2/worker1.ejs)
 
-Style: [/public/styles/portfolio/tattoo-shop/styles.css](/public/styles/portfolio/tattoo-shop/styles.css)
+Worker 1: [/views/portfolio/tattoo-shop-v2/worker1.ejs](/views/portfolio/tattoo-shop-v2/worker1.ejs)
 
-Script: [/public/scripts/portfolio/tattoo-shop/script.js](/public/scripts/portfolio/tattoo-shop/script.js)
+Worker 2: [/views/portfolio/tattoo-shop-v2/worker2.ejs](/views/portfolio/tattoo-shop-v2/worker2.ejs)
+
+Worker 3: [/views/portfolio/tattoo-shop-v2/worker3.ejs](/views/portfolio/tattoo-shop-v2/worker3.ejs)
+
+Style: [/public/styles/portfolio/tattoo-shop-v2/styles.css](/public/styles/portfolio/tattoo-shop-v2/styles.css)
+
+Worker style: [/public/styles/portfolio/tattoo-shop-v2/worker.css](/public/styles/portfolio/tattoo-shop-v2/worker.css)
+
+Script: [/public/scripts/portfolio/tattoo-shop-v2/script.js](/public/scripts/portfolio/tattoo-shop-v2/script.js)
+
+Image viewer script: [/public/scripts/portfolio/tattoo-shop-v2/imageViewer.js](/public/scripts/portfolio/tattoo-shop-v2/imageViewer.js)
 
 ### Twitter Clone CRUD
 A twitter clone with full CRUD and randomly generated users with randomly generated tweets.
@@ -86,8 +96,11 @@ Style: [/public/styles/portfolio/landing-page/styles.css](/public/styles/portfol
 
 Script: [/public/scripts/portfolio/landing-page/script.js](/public/scripts/portfolio/landing-page/script.js)
 
+### Tattoo Shop Mock-Up
+A tattoo shop mock-up website with worker info and a gallery with all their work. Has an image viewer to view the images and cycle through them using Javascript.
 
+Main page: [/views/portfolio/tattoo-shop.ejs](/views/portfolio/tattoo-shop.ejs)
 
+Style: [/public/styles/portfolio/tattoo-shop/styles.css](/public/styles/portfolio/tattoo-shop/styles.css)
 
-
-
+Script: [/public/scripts/portfolio/tattoo-shop/script.js](/public/scripts/portfolio/tattoo-shop/script.js)
