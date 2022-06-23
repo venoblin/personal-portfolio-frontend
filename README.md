@@ -30,7 +30,7 @@ In our boilerplate file:
 ```
 
 ### Tattoo Shop Mock-Up V2
-A tattoo shop mock-up website with worker info and a gallery with all their work. Has an image viewer to view the images and cycle through them using Javascript.
+A re-design of a past project.
 
 Main page: [/views/portfolio/tattoo-shop-v2.ejs](/views/portfolio/tattoo-shop-v2.ejs)
 
