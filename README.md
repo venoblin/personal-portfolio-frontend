@@ -32,7 +32,7 @@ In our boilerplate file:
 ### Tattoo Shop Mock-Up V2
 A tattoo shop mock-up website with worker info and a gallery with all their work. Has an image viewer to view the images and cycle through them using Javascript.
 
-Main page: [/views/portfolio/tattoo-shop-v2.ejs](/views/portfolio/tattoo-shop-v2/worker1.ejs)
+Main page: [/views/portfolio/tattoo-shop-v2.ejs](/views/portfolio/tattoo-shop-v2.ejs)
 
 Worker 1: [/views/portfolio/tattoo-shop-v2/worker1.ejs](/views/portfolio/tattoo-shop-v2/worker1.ejs)
 
