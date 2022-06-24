@@ -1,4 +1,5 @@
 const headerNav = document.querySelector('header nav');
+const headerScrollIcon = document.querySelector('header section .icon');
 const headerLinksContainer = headerNav.querySelector('.links-container');
 const headerLinks = headerNav.querySelectorAll('.links');
 const headerLogos = headerNav.querySelectorAll('.header-logos');
@@ -25,7 +26,7 @@ burgerMenu.addEventListener('click', () => {
   headerNav.classList.toggle('open');
   headerLinksContainer.classList.toggle('open');
 
-  if (window.scrollY < 75) {
+  if (window.scrollY < 125) {
     headerNav.classList.toggle('nav-scroll-bg');
   }
 });
@@ -49,10 +50,12 @@ window.addEventListener('resize', () => {
 
 let lastScrollTop = 0;
 document.addEventListener('scroll', () => {
-  if (window.scrollY > 75) {
+  if (window.scrollY > 125) {
     headerNav.classList.add('nav-scroll-bg');
+    headerScrollIcon.classList.add('scroll');
   } else {
     headerNav.classList.remove('nav-scroll-bg');
+    headerScrollIcon.classList.remove('scroll');
   }
 
   if (burgerMenu.classList.contains('open')) {
