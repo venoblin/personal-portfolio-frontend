@@ -431,11 +431,11 @@ footer {
 
 header {
   height: 100vh;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 header nav {
@@ -462,13 +462,13 @@ header .links-container div {
   align-items: center;
 }
 
-header section .icon {
+header .scroll-icon-container {
   margin-bottom: 5rem;
   position: absolute;
   bottom: 0;
 }
 
-header section .icon.scroll {
+header .scroll-icon-container .icon.scroll {
   height: 0;
 }
 

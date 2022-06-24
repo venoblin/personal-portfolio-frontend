@@ -1,5 +1,5 @@
 const headerNav = document.querySelector('header nav');
-const headerScrollIcon = document.querySelector('header section .icon');
+const headerScrollIcon = document.querySelector('header .scroll-icon-container .icon');
 const headerLinksContainer = headerNav.querySelector('.links-container');
 const headerLinks = headerNav.querySelectorAll('.links');
 const headerLogos = headerNav.querySelectorAll('.header-logos');
