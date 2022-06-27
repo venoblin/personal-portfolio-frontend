@@ -215,17 +215,16 @@ p.subheading {
 }
 
 .skills-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 2rem 0 1rem 0;
 }
 
 .skills-container .subheading {
-  text-align: left;
   padding: 0;
   margin-bottom: 0.25rem;
-}
-
-.skills-container ul {
-  padding: 0 1rem;
 }
 
 .skills-container ul li {
