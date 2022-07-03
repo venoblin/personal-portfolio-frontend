@@ -17,6 +17,7 @@
 
 <body>
   <header>
+    <button type="button" name="button" class="nav-toggle">X</button>
     <!-- WELCOME SECTION -->
     <section id="welcome-section" class="full-section">
       <h1>Jonathan,</h1>
@@ -69,7 +70,7 @@
   <main>
 
     <!-- SKILLS SECTION -->
-    <section id="skills-section" class="section">
+    <section id="skills-section" class="section skills">
       <h2 class="section-heading">Skills & Tools</h2>
 
       <div class="grid">
@@ -102,12 +103,12 @@
 
     <!-- WORK SECTION -->
     <section id="work-section" class="section">
-      <h2 class="section-heading">Projects</h2>
+      <h2 class="section-heading center-heading">Projects</h2>
 
       <!-- WORK GRID -->
       <div class="work-grid">
         <!-- TILE -->
-        <div class="work-tiles">
+        <div class="work-tile">
           <img src="images/tattoo-shop-v2-screenshot.png" alt="Tattoo Shop V2 Screenshot">
           <div class="project-info">
             <div>
@@ -121,15 +122,15 @@
             <div>
               <p class="project-info-title">Tattoo Shop V2</p>
               <div>
-                <a href="/portfolio/tattoo-shop-v2" class="btn">Demo</a>
-                <a href="https://github.com/VillagomezHJonathan/Personal-Portfolio#tattoo-shop-mock-up-v2" target="_blank" class="btn">Code</a>
+                <a href="/portfolio/tattoo-shop-v2" class="btn-link">Demo</a>
+                <a href="https://github.com/VillagomezHJonathan/Personal-Portfolio#tattoo-shop-mock-up-v2" target="_blank" class="btn-link">Code</a>
               </div>
             </div>
           </div>
         </div>
 
         <!-- TILE -->
-        <div class="work-tiles">
+        <div class="work-tile">
           <img src="images/twitter-clone-screenshot.png" alt="Twitter Clone Screenshot">
           <div class="project-info">
             <div>
@@ -146,14 +147,14 @@
             <div>
               <p class="project-info-title">Twitter Clone CRUD</p>
               <div>
-                <a href="/portfolio/twitter-clone" class="btn">Demo</a>
-                <a href="https://github.com/VillagomezHJonathan/Personal-Portfolio/blob/main/README.md#twitter-clone-crud" target="_blank" class="btn">Code</a>
+                <a href="/portfolio/twitter-clone" class="btn-link">Demo</a>
+                <a href="https://github.com/VillagomezHJonathan/Personal-Portfolio/blob/main/README.md#twitter-clone-crud" target="_blank" class="btn-link">Code</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="work-tiles">
+        <div class="work-tile">
           <img src="images/weather-app-screenshot.png" alt="Weather App Screenshot">
           <div class="project-info">
             <div>
@@ -170,14 +171,14 @@
             <div>
               <p class="project-info-title">Weather App</p>
               <div>
-                <a href="/portfolio/weather" class="btn">Demo</a>
-                <a href="https://github.com/VillagomezHJonathan/Personal-Portfolio/blob/main/README.md#weather-app" target="_blank" class="btn">Code</a>
+                <a href="/portfolio/weather" class="btn-link">Demo</a>
+                <a href="https://github.com/VillagomezHJonathan/Personal-Portfolio/blob/main/README.md#weather-app" target="_blank" class="btn-link">Code</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="work-tiles">
+        <div class="work-tile">
           <img src="images/landing-page-screenshot.png" alt="Landing Page Screenshot">
           <div class="project-info">
             <div>
@@ -192,14 +193,14 @@
             <div>
               <p class="project-info-title">Bootstrap Landing Page</p>
               <div>
-                <a href="/portfolio/landing-page" class="btn">Demo</a>
-                <a href="https://github.com/VillagomezHJonathan/Personal-Portfolio/blob/main/README.md#bootstrap-landing-page" target="_blank" class="btn">Code</a>
+                <a href="/portfolio/landing-page" class="btn-link">Demo</a>
+                <a href="https://github.com/VillagomezHJonathan/Personal-Portfolio/blob/main/README.md#bootstrap-landing-page" target="_blank" class="btn-link">Code</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="work-tiles">
+        <div class="work-tile">
           <img src="images/tattoo-shop-screenshot.png" alt="Tattoo Shop Screenshot">
           <div class="project-info">
             <div>
@@ -213,8 +214,8 @@
             <div>
               <p class="project-info-title">Tattoo Shop</p>
               <div>
-                <a href="/portfolio/tattoo-shop" class="btn">Demo</a>
-                <a href="https://github.com/VillagomezHJonathan/Personal-Portfolio/blob/main/README.md#tattoo-shop-mock-up" target="_blank" class="btn">Code</a>
+                <a href="/portfolio/tattoo-shop" class="btn-link">Demo</a>
+                <a href="https://github.com/VillagomezHJonathan/Personal-Portfolio/blob/main/README.md#tattoo-shop-mock-up" target="_blank" class="btn-link">Code</a>
               </div>
             </div>
           </div>
@@ -224,8 +225,10 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact-section" class="section">
-      <h2 class="section-heading">Get in touch!</h2>
+    <section id="contact-section" class="section contact">
+
+
+      <h2 class="section-heading center-heading">Get in touch!</h2>
 
       <!-- EMAIL FORM -->
       <form class="contact-form" action="index.html" method="post">
@@ -241,15 +244,16 @@
 
         <label for="message" class="hide">Message</label>
         <textarea name="message" id="message" placeholder="Message" required></textarea>
-        <button class="btn">Send</button>
+        <button class="btn-link">Send</button>
       </form>
     </section>
 
   </main>
 
   <footer>
-
-    <p>Jon © 2022</p>
+    <div class="container">
+      <p>Jon © 2022</p>
+    </div>
   </footer>
 
   <script src="/scripts/script.js"></script>
