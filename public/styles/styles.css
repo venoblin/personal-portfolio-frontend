@@ -526,9 +526,20 @@ footer .container p {
   h2.section-heading {
     font-size: 2em;
   }
-  .section p, .section ul li {
+
+  .section p,
+  ul li {
     font-size: 1.5em;
   }
+  
+  .work-grid .subheading, .project-info-title{
+    font-size: 1.5em;
+  }
+
+  .project-info ul li {
+    font-size: 1.25rem;
+  }
+
   .section .grid {
     grid-template-columns: 1fr;
   }
