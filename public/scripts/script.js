@@ -1,11 +1,23 @@
 const body = document.querySelector('body');
 const navToggle = document.querySelector('.burger-container');
+const navToggleSpans = navToggle.querySelectorAll('span');
 const navBar = document.querySelector('header nav');
 const navLinks = navBar.querySelectorAll('.link');
 const mainHeader = document.querySelector('#welcome-section h1');
 const mainSubHeader = document.querySelector('#welcome-section h2');
 const arrowScrollDown = document.querySelector('.full-section .arrow-container');
 const workTiles = document.querySelectorAll('.work-grid .work-tile');
+
+navToggle.addEventListener('mouseover', () => {
+  navToggleSpans.forEach((span) => {
+    span.classList.toggle('hover');
+  });
+});
+navToggle.addEventListener('mouseout', () => {
+  navToggleSpans.forEach((span) => {
+    span.classList.toggle('hover');
+  });
+});
 
 navToggle.addEventListener('click', () => {
   navToggle.classList.toggle('toggle');

@@ -46,20 +46,6 @@ button {
   background-color: transparent;
 }
 
-/* .nav-toggle {
-  margin: 2rem;
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 20;
-  padding: 0.25rem 0.75rem;
-  color: var(--color-primary);
-  background-color: var(--color-bg);
-  border: 1px solid var(--color-primary);
-  transition: transform 0.2s ease-in, margin 0.2s ease-in;
-} */
-
 .burger-container {
   margin: 2rem;
   padding: 1rem;
@@ -92,6 +78,10 @@ button {
   left: 0;
   transform: rotate(0deg);
   transition: 0.25s ease;
+}
+
+.burger-menu span.hover {
+  background-color: white;
 }
 
 .burger-menu span:nth-child(1) {
@@ -270,34 +260,35 @@ nav .links-container .link {
 }
 
 .logo-container {
-  height: 100%;
-  padding: 6rem 0;
+  width: 100%;
+  padding-right: 1.5rem;
   z-index: 10;
   display: flex;
-  align-items: flex-end;
+  justify-content: flex-start;
   position: fixed;
   right: 0;
-  bottom: 0;
+  top: 0;
+  transform-origin: top right;
+  transform: rotate(-90deg) translateY(-24px);
 }
 
 .logo-container::before {
   content: '';
-  width: 1px;
-  height: 15rem;
-  margin-right: 0.75rem;
+  height: 1px;
+  width: 20rem;
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 0;
   background-color: var(--color-primary);
 }
 
 .logo-container .logo {
-  transform: rotate(90deg) translateY(-66px);
+  transform: translateX(0) rotate(180deg);
   transition: transform 0.1s ease-in;
 }
 
 .logo-container .logo:hover {
-  transform: rotate(90deg) translateY(-66px) translateX(-5px);
+  transform: translateX(-5px) rotate(180deg);
 }
 
 .full-section {
@@ -545,7 +536,7 @@ footer .container p {
   }
 
   .burger-container.toggle {
-    margin-right: 0.25rem;
+    margin-right: 0;
     transform: translateY(350px);
     background-color: transparent;
   }
