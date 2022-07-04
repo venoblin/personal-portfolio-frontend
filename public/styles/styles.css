@@ -395,7 +395,16 @@ nav .links-container .link {
   justify-content: space-between;
   background-color: rgb(28, 28, 30, 0.75);
   backdrop-filter: blur(5px);
-  transition: opacity 0.5s ease;
+  transition: opacity 0.3s ease-in;
+}
+
+.project-info div {
+  max-height: 0;
+  transition: max-height 0.3s ease-in;
+}
+
+.project-info.show div {
+  max-height: 10rem;
 }
 
 .project-info.show {
