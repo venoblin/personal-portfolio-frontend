@@ -1,5 +1,5 @@
 const body = document.querySelector('body');
-const navToggle = document.querySelector('.nav-toggle');
+const navToggle = document.querySelector('.burger-container');
 const navBar = document.querySelector('header nav');
 const navLinks = navBar.querySelectorAll('.link');
 const mainHeader = document.querySelector('#welcome-section h1');
@@ -29,12 +29,6 @@ navLinks.forEach(link => {
 if (window.innerWidth > 800) {
   mainHeader.textContent = 'Jonathan,';
   mainSubHeader.textContent = 'Website Developer';
-
-  if (navBar.classList.contains('toggle')) {
-    navToggle.classList.remove('toggle');
-    navBar.classList.remove('toggle');
-    body.classList.remove('toggle');
-  }
 } else {
   mainHeader.textContent = 'Jon,';
   mainSubHeader.textContent = 'Web Dev';
