@@ -26,6 +26,19 @@
       </div>
     </div>
 
+    <% if (query.email_sent) { %>
+    <div class="message-container">
+      <p class="message">Email Sent!</p>
+      <div class="exit-container">
+        <div class="exit">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <% } %>
+
     <!-- WELCOME SECTION -->
     <section id="welcome-section" class="full-section">
       <h1>Jonathan,</h1>
@@ -239,7 +252,7 @@
       <h2 class="section-heading center-heading">Get in touch!</h2>
 
       <!-- EMAIL FORM -->
-      <form class="contact-form" action="index.html" method="post">
+      <form class="contact-form" action="/send" method="post">
         <div>
           <label for="name" class="hide">Name</label>
           <input type="text" name="name" id="name" placeholder="Name" required>
@@ -252,7 +265,8 @@
 
         <label for="message" class="hide">Message</label>
         <textarea name="message" id="message" placeholder="Message" required></textarea>
-        <button class="btn-link">Send</button>
+
+        <button type="submit" class="btn-link">Send</button>
       </form>
     </section>
 

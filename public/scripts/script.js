@@ -7,6 +7,33 @@ const mainHeader = document.querySelector('#welcome-section h1');
 const mainSubHeader = document.querySelector('#welcome-section h2');
 const arrowScrollDown = document.querySelector('.full-section .arrow-container');
 const workTiles = document.querySelectorAll('.work-grid .work-tile');
+const contactForm = document.querySelector('.contact-form');
+
+
+function cutQueryFromUrl(url) {
+  return url.split("?")[0];
+}
+
+if (document.body.contains(document.querySelector('.message-container'))) {
+  const messageContainer = document.querySelector('.message-container');
+  const exitBtn = document.querySelector('.exit-container');
+  const exitBtnSpans = exitBtn.querySelectorAll('span');
+
+  exitBtn.addEventListener('mouseover', () => {
+    exitBtnSpans.forEach((span) => {
+      span.classList.toggle('hover');
+    });
+  });
+  exitBtn.addEventListener('mouseout', () => {
+    exitBtnSpans.forEach((span) => {
+      span.classList.toggle('hover');
+    });
+  });
+  exitBtn.addEventListener('click', () => {
+    messageContainer.classList.toggle('dismiss');
+    window.location.href = cutQueryFromUrl(window.location.href);
+  });
+}
 
 navToggle.addEventListener('mouseover', () => {
   navToggleSpans.forEach((span) => {

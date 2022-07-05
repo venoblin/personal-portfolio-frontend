@@ -30,7 +30,7 @@ h3 {
 }
 
 p,
-li {
+ul li {
   font-size: 2em;
   letter-spacing: 0.075em;
 }
@@ -44,6 +44,88 @@ button {
   cursor: pointer;
   border: none;
   background-color: transparent;
+}
+
+.message-container {
+  margin: 6rem 0;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  text-align: center;
+  background-color: var(--color-primary);
+  transform: translateX(0);
+  transition: transform 0.3s ease-in;
+}
+
+.message-container.dismiss {
+  transform: translateX(-500px);
+}
+
+.message-container.dismiss .exit-container {
+  opacity: 0;
+}
+
+.message-container p {
+  width: fit-content;
+  text-transform: uppercase;
+  color: var(--color-bg);
+}
+
+.exit-container {
+  padding: 0 0.75rem;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--color-bg);
+  transition: transform 0.2s ease-in, margin 0.2s ease-in, background-color 0.2s ease-in, opacity 0.1s ease-in;
+}
+
+.exit {
+  width: 1.5rem;
+  height: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  transform: rotate(0deg);
+}
+
+.exit span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-primary);
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease;
+}
+
+.exit span.hover {
+  background-color: white;
+}
+
+.exit span:nth-child(1) {
+  top: 0;
+  transform-origin: left center;
+  transform: rotate(36deg);
+}
+
+.exit span:nth-child(2) {
+  width: 0;
+  margin: auto 0;
+  top: 0;
+  bottom: 0;
+  transform-origin: left center;
+}
+
+.exit span:nth-child(3) {
+  transform: rotate(-36deg);
+  bottom: 0;
+  transform-origin: left center;
 }
 
 .burger-container {
@@ -522,6 +604,15 @@ footer .container p {
   color: var(--color-muted-text);
 }
 
+@media (max-width: 450px) {
+  .exit-container {
+    padding: 0 0.5rem;
+  }
+  .message {
+    font-size: 1.25em;
+  }
+}
+
 @media (max-width: 550px) {
   h2.section-heading {
     font-size: 2em;
@@ -531,7 +622,7 @@ footer .container p {
   ul li {
     font-size: 1.5em;
   }
-  
+
   .work-grid .subheading, .project-info-title{
     font-size: 1.5em;
   }
