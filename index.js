@@ -25,7 +25,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/portfolio', portfolioRoutes);
 app.get('/', (req, res) => {
   const query = req.query;
-  console.log(query);
   res.render('home', { query });
 });
 
