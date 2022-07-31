@@ -428,6 +428,14 @@ nav .links-container .link {
   background-color: var(--color-primary);
 }
 
+.btn-container {
+  display: flex;
+}
+
+.btn-container a {
+  margin-right: 5rem;
+}
+
 .grid .links-container {
   padding: 0 2rem;
   display: flex;
@@ -608,6 +616,7 @@ footer .container p {
   .exit-container {
     padding: 0 0.5rem;
   }
+
   .message {
     font-size: 1.25em;
   }
@@ -623,7 +632,8 @@ footer .container p {
     font-size: 1.5em;
   }
 
-  .work-grid .subheading, .project-info-title{
+  .work-grid .subheading,
+  .project-info-title {
     font-size: 1.5em;
   }
 
