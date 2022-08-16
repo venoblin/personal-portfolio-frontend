@@ -638,7 +638,7 @@ footer .container p {
   }
 
   .project-info ul li {
-    font-size: 1.25rem;
+    font-size: 1.25em;
   }
 
   .section .grid {
@@ -695,5 +695,25 @@ footer .container p {
 
   .contact-form div {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 350px) {
+  h2.section-heading {
+    font-size: 1.75em;
+  }
+
+  .section p,
+  ul li {
+    font-size: 1.25em;
+  }
+
+  .work-grid .subheading,
+  .project-info-title {
+    font-size: 1.25em;
+  }
+
+  .project-info ul li {
+    font-size: 1em;
   }
 }
