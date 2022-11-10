@@ -1,106 +1,70 @@
-# Personal-Portfolio
-This is my personal web portfolio showcasing my skills as a website developer.
+# Getting Started with Create React App
 
-Technologies used:
-* NodeJs
-* Express
-* EJS
-* Html
-* Css
-* Javascript
-* Axios
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Projects
-All of my projects are set up to be inserted as the body of [views/layouts/boilerplate.ejs](views/layouts/boilerplate.ejs),  in the server-side when rendering the page; the project name is passed to the boilerplate so it can be used to get the corresponding stylesheet and script.
+## Available Scripts
 
-Server-side:
-```
-router.get('/:project', (req, res) => {
-  const { project } = req.params;
+In the project directory, you can run:
 
-  res.render(`portfolio/${project}`, { project });
-});
-```
-As long as we use the **/public/styles/PROJECT-NAME/style.css** & **/public/scripts/PROJECT-NAME/script.js** file path conventions the layout will grab the correct files for each project.
+### `npm start`
 
-In our boilerplate file:
-```
-<link rel="stylesheet" href="/styles/portfolio/<%= project %>/styles.css">
-<script src="/scripts/portfolio/<%= project %>/script.js"></script>
-```
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Tattoo Shop Mock-Up V2
-A re-design of a past project.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Main page: [/views/portfolio/tattoo-shop-v2.ejs](/views/portfolio/tattoo-shop-v2.ejs)
+### `npm test`
 
-Worker 1: [/views/portfolio/tattoo-shop-v2/worker1.ejs](/views/portfolio/tattoo-shop-v2/worker1.ejs)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Worker 2: [/views/portfolio/tattoo-shop-v2/worker2.ejs](/views/portfolio/tattoo-shop-v2/worker2.ejs)
+### `npm run build`
 
-Worker 3: [/views/portfolio/tattoo-shop-v2/worker3.ejs](/views/portfolio/tattoo-shop-v2/worker3.ejs)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Style: [/public/styles/portfolio/tattoo-shop-v2/styles.css](/public/styles/portfolio/tattoo-shop-v2/styles.css)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Worker style: [/public/styles/portfolio/tattoo-shop-v2/worker.css](/public/styles/portfolio/tattoo-shop-v2/worker.css)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Script: [/public/scripts/portfolio/tattoo-shop-v2/script.js](/public/scripts/portfolio/tattoo-shop-v2/script.js)
+### `npm run eject`
 
-Image viewer script: [/public/scripts/portfolio/tattoo-shop-v2/imageViewer.js](/public/scripts/portfolio/tattoo-shop-v2/imageViewer.js)
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### Twitter Clone CRUD
-A twitter clone with full CRUD and randomly generated users with randomly generated tweets.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Main page: [/views/portfolio/twitter-clone.ejs](/views/portfolio/twitter-clone.ejs)
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-Users page: [/views/portfolio/twitter-clone/users.ejs](/views/portfolio/twitter-clone/users.ejs)
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Profile page: [/views/portfolio/twitter-clone/profile.ejs](/views/portfolio/twitter-clone/profile.ejs)
+## Learn More
 
-Edit page: [/views/portfolio/twitter-clone/edit.ejs](/views/portfolio/twitter-clone/edit.ejs)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Style: [/public/styles/portfolio/twitter-clone/styles.css](/public/styles/portfolio/twitter-clone/styles.css)
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Script: [/public/scripts/portfolio/twitter-clone/script.js](/public/scripts/portfolio/twitter-clone/script.js)
+### Code Splitting
 
-Generate users script: [/seeds/generateUsers.js](/seeds/generateUsers.js)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-RESTful routes: [/routes/twitterRoutes.js](/routes/twitterRoutes.js)
-| URL                          | HTTP verb | Desc                                    |
-| ---------------------------- | --------- | --------------------------------------- |
-| /tweets                      | GET       | Displays all tweets                     |
-| /tweets                      | POST      | Posts a new tweet                       |
-| /users                       | GET       | Displays all users                      |
-| /users/:userId               | GET       | Displays a specific user                |
-| /users/:userId/:tweetId/edit | GET       | Shows edit form                         |
-| /users/:userId/:tweetId      | PATCH     | Patches a specific tweet then redirects |
-| /users/:userId/:tweetId      | DELETE    | Deletes a specific tweet then redirects |
+### Analyzing the Bundle Size
 
-### Weather App
-Weather app that uses an api (Yahoo Weather) to look up the weather in a location using a zip-code and display it along with the date, location, and summary.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Main page: [/views/portfolio/weather.ejs](/views/portfolio/weather.ejs)
+### Making a Progressive Web App
 
-Style: [/public/styles/portfolio/weather/styles.css](/public/styles/portfolio/weather/styles.css)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-Script: [/public/scripts/portfolio/weather/script.js](/public/scripts/portfolio/weather/script.js)
+### Advanced Configuration
 
-Routes: [/routes/weatherRoutes.js](/routes/weatherRoutes.js)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Bootstrap Landing Page
-A simple landing page made with Bootstrap.
+### Deployment
 
-Main page: [/views/portfolio/landing-page.ejs](/views/portfolio/landing-page.ejs)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-Style: [/public/styles/portfolio/landing-page/styles.css](/public/styles/portfolio/landing-page/styles.css)
+### `npm run build` fails to minify
 
-Script: [/public/scripts/portfolio/landing-page/script.js](/public/scripts/portfolio/landing-page/script.js)
-
-### Tattoo Shop Mock-Up
-A tattoo shop mock-up website with worker info and a gallery with all their work. Has an image viewer to view the images and cycle through them using Javascript.
-
-Main page: [/views/portfolio/tattoo-shop.ejs](/views/portfolio/tattoo-shop.ejs)
-
-Style: [/public/styles/portfolio/tattoo-shop/styles.css](/public/styles/portfolio/tattoo-shop/styles.css)
-
-Script: [/public/scripts/portfolio/tattoo-shop/script.js](/public/scripts/portfolio/tattoo-shop/script.js)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
