@@ -1,0 +1,34 @@
+$redColor: #e12c44;
+$blackColor: #15131b;
+$whiteColor: #dad7da;
+
+@mixin defaultTransition($property) {
+  transition: $property 0.3s ease;
+}
+
+@mixin link() {
+  padding: 1rem;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: $whiteColor;
+  @include defaultTransition(color);
+
+  &:hover {
+    color: $redColor;
+  }
+}
+
+@mixin logo() {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $whiteColor;
+
+  span {
+    color: $redColor;
+  }
+}
+
+
