@@ -1,0 +1,14 @@
+@import './vars/variables.scss';
+
+.App {
+
+  h1 {
+    font-size: 3em;
+  }
+
+  section {
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+}

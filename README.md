@@ -1,4 +1,4 @@
-# Flixder Front-End
+# Personal Portfolio
 
 ## Jonathan Villagomez
 
@@ -10,7 +10,7 @@
 
 ### **_Description_**
 
-#### My personal portolio showcasing my projects
+#### My personal portolio showcasing my projects.
 
 ---
 
