@@ -21,13 +21,18 @@ $whiteColor: #dad7da;
 }
 
 @mixin logo() {
-  font-size: 2em;
+  font-size: 1.25em;
   font-weight: bold;
-  text-transform: uppercase;
-  color: $whiteColor;
+
+  &:hover {
+    span {
+      color: $whiteColor;
+    }
+  }
 
   span {
     color: $redColor;
+    @include defaultTransition(color);
   }
 }
 

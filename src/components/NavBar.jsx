@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 const NavBar = () => {
   return (
     <nav className="NavBar">
-      <p className="logo">
+      <Link to="/" className="logo">
         Jon <span>/ Web Dev</span>
-      </p>
+      </Link>
 
       <div className="links-container">
         <Link to="/skills">Skills</Link>

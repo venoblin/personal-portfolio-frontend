@@ -1,6 +1,6 @@
 .NavBar {
   width: 100%;
-  height: 100px;
+  height: 200px;
   padding: 2rem 4rem;
   display: flex;
   align-items: center;
@@ -22,12 +22,14 @@
 }
 
 .NavBar .logo {
-  font-size: 2em;
+  font-size: 1.25em;
   font-weight: bold;
-  text-transform: uppercase;
-  color: #dad7da;
   margin-right: 2.5rem;
+}
+.NavBar .logo:hover span {
+  color: #dad7da;
 }
 .NavBar .logo span {
   color: #e12c44;
+  transition: color 0.3s ease;
 }/*# sourceMappingURL=NavBar.css.map */
