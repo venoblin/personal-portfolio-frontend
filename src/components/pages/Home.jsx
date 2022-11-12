@@ -4,8 +4,13 @@ const Home = () => {
   return (
     <section className="Home">
       <h1 className="intro-heading">
-        Hello there! My name is <span>Jonathan</span> and I am a{' '}
-        <span>Software Engineer!</span>
+        Hello there!{' '}
+        <span className="wrapper">
+          I'm <span className="highlight">Jonathan</span>,
+        </span>
+        <span className="wrapper">
+          a <span className="highlight">Software Engineer</span>!
+        </span>
       </h1>
     </section>
   )

@@ -1,4 +1,9 @@
-.intro-heading span {
+.intro-heading {
+  font-size: 5em;
+}
+.intro-heading span.wrapper {
   display: block;
+}
+.intro-heading span.highlight {
   color: #e12c44;
 }/*# sourceMappingURL=Home.css.map */

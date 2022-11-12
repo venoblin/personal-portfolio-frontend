@@ -1,9 +1,13 @@
 @import './vars/variables.scss';
 
 .intro-heading {
+  font-size: 5em;
 
-  span {
+  span.wrapper {
     display: block;
+  }
+
+  span.highlight {
     color: $redColor;
   }
 }
