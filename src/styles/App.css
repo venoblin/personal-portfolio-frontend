@@ -8,6 +8,7 @@
 }
 .App h2 {
   font-size: 4em;
+  margin-bottom: 1rem;
 }
 .App li, .App p {
   font-size: 2em;

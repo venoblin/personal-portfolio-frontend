@@ -1,7 +1,29 @@
 .Skills button {
-  padding: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.5em;
+  background-color: transparent;
+  color: #8b8a8a;
+}
+.Skills button.active {
+  background-color: #e12c44;
+  color: #15131b;
 }
 .Skills .skill-container {
   height: 500px;
-  background-color: #e12c44;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #e12c44;
+  border-top: none;
+}
+.Skills .skill-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2rem;
+}
+.Skills .skill-container svg {
+  width: 3rem;
+  height: 3rem;
+  fill: #e12c44;
 }/*# sourceMappingURL=Skills.css.map */
