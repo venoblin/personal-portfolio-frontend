@@ -1,1 +1,7 @@
-/*# sourceMappingURL=Skills.css.map */
+.Skills button {
+  padding: 1rem;
+}
+.Skills .skill-container {
+  height: 500px;
+  background-color: #e12c44;
+}/*# sourceMappingURL=Skills.css.map */

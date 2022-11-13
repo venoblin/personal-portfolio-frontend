@@ -1,2 +1,13 @@
 @import './vars/variables.scss';
 
+.Skills {
+
+  button {
+    padding: 1rem;
+  }
+
+  .skill-container {
+    height: 500px;
+    background-color: $redColor;
+  }
+}

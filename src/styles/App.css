@@ -1,8 +1,4 @@
 .App section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   max-width: 1500px;
   padding: 1rem 3rem;
   margin: 0 auto;
@@ -12,6 +8,14 @@
 }
 .App h2 {
   font-size: 4em;
+}
+.App li, .App p {
+  font-size: 2em;
+}
+.App button {
+  cursor: pointer;
+  outline: none;
+  border: none;
 }
 .App .link {
   padding: 1rem;

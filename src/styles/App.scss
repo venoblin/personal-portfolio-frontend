@@ -3,10 +3,6 @@
 .App {
 
   section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     max-width: 1500px;
     padding: 1rem 3rem;
     margin: 0 auto;
@@ -18,6 +14,16 @@
 
   h2 {
     font-size: 4em;
+  }
+
+  li, p {
+    font-size: 2em;
+  }
+
+  button {
+    cursor: pointer;
+    outline: none;
+    border: none;
   }
 
   .link {
