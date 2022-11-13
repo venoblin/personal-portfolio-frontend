@@ -3,16 +3,16 @@
   font-size: 1.5em;
   font-weight: bold;
   border-radius: 1rem 1rem 0 0;
-  border: 2px solid #8b8a8a;
+  border: 2px solid #e12c44;
   border-bottom: none;
-  background-color: transparent;
-  color: #8b8a8a;
+  background-color: #e12c44;
+  color: #15131b;
   transition: all 0.3s ease;
 }
 .Skills button.active {
-  background-color: #e12c44;
-  color: #15131b;
-  border-color: #e12c44;
+  background-color: transparent;
+  color: #8b8a8a;
+  border-color: #8b8a8a;
   cursor: default;
 }
 .Skills .skill-container {
@@ -20,8 +20,10 @@
   padding: 3rem 2rem;
   display: flex;
   flex-wrap: wrap;
-  border-radius: 0 2rem 2rem 2rem;
-  border: 5px solid #e12c44;
+  border-radius: 0 0 0 2rem;
+  border: 2px solid #8b8a8a;
+  border-top: none;
+  border-right: none;
 }
 .Skills .skill-container div {
   display: flex;
