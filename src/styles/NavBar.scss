@@ -6,6 +6,7 @@
   padding: 2rem 3rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .NavBar a {
@@ -18,4 +19,8 @@
   margin-right: 2.5rem;
   margin-left: 0;
   padding-left: 0;
+}
+
+.NavBar .icon {
+  @include icon();
 }
