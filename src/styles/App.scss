@@ -19,4 +19,14 @@
   .btn {
     @include btn();
   }
+
+  .logo {
+    @include logo();
+  }
+
+  .icon {
+    @include icon();
+  }
+  
+  
 }

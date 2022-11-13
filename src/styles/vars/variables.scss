@@ -60,13 +60,13 @@ $mutedWhiteColor: #8b8a8a;
   border-radius: 10px;
   font-size: 1.5em;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-weight: bold;
   background-color: $greenColor;
   color: $blackColor;
   @include defaultTransition(all);
 
   &:hover {
-    background-color: #089c72;
     transform: scale(1.04);
   } 
 }
