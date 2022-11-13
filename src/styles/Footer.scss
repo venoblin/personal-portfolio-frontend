@@ -1,0 +1,13 @@
+@import "./vars/variables.scss";
+
+.Foot {
+  width: 100%;
+  padding: 4rem 0;
+  margin-top: 6rem;
+  text-align: center;
+
+  p {
+    font-size: 1em;
+    color: $mutedWhiteColor;
+  }
+}
