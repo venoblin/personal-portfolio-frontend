@@ -1,6 +1,7 @@
 .Skills button {
   padding: 1rem 2rem;
   font-size: 1.5em;
+  font-weight: bold;
   border-radius: 1rem 1rem 0 0;
   border: 2px solid #8b8a8a;
   border-bottom: none;
@@ -19,7 +20,7 @@
   padding: 3rem 2rem;
   display: flex;
   flex-wrap: wrap;
-  border-radius: 0 1rem 1rem 1rem;
+  border-radius: 0 2rem 2rem 2rem;
   border: 5px solid #e12c44;
 }
 .Skills .skill-container div {
