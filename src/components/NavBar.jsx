@@ -5,12 +5,18 @@ const NavBar = () => {
   return (
     <nav className="NavBar">
       <div className="links-container">
-        <Link to="/" className="logo">
+        <Link to="/" className="link logo">
           Jon <span>/ Web Dev</span>
         </Link>
-        <Link to="/skills">Skills</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/contact">Contact</Link>
+        <Link className="link" to="/skills">
+          Skills
+        </Link>
+        <Link className="link" to="/projects">
+          Projects
+        </Link>
+        <Link className="link" to="/contact">
+          Contact
+        </Link>
       </div>
 
       <div className="icons-container">

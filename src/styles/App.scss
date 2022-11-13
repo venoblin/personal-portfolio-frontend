@@ -3,13 +3,28 @@
 .App {
 
   section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     max-width: 1500px;
     padding: 1rem 3rem;
     margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 5em;
+  }
+
+  h2 {
+    font-size: 4em;
+    margin-bottom: 1rem;
+  }
+
+  li, p {
+    font-size: 2em;
+  }
+
+  button {
+    cursor: pointer;
+    outline: none;
+    border: none;
   }
 
   .link {
@@ -19,4 +34,14 @@
   .btn {
     @include btn();
   }
+
+  .logo {
+    @include logo();
+  }
+
+  .icon {
+    @include icon();
+  }
+  
+  
 }

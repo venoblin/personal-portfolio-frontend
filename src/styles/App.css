@@ -1,11 +1,22 @@
 .App section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   max-width: 1500px;
   padding: 1rem 3rem;
   margin: 0 auto;
+}
+.App h1 {
+  font-size: 5em;
+}
+.App h2 {
+  font-size: 4em;
+  margin-bottom: 1rem;
+}
+.App li, .App p {
+  font-size: 2em;
+}
+.App button {
+  cursor: pointer;
+  outline: none;
+  border: none;
 }
 .App .link {
   padding: 1rem;
@@ -30,12 +41,36 @@
   border-radius: 10px;
   font-size: 1.5em;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-weight: bold;
   background-color: #09BC8A;
   color: #15131b;
   transition: all 0.3s ease;
 }
 .App .btn:hover {
-  background-color: #089c72;
   transform: scale(1.04);
+}
+.App .logo {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.App .logo:hover {
+  color: #e12c44;
+}
+.App .logo:hover span {
+  color: #dad7da;
+}
+.App .logo span {
+  color: #e12c44;
+  transition: color 0.3s ease;
+}
+.App .icon {
+  width: 2.5rem;
+  padding: 0.25rem;
+  fill: #dad7da;
+  transition: fill 0.3s ease;
+}
+.App .icon:hover {
+  color: #8b8a8a;
+  fill: #8b8a8a;
 }/*# sourceMappingURL=App.css.map */

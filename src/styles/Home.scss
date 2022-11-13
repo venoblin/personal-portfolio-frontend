@@ -1,6 +1,11 @@
 @import './vars/variables.scss';
 
 .Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 
   .wrapper-bottom {
     margin-top: -2rem;
@@ -10,7 +15,6 @@
   }
 
   .intro-heading {
-    font-size: 5em;
     line-height: 0.75em;
   
     span.wrapper {

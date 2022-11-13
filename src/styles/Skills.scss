@@ -1,0 +1,45 @@
+@import './vars/variables.scss';
+
+.Skills {
+
+  button {
+    padding: 1rem 2rem;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 1rem 1rem 0 0;
+    border: 2px solid $mutedWhiteColor;
+    border-bottom: none;
+    background-color: transparent;
+    color: $mutedWhiteColor;
+    @include defaultTransition(all);
+
+    &.active {
+      background-color: $redColor; 
+      color: $blackColor;
+      border-color: $redColor;
+      cursor: default;
+    }
+  }
+
+  .skill-container {
+    min-height: 500px;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0 2rem 2rem 2rem;
+    border: 5px solid $redColor;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 2rem;
+    } 
+    
+    svg {
+      width: 3rem;
+      height: 3rem;
+      fill: $redColor;
+    }
+  }
+}
