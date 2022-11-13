@@ -7,14 +7,10 @@
   box-sizing: border-box;
 }
 
-html {
-  height: 100vh;
+body {
   width: 100%;
   background: rgb(21,19,27);
   background: linear-gradient(180deg, rgba(21,19,27,1) 0%, rgb(13, 12, 17) 100%);
-}
-
-body {
   color: $whiteColor;
   font-family: 'Kanit', sans-serif;
   -webkit-font-smoothing: antialiased;
