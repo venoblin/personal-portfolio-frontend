@@ -3,7 +3,7 @@ import '../../styles/Projects.css'
 const Projects = () => {
   return (
     <section className="Projects">
-      <h1>Projects</h1>
+      <h2>Projects</h2>
     </section>
   )
 }

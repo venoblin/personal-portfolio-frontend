@@ -7,6 +7,12 @@
   padding: 1rem 3rem;
   margin: 0 auto;
 }
+.App h1 {
+  font-size: 5em;
+}
+.App h2 {
+  font-size: 4em;
+}
 .App .link {
   padding: 1rem;
   font-size: 1.25em;

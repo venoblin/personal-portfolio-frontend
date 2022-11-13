@@ -1,6 +1,5 @@
 import '../../styles/Home.css'
 import emojiTyping from '../../images/emoji-typing.gif'
-import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -27,7 +26,7 @@ const Home = () => {
           href="https://www.linkedin.com/in/jonathanvillagomezhernandez/"
           target="_blank"
         >
-          Let's Work Together!
+          Let's Connect!
         </a>
       </div>
     </section>
