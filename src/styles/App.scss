@@ -2,13 +2,21 @@
 
 .App {
 
-  h1 {
-    font-size: 3em;
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    padding: 1rem 3rem;
+    margin: 0 auto;
   }
 
-  section {
-    max-width: 1200px;
-    padding: 2rem;
-    margin: 0 auto;
+  .link {
+    @include link();
+  }
+
+  .btn {
+    @include btn();
   }
 }

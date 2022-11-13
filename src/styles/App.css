@@ -1,8 +1,41 @@
-.App h1 {
-  font-size: 3em;
-}
 .App section {
-  max-width: 1200px;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1500px;
+  padding: 1rem 3rem;
   margin: 0 auto;
+}
+.App .link {
+  padding: 1rem;
+  font-size: 1.25em;
+  font-weight: 200;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #dad7da;
+  transition: color 0.3s ease;
+}
+.App .link:hover {
+  color: #8b8a8a;
+  fill: #8b8a8a;
+}
+.App .btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  font-size: 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #09BC8A;
+  color: #15131b;
+  transition: all 0.3s ease;
+}
+.App .btn:hover {
+  background-color: #089c72;
+  transform: scale(1.04);
 }/*# sourceMappingURL=App.css.map */

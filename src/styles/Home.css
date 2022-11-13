@@ -1,4 +1,37 @@
-.intro-heading span {
+.Home .wrapper-bottom {
+  margin-top: -2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Home .intro-heading {
+  font-size: 5em;
+  line-height: 0.75em;
+}
+.Home .intro-heading span.wrapper {
   display: block;
+}
+.Home .intro-heading span.highlight {
   color: #e12c44;
+}
+.Home p {
+  margin-top: 0.5rem;
+  font-size: 2em;
+  color: #8b8a8a;
+}
+.Home .wrapper-top {
+  max-width: 600px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 5rem 5rem 0 0;
+  background-color: #e12c44;
+  z-index: -1;
+}
+.Home .emoji {
+  width: 100%;
+  transform: translateY(20px);
+}
+.Home .btn {
+  margin-top: 2.5rem;
 }/*# sourceMappingURL=Home.css.map */

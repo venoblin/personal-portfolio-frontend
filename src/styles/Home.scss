@@ -1,9 +1,48 @@
 @import './vars/variables.scss';
 
-.intro-heading {
+.Home {
 
-  span {
-    display: block;
-    color: $redColor;
+  .wrapper-bottom {
+    margin-top: -2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .intro-heading {
+    font-size: 5em;
+    line-height: 0.75em;
+  
+    span.wrapper {
+      display: block;
+    }
+  
+    span.highlight {
+      color: $redColor;
+    }
+  }
+
+  p {
+    margin-top: 0.5rem;
+    font-size: 2em;
+    color: $mutedWhiteColor;
+  }
+
+  .wrapper-top {
+    max-width: 600px;
+    height: fit-content;
+    border-radius: 5rem 5rem 0 0;
+    background-color: $redColor;
+    z-index: -1;
+  }
+
+  .emoji {
+    width: 100%;
+    transform: translateY(20px);
+  }
+
+  .btn {
+    margin-top: 2.5rem;
   }
 }
+

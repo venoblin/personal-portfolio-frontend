@@ -1,10 +1,19 @@
 $redColor: #e12c44;
+$greenColor: #09BC8A;
 $blackColor: #15131b;
 $whiteColor: #dad7da;
+$mutedWhiteColor: #8b8a8a; 
 
 @mixin defaultTransition($property) {
   transition: $property 0.3s ease;
 }
+
+@mixin hoverMutedWhite() {
+  &:hover {
+    color: $mutedWhiteColor;
+    fill:$mutedWhiteColor;
+  }
+} 
 
 @mixin link() {
   padding: 1rem;
@@ -15,10 +24,7 @@ $whiteColor: #dad7da;
   letter-spacing: 0.2em;
   color: $whiteColor;
   @include defaultTransition(color);
-
-  &:hover {
-    color: $redColor;
-  }
+  @include hoverMutedWhite();
 }
 
 @mixin logo() {
@@ -26,6 +32,8 @@ $whiteColor: #dad7da;
   font-weight: 400;
 
   &:hover {
+    color: $redColor;
+    
     span {
       color: $whiteColor;
     }
@@ -37,4 +45,28 @@ $whiteColor: #dad7da;
   }
 }
 
+@mixin icon() {
+  width: 2.5rem;
+  padding: 0.25rem;
+  fill: $whiteColor;
+  @include defaultTransition(fill);
+  @include hoverMutedWhite();
+}
 
+@mixin btn() {
+  width: fit-content;
+  display: block;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  font-size: 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: $greenColor;
+  color: $blackColor;
+  @include defaultTransition(all);
+
+  &:hover {
+    background-color: #089c72;
+    transform: scale(1.04);
+  } 
+}
