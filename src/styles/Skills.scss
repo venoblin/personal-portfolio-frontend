@@ -5,22 +5,28 @@
   button {
     padding: 1rem 2rem;
     font-size: 1.5em;
+    border-radius: 1rem 1rem 0 0;
+    border: 2px solid $mutedWhiteColor;
+    border-bottom: none;
     background-color: transparent;
     color: $mutedWhiteColor;
+    @include defaultTransition(all);
 
     &.active {
       background-color: $redColor; 
       color: $blackColor;
+      border-color: $redColor;
+      cursor: default;
     }
   }
 
   .skill-container {
-    height: 500px;
-    padding: 2rem;
+    min-height: 500px;
+    padding: 3rem 2rem;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid $redColor;
-    border-top: none;
+    border-radius: 0 1rem 1rem 1rem;
+    border: 5px solid $redColor;
 
     div {
       display: flex;
