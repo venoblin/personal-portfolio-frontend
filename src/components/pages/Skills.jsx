@@ -38,7 +38,7 @@ const Skills = () => {
             Back-End
           </button>
           <button id="software" onClick={(evt) => handleClick(evt)}>
-            Sofware
+            Software
           </button>
         </div>
 
