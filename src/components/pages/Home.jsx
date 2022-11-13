@@ -22,9 +22,13 @@ const Home = () => {
 
         <p>Passionate about coding and learning new things...</p>
 
-        <Link className="btn" to="">
+        <a
+          className="btn"
+          href="https://www.linkedin.com/in/jonathanvillagomezhernandez/"
+          target="_blank"
+        >
           Let's Work Together!
-        </Link>
+        </a>
       </div>
     </section>
   )
