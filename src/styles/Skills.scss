@@ -11,6 +11,8 @@
     border-bottom: none;
     background-color: $redColor;
     color: $blackColor;
+    -webkit-box-shadow: inset 0px -10px 13px -7px $blackColor; 
+    box-shadow: inset 0px -10px 13px -7px $blackColor;
     @include defaultTransition(all);
 
     &.active {

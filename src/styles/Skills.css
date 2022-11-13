@@ -7,6 +7,7 @@
   border-bottom: none;
   background-color: #e12c44;
   color: #15131b;
+  box-shadow: inset 0px -10px 13px -7px #15131b;
   transition: all 0.3s ease;
 }
 .Skills button.active {
