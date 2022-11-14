@@ -1,1 +1,24 @@
-/*# sourceMappingURL=Contact.css.map */
+.Contact .upper-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+.Contact .upper-wrapper input:first-of-type {
+  margin-right: 0.25rem;
+}
+.Contact .upper-wrapper input:last-of-type {
+  margin-left: 0.25rem;
+}
+.Contact form {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+.Contact form input, .Contact form textarea {
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  font-size: 2em;
+}
+.Contact button {
+  margin-top: 0.5rem;
+}/*# sourceMappingURL=Contact.css.map */
