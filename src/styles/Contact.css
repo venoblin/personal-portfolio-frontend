@@ -15,9 +15,23 @@
   flex-direction: column;
 }
 .Contact-class form input, .Contact-class form textarea {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   padding: 1rem;
   font-size: 2em;
+  background-color: transparent;
+  color: #dad7da;
+  outline: none;
+  border: none;
+  border: 2px solid #8b8a8a;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+.Contact-class form input:focus, .Contact-class form textarea:focus {
+  color: #e12c44;
+  border-color: #e12c44;
+}
+.Contact-class form textarea {
+  height: 250px;
 }
 .Contact-class button {
   margin-top: 0.5rem;
