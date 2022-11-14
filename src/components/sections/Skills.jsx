@@ -5,7 +5,7 @@ const Skills = () => {
   const [skillSet, setSkillSet] = useState('front')
 
   const resetButtonsActive = () => {
-    const buttons = document.querySelectorAll('.Skills button')
+    const buttons = document.querySelectorAll('.Skills-class button')
 
     for (let btn of buttons) {
       btn.classList.remove('active')
