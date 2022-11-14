@@ -1,10 +1,20 @@
 import '../styles/NavBar.css'
 
 const NavBar = () => {
+  window.addEventListener('scroll', () => {
+    const navBar = document.querySelector('.NavBar')
+
+    if (window.scrollY > 75) {
+      navBar.classList.add('scroll')
+    } else {
+      navBar.classList.remove('scroll')
+    }
+  })
+
   return (
     <nav className="NavBar">
       <div className="links-container">
-        <a href="#" className="link logo">
+        <a href="/" className="link logo">
           Jon <span>/ Web Dev</span>
         </a>
         <a className="link" href="#skills">
