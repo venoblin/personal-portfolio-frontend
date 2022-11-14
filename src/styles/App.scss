@@ -21,6 +21,12 @@
     font-size: 2em;
   }
 
+  label {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
   button {
     cursor: pointer;
     outline: none;

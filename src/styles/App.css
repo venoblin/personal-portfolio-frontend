@@ -13,6 +13,11 @@
 .App li, .App p {
   font-size: 2em;
 }
+.App label {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
 .App button {
   cursor: pointer;
   outline: none;
