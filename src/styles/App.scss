@@ -5,7 +5,7 @@
   background: linear-gradient(180deg, rgba(21,19,27,1) 0%, rgb(13, 12, 17) 100%);
   color: $whiteColor;
 
-  
+
   section {
     max-width: 1500px;
     padding: 1rem 3rem;
@@ -21,8 +21,10 @@
   }
 
   h2 {
+    width: fit-content;
     font-size: 4em;
     margin-bottom: 1rem;
+    border-bottom: 1px solid $redColor;
   }
 
   li, p {

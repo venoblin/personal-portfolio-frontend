@@ -15,8 +15,12 @@
   font-size: 5em;
 }
 .App h2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-size: 4em;
   margin-bottom: 1rem;
+  border-bottom: 1px solid #e12c44;
 }
 .App li, .App p {
   font-size: 2em;
