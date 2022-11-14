@@ -22,9 +22,25 @@
     flex-direction: column;
 
     input, textarea {
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
       padding: 1rem;
       font-size: 2em;
+      background-color: transparent;
+      color: $whiteColor;
+      outline: none;
+      border: none;
+      border: 2px solid $mutedWhiteColor;
+      border-radius: 1rem;
+      @include defaultTransition(all);
+
+      &:focus {
+        color: $redColor;
+        border-color: $redColor;
+      }
+    }
+
+    textarea {
+      height: 250px;
     }
   }
 

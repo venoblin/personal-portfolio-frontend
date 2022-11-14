@@ -1,14 +1,26 @@
+.App {
+  background: rgb(21, 19, 27);
+  background: linear-gradient(180deg, rgb(21, 19, 27) 0%, rgb(13, 12, 17) 100%);
+  color: #dad7da;
+}
 .App section {
   max-width: 1500px;
   padding: 1rem 3rem;
-  margin: 0 auto 6rem auto;
+  margin: 0 auto 10rem auto;
+}
+.App main {
+  padding-top: 13rem;
 }
 .App h1 {
   font-size: 5em;
 }
 .App h2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-size: 4em;
   margin-bottom: 1rem;
+  border-bottom: 1px solid #e12c44;
 }
 .App li, .App p {
   font-size: 2em;
