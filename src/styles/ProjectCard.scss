@@ -1,0 +1,33 @@
+@import './vars/variables.scss';
+
+.ProjectCard {
+  width: 600px;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: $blackColor;
+
+  img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .links {
+    padding: 2rem 0;
+    display: flex;
+
+    .btn {
+      margin-right: 2rem;
+    }
+  }
+
+  .techs {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.75em;
+    color: $mutedWhiteColor;
+  }
+
+  .desc {
+    margin-top: 1.5rem;
+  }
+}

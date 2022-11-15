@@ -1,3 +1,7 @@
+.Contact-class .wrapper {
+  display: flex;
+  align-items: center;
+}
 .Contact-class .upper-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -35,4 +39,21 @@
 }
 .Contact-class button {
   margin-top: 0.5rem;
+}
+.Contact-class .emoji-wrapper {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  z-index: 0;
+}
+.Contact-class .emoji-wrapper .emoji {
+  width: 100%;
+}
+.Contact-class .emoji-wrapper svg {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }/*# sourceMappingURL=Contact.css.map */

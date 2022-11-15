@@ -1,0 +1,26 @@
+.ProjectCard {
+  width: 600px;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #15131b;
+}
+.ProjectCard img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+.ProjectCard .links {
+  padding: 2rem 0;
+  display: flex;
+}
+.ProjectCard .links .btn {
+  margin-right: 2rem;
+}
+.ProjectCard .techs {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.75em;
+  color: #8b8a8a;
+}
+.ProjectCard .desc {
+  margin-top: 1.5rem;
+}/*# sourceMappingURL=ProjectCard.css.map */
