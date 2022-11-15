@@ -1,0 +1,26 @@
+@import './vars/variables.scss';
+
+#projects {
+  max-width: 100%;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  display: grid;
+
+  h2 {
+    color: $blackColor;
+    border: none;
+  }
+
+  svg {
+    width: 100%;
+    margin-bottom: -1rem;
+  }
+
+  .wrapper {
+    width: 100%;
+    margin-top: 0;
+    padding: 0 2rem;
+    background-color: $redColor;
+  }
+}
