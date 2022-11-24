@@ -1,13 +1,15 @@
 #projects {
+  width: 100%;
   max-width: 100%;
   padding: 0;
   margin-left: 0;
   margin-right: 0;
-  display: grid;
+  margin-bottom: 0;
 }
 #projects h2 {
   color: #15131b;
   border: none;
+  margin: 0 auto;
 }
 #projects svg {
   width: 100%;
@@ -18,4 +20,12 @@
   margin-top: 0;
   padding: 0 2rem;
   background-color: #e12c44;
+}
+#projects .projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#projects .ProjectCard {
+  margin: 0.5rem;
 }/*# sourceMappingURL=Projects.css.map */

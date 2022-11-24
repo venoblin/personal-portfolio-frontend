@@ -10,34 +10,7 @@ const Projects = () => {
         'https://woz-u.com/wp-content/uploads/2022/06/Evolution-of-Coding-scaled.jpg',
       demo: 'www.google.com',
       repo: 'www.google.com',
-      techs: ['React', 'SASS', 'JavaScript'],
-      desc: 'A test project'
-    },
-    {
-      title: 'Test',
-      image:
-        'https://woz-u.com/wp-content/uploads/2022/06/Evolution-of-Coding-scaled.jpg',
-      demo: 'www.google.com',
-      repo: 'www.google.com',
-      techs: ['React', 'SASS', 'JavaScript'],
-      desc: 'A test project'
-    },
-    {
-      title: 'Test',
-      image:
-        'https://woz-u.com/wp-content/uploads/2022/06/Evolution-of-Coding-scaled.jpg',
-      demo: 'www.google.com',
-      repo: 'www.google.com',
-      techs: ['React', 'SASS', 'JavaScript'],
-      desc: 'A test project'
-    },
-    {
-      title: 'Test',
-      image:
-        'https://woz-u.com/wp-content/uploads/2022/06/Evolution-of-Coding-scaled.jpg',
-      demo: 'www.google.com',
-      repo: 'www.google.com',
-      techs: ['React', 'SASS', 'JavaScript'],
+      techs: ['React', 'SASS', 'JavaScript', 'lol', 'another one'],
       desc: 'A test project'
     }
   ])
@@ -55,9 +28,11 @@ const Projects = () => {
       <div className="wrapper">
         <h2>Projects</h2>
 
-        {projects.map((project) => (
-          <ProjectCard key={project.title} project={project} />
-        ))}
+        <div className="projects">
+          {projects.map((project) => (
+            <ProjectCard key={project.title} project={project} />
+          ))}
+        </div>
       </div>
 
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
