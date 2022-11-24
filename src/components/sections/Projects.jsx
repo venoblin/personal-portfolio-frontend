@@ -1,17 +1,17 @@
 import '../../styles/Projects.css'
 import { useState } from 'react'
 import ProjectCard from '../ProjectCard'
+import ticTacToePng from '../../images/project-screenshots/tic-tac-toe.png'
 
 const Projects = () => {
   const [projects, setProjects] = useState([
     {
-      title: 'Test',
-      image:
-        'https://woz-u.com/wp-content/uploads/2022/06/Evolution-of-Coding-scaled.jpg',
-      demo: 'www.google.com',
-      repo: 'www.google.com',
-      techs: ['React', 'SASS', 'JavaScript', 'lol', 'another one'],
-      desc: 'A test project'
+      title: 'Tic-Tac-Toe',
+      image: ticTacToePng,
+      demo: 'http://tic-tac-toe-jvh.surge.sh/',
+      repo: 'https://github.com/VillagomezHJonathan/tic-tac-toe',
+      techs: ['JavaScript', 'CSS'],
+      desc: 'Tic-Tac-Toe game made entirely with JavaScript'
     }
   ])
 
