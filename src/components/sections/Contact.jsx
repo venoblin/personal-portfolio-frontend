@@ -22,7 +22,7 @@ const Contact = () => {
 
       <div className="wrapper">
         <form>
-          <div className="upper-wrapper">
+          <div className="upper-form">
             <label htmlFor="name">Name</label>
             <input
               type="text"

@@ -90,4 +90,36 @@
 .App .icon:hover {
   color: #8b8a8a;
   fill: #8b8a8a;
+}
+@media (max-width: 1400px) {
+  .App .emoji-wrapper {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .App #contact form {
+    width: 100%;
+  }
+  .App #contact .upper-form {
+    display: block;
+  }
+  .App #contact .upper-form input {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 650px) {
+  .App section {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .App .Skills-class button {
+    padding: 1rem;
+    font-size: 1em;
+  }
+  .App .Skills-class .skill-container {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=App.css.map */

@@ -4,9 +4,10 @@
   .wrapper {
     display: flex;
     align-items: center;
+    position: relative;
   }
   
-  .upper-wrapper {
+  .upper-form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -24,12 +25,13 @@
     max-width: 1000px;
     display: flex;
     flex-direction: column;
+    z-index: 2;
 
     input, textarea {
       margin-bottom: 1rem;
       padding: 1rem;
       font-size: 2em;
-      background-color: transparent;
+      background-color: $blackColor;
       color: $whiteColor;
       outline: none;
       border: none;

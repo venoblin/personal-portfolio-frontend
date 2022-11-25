@@ -59,5 +59,48 @@
     @include icon();
   }
   
-  
+  @media (max-width: 1400px) {
+    .emoji-wrapper {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1000px) {
+
+    #contact {
+      form {
+        width: 100%;
+      }
+
+      .upper-form {
+        display: block;
+
+        input {
+          width: 100%;
+          display: block;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 650px) {
+    section {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+    
+    .Skills-class {
+      
+      button {
+        padding: 1rem;
+        font-size: 1em;
+      }
+
+      .skill-container {
+        justify-content: center;
+      }
+    }
+  }
 }
