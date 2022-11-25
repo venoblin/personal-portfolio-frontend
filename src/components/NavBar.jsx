@@ -11,31 +11,42 @@ const NavBar = () => {
     }
   })
 
-  const menuClickHandler = () => {
+  const showMenu = () => {
     const navbar = document.querySelector('.NavBar')
 
     navbar.classList.toggle('show-menu')
     document.body.classList.toggle('show-menu')
   }
 
+  const hideMenu = () => {
+    const navbar = document.querySelector('.NavBar')
+
+    navbar.classList.remove('show-menu')
+    document.body.classList.remove('show-menu')
+  }
+
   return (
     <nav className="NavBar">
-      <a href="/" className="link logo">
+      <a href="/" className="link logo" onClick={hideMenu}>
         Jon <span>/ Web Dev</span>
       </a>
       <div className="links-container">
-        <a className="link" href="#skills">
+        <a className="link" href="#skills" onClick={hideMenu}>
           Skills
         </a>
-        <a className="link" href="#projects">
+        <a className="link" href="#projects" onClick={hideMenu}>
           Projects
         </a>
-        <a className="link" href="#contact">
+        <a className="link" href="#contact" onClick={hideMenu}>
           Contact
         </a>
 
         <div className="icons-container">
-          <a href="https://github.com/VillagomezHJonathan" target="_blank">
+          <a
+            href="https://github.com/VillagomezHJonathan"
+            target="_blank"
+            onClick={hideMenu}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon"
@@ -49,6 +60,7 @@ const NavBar = () => {
           <a
             href="https://www.linkedin.com/in/jonathanvillagomezhernandez/"
             target="_blank"
+            onClick={hideMenu}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +73,7 @@ const NavBar = () => {
           </a>
         </div>
       </div>
-      <button className="menu-icon" onClick={menuClickHandler}>
+      <button className="menu-icon" onClick={showMenu}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="icon"
