@@ -5,6 +5,14 @@ const ProjectCard = (props) => {
     <div className="ProjectCard">
       <img src={props.project.image} alt={`${props.project.title} project`} />
 
+      <div className="techs">
+        {props.project.techs.map((tech) => (
+          <p key={tech}>{tech}</p>
+        ))}
+      </div>
+
+      <p className="desc">{props.project.desc}</p>
+
       <div className="links">
         <a className="btn" href={props.project.demo} target="_blank">
           Demo
@@ -13,14 +21,6 @@ const ProjectCard = (props) => {
           Repo
         </a>
       </div>
-
-      <div className="techs">
-        {props.project.techs.map((tech) => (
-          <p key={tech}>{tech}</p>
-        ))}
-      </div>
-
-      <p className="desc">{props.project.desc}</p>
     </div>
   )
 }
