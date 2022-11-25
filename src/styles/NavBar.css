@@ -3,8 +3,8 @@
   height: 150px;
   padding: 2rem 3rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   right: 0;
@@ -23,9 +23,18 @@
   margin-left: 0;
   padding-left: 0;
 }
+.NavBar .links-container {
+  display: flex;
+  align-items: center;
+}
 .NavBar .link {
   margin: 0 0.25rem;
 }
 .NavBar .icons-container a {
   margin-left: 1rem;
+}
+.NavBar .menu-icon {
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
 }/*# sourceMappingURL=NavBar.css.map */
