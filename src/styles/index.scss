@@ -23,6 +23,21 @@ body.show-menu {
   overflow-y: hidden;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $blackColor;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $redColor;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

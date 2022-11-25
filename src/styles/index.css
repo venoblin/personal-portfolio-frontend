@@ -21,6 +21,21 @@ body.show-menu {
   overflow-y: hidden;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #15131b;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e12c44;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }/*# sourceMappingURL=index.css.map */
