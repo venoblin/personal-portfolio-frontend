@@ -137,6 +137,12 @@
     margin-right: 0;
   }
 }
+@media (max-width: 900px) {
+  .App #projects .ProjectCard {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+}
 @media (max-width: 650px) {
   .App section {
     padding-left: 0.75rem;
