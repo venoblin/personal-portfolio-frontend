@@ -120,8 +120,6 @@
   .App .NavBar.show-menu .link {
     padding-left: 0;
     padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
   }
   .App .NavBar.show-menu .icons-container {
     width: 100%;
