@@ -117,6 +117,10 @@
     flex-direction: column;
     margin: 4rem 0;
   }
+  .App .NavBar.show-menu .link {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .App .NavBar.show-menu .icons-container {
     width: 100%;
     margin-top: 2rem;
