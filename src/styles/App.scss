@@ -130,8 +130,9 @@
 
   @media (max-width: 650px) {
     section {
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin-bottom: 2rem;
     }
     
     .Skills-class {
@@ -144,6 +145,56 @@
       .skill-container {
         justify-content: center;
       }
+    }
+  }
+
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 3.5em;
+    }
+
+    h2 {
+      font-size: 2.5em;
+    }
+
+    .Home p,
+    p, 
+    .Contact-class form input, 
+    .Contact-class form textarea {
+      font-size: 1.5em;
+    }
+
+    .Home h1 {
+      margin-top: 2rem;
+    }
+
+    .Home .btn {
+      margin-top: 1.5rem;
+    }
+
+    .btn {
+      font-size: 1em;
+    }
+    
+    main {
+      padding-top: 5rem;
+    }
+    
+    .NavBar {
+      height: 80px;
+      padding: 1rem;
+    }
+    
+    .logo {
+      font-size: 1em;
+    }
+
+    .menu-icon .icon {
+      width: 2rem;
+    }
+
+    .Home .emoji {
+      max-height: 200px;
     }
   }
 }
