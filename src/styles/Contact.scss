@@ -1,6 +1,7 @@
 @import './vars/variables.scss';
 
 .Contact-class {
+  
   .wrapper {
     display: flex;
     align-items: center;
@@ -71,4 +72,8 @@
       z-index: -1;
     }
   }
+}
+
+#contact {
+  margin-bottom: 0;
 }
