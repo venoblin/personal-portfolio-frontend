@@ -6,7 +6,7 @@
 .App section {
   max-width: 1500px;
   padding: 1rem 3rem;
-  margin: 0 auto 10rem auto;
+  margin: 0 auto 6rem auto;
 }
 .App main {
   padding-top: 13rem;
@@ -106,6 +106,7 @@
   .App .NavBar.show-menu {
     height: 100vh;
     flex-direction: column;
+    justify-content: center;
     box-shadow: 0px 0px 0px 0px black;
     background: rgba(21, 19, 27, 0.95);
     backdrop-filter: blur(4px);
@@ -114,6 +115,7 @@
   .App .NavBar.show-menu .links-container {
     display: flex;
     flex-direction: column;
+    margin: 4rem 0;
   }
   .App .NavBar.show-menu .icons-container {
     width: 100%;
