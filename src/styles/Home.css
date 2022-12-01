@@ -1,14 +1,14 @@
 .Home {
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .Home .emoji {
   max-height: 400px;
 }
 .Home .wrapper-bottom {
-  margin-top: -2rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
