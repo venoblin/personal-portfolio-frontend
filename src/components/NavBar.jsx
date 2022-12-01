@@ -4,7 +4,7 @@ const NavBar = () => {
   window.addEventListener('scroll', () => {
     const navBar = document.querySelector('.NavBar')
 
-    if (window.scrollY > 75) {
+    if (window.scrollY > 50) {
       navBar.classList.add('scroll')
     } else {
       navBar.classList.remove('scroll')
