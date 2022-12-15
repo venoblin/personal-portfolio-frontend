@@ -2,16 +2,25 @@ import '../../styles/Projects.css'
 import { useState } from 'react'
 import ProjectCard from '../ProjectCard'
 import ticTacToePng from '../../images/project-screenshots/tic-tac-toe.png'
+import flixderPng from '../../images/project-screenshots/flixder.png'
 
 const Projects = () => {
   const [projects, setProjects] = useState([
+    {
+      title: 'Flixder',
+      image: flixderPng,
+      demo: 'https://flixder-frontend.herokuapp.com/',
+      repo: 'https://github.com/VillagomezHJonathan/flixder-frontend',
+      techs: ['React', 'SCSS', 'Node.js', 'Express', 'MongoDB'],
+      desc: 'Dating application for movies, find new movies to watch!'
+    },
     {
       title: 'Tic-Tac-Toe',
       image: ticTacToePng,
       demo: 'http://tic-tac-toe-jvh.surge.sh/',
       repo: 'https://github.com/VillagomezHJonathan/tic-tac-toe',
       techs: ['JavaScript', 'CSS'],
-      desc: 'Tic-Tac-Toe game made entirely with JavaScript'
+      desc: 'Tic-Tac-Toe game made entirely with JavaScript.'
     }
   ])
 

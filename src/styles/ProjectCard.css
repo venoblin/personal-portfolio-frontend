@@ -1,15 +1,23 @@
 .ProjectCard {
   width: 400px;
-  padding: 1rem;
+  padding: 1rem 1rem 7rem 1rem;
   border-radius: 1rem;
   background-color: #15131b;
+  position: relative;
 }
 .ProjectCard img {
   width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .ProjectCard .links {
   padding: 2rem 0;
   display: flex;
+  position: absolute;
+  bottom: 0;
 }
 .ProjectCard .links .btn {
   margin-right: 1rem;
