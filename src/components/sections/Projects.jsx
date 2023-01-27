@@ -1,8 +1,9 @@
 import '../../styles/Projects.css'
 import { useState } from 'react'
 import ProjectCard from '../ProjectCard'
-import ticTacToePng from '../../images/project-screenshots/tic-tac-toe.png'
 import flixderPng from '../../images/project-screenshots/flixder.png'
+import fitBuddyPng from '../../images/project-screenshots/fit-buddy.png'
+import ticTacToePng from '../../images/project-screenshots/tic-tac-toe.png'
 
 const Projects = () => {
   const [projects, setProjects] = useState([
@@ -13,6 +14,14 @@ const Projects = () => {
       repo: 'https://github.com/VillagomezHJonathan/flixder-frontend',
       techs: ['React', 'SCSS', 'Node.js', 'Express', 'MongoDB'],
       desc: 'Dating application for movies, find new movies to watch!'
+    },
+    {
+      title: 'Fit-Buddy',
+      image: fitBuddyPng,
+      demo: 'https://fit-buddy.herokuapp.com/',
+      repo: 'https://github.com/VillagomezHJonathan/fit-buddy',
+      techs: ['Vue', 'SCSS'],
+      desc: 'An application used to set up your workout routine for the week!'
     },
     {
       title: 'Tic-Tac-Toe',

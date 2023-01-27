@@ -25,6 +25,12 @@
     }
   }
 
+  .title {
+    font-weight: bold;
+    text-decoration: underline;
+    color: $redColor;
+  }
+
   .techs {
     display: flex;
     flex-wrap: wrap;

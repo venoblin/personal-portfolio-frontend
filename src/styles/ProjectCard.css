@@ -22,6 +22,11 @@
 .ProjectCard .links .btn {
   margin-right: 1rem;
 }
+.ProjectCard .title {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #e12c44;
+}
 .ProjectCard .techs {
   display: flex;
   flex-wrap: wrap;

@@ -5,6 +5,8 @@ const ProjectCard = (props) => {
     <div className="ProjectCard">
       <img src={props.project.image} alt={`${props.project.title} project`} />
 
+      <p className='title'>{props.project.title}</p>
+
       <div className="techs">
         {props.project.techs.map((tech) => (
           <p key={tech}>{tech}</p>
