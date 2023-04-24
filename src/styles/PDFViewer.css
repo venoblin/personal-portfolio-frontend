@@ -5,13 +5,16 @@
   flex-direction: column;
   overflow-x: hidden;
 }
+.PDFViewer .viewer {
+  margin-bottom: 2rem;
+}
 .PDFViewer .top-bar {
   display: flex;
   width: 100%;
   padding: 1rem 1.25rem;
   justify-content: space-between;
 }
-.PDFViewer .top-bar button {
+.PDFViewer .top-bar .viewer-btn {
   background: transparent;
   border: none;
   outline: none;
