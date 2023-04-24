@@ -30,7 +30,7 @@ const App = () => {
           }
         />
 
-        <Route path="/viewer/:file" element={<PDFViewer />} />
+        <Route path="/viewer/:pdfName" element={<PDFViewer />} />
       </Routes>
 
       <Footer />

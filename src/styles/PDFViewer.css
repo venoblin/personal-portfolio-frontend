@@ -1,4 +1,18 @@
-.PDFViewer .inputs {
+.PDFViewer {
+  background-color: #dad7da;
+  padding: 5rem 1rem;
   display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.PDFViewer .top-bar {
+  background-color: black;
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
   justify-content: space-around;
+  z-index: 10;
 }/*# sourceMappingURL=PDFViewer.css.map */
