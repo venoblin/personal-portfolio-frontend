@@ -1,5 +1,6 @@
 import '../styles/PDFViewer.css'
 import 'react-pdf/dist/esm/Page/TextLayer.css'
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css'
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
@@ -7,7 +8,7 @@ import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
 const PDFViewer = () => {
   const [numPage, setNumPages] = useState(null)
   const [pageNumber, setPageNumber] = useState(1)
-  let [scale, setScale] = useState(1)
+  const [scale, setScale] = useState(1)
   let { pdfName } = useParams()
 
   const onDocumentLoad = () => {
@@ -15,11 +16,11 @@ const PDFViewer = () => {
   }
 
   const zoomOutHandler = () => {
-    if (scale > 0.5) setScale(scale - 0.1)
+    if (scale > 0.5) setScale(prev => prev - 0.1)
   }
 
   const zoomInHandler = () => {
-    setScale(scale + 0.1)
+    setScale(prev => prev + 0.1)
   }
 
   console.log(pdfName)
