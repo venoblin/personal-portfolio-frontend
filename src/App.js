@@ -1,4 +1,5 @@
 import './styles/App.css'
+import { Routes, Route } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import Home from './components/sections/Home'
 import Skills from './components/sections/Skills'
@@ -10,17 +11,27 @@ import PDFViewer from './components/PDFViewer'
 const App = () => {
   return (
     <div className="App">
-      <header>
-        <NavBar />
-      </header>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div>
+              <header>
+                <NavBar />
+              </header>
 
-      <main>
-        <PDFViewer />
-        <Home />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
+              <main>
+                <Home />
+                <Skills />
+                <Projects />
+                <Contact />
+              </main>
+            </div>
+          }
+        />
+
+        <Route path="/viewer/:file" element={<PDFViewer />} />
+      </Routes>
 
       <Footer />
     </div>
