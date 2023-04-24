@@ -1,1 +1,8 @@
 @import './vars/variables.scss';
+ .Error {
+  display: flex;
+  height: 700px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }

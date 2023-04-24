@@ -7,6 +7,7 @@ import Projects from './components/sections/Projects'
 import Contact from './components/sections/Contact'
 import Footer from './components/Footer'
 import PDFViewer from './components/PDFViewer'
+import Error from './components/Error'
 
 const App = () => {
   return (
@@ -29,8 +30,8 @@ const App = () => {
             </div>
           }
         />
-
         <Route path="/viewer/:pdfName" element={<PDFViewer />} />
+        <Route path="/*" element={<Error code="404" msg="Not Found :(" />} />
       </Routes>
 
       <Footer />
