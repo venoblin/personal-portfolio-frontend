@@ -1,7 +1,7 @@
 @import './vars/variables.scss';
 
 .PDFViewer {
-  padding: 7rem 1rem;
+  padding: 8rem 1rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -15,6 +15,11 @@
     left: 0;
     justify-content: space-around;
     z-index: 10;
+    -webkit-box-shadow: 0px 10px 13px -13px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -13px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    background: rgba( 21, 19, 27, 0.95 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
 
     button {
       background: transparent;
