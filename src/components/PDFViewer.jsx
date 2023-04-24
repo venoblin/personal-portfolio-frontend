@@ -2,7 +2,7 @@ import '../styles/PDFViewer.css'
 import 'react-pdf/dist/esm/Page/TextLayer.css'
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css'
 import { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
 
 const PDFViewer = () => {
@@ -10,6 +10,7 @@ const PDFViewer = () => {
   const [pageNumber, setPageNumber] = useState(1)
   const [scale, setScale] = useState(1)
   let { pdfName } = useParams()
+  let navigate = useNavigate()
 
   const onDocumentLoad = () => {
     setNumPages(numPage)
@@ -23,7 +24,10 @@ const PDFViewer = () => {
     setScale(prev => prev + 0.1)
   }
 
-  console.log(pdfName)
+  const closeHandler = () => {
+    navigate('/')
+  }
+
 
   return ( 
     <div className='PDFViewer'>
@@ -42,7 +46,7 @@ const PDFViewer = () => {
           </button>
         </div>
 
-        <button>
+        <button onClick={closeHandler}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
           <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/>
         </svg>
