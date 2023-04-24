@@ -1,21 +1,36 @@
 @import './vars/variables.scss';
 
 .PDFViewer {
-  background-color: $whiteColor;
-  padding: 5rem 1rem;
+  padding: 7rem 1rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   
   .top-bar {
-    background-color: black;
     display: flex;
     width: 100%;
-    height: 3rem;
+    padding: 2rem 0;
     position: fixed;
     top: 0;
     left: 0;
     justify-content: space-around;
     z-index: 10;
+
+    button {
+      background: transparent;
+      border: none;
+      outline: none;
+    }
+
+    svg {
+      @include defaultTransition(fill);
+      fill: $redColor;
+      width: 2rem;
+      height: 2rem;
+
+      &:hover {
+        fill: $whiteColor;
+      }
+    }
   }
 }
