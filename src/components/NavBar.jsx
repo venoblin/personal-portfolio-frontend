@@ -42,7 +42,7 @@ const NavBar = () => {
           Contact
         </a>
 
-        <Link className='link' to="/viewer/JonathanResume.pdf">Resume</Link>
+        <Link className='link' to="/viewer/resume.pdf">Resume</Link>
         <Link className='link' to="/viewer/certificate.pdf">Certificate</Link>
 
         <div className="icons-container">
