@@ -42,13 +42,6 @@ const NavBar = () => {
           Contact
         </a>
 
-        <Link className='link' to="/viewer/resume.pdf" onClick={hideMenu}>
-          Resume
-        </Link>
-        <Link className='link' to="/viewer/certificate.pdf" onClick={hideMenu}>
-          Certificate
-        </Link>
-
         <div className="icons-container">
           <a
             href="https://github.com/VillagomezHJonathan"
