@@ -42,8 +42,12 @@ const NavBar = () => {
           Contact
         </a>
 
-        <Link className='link' to="/viewer/resume.pdf">Resume</Link>
-        <Link className='link' to="/viewer/certificate.pdf">Certificate</Link>
+        <Link className='link' to="/viewer/resume.pdf" onClick={hideMenu}>
+          Resume
+        </Link>
+        <Link className='link' to="/viewer/certificate.pdf" onClick={hideMenu}>
+          Certificate
+        </Link>
 
         <div className="icons-container">
           <a
