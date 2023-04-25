@@ -31,7 +31,7 @@ const App = () => {
           }
         />
         <Route path="/viewer/:pdfName" element={<PDFViewer />} />
-        <Route path="/*" element={<Error code="404" msg="Not Found :(" />} />
+        <Route path="*" element={<Error code="404" msg="Not Found :(" />} />
       </Routes>
 
       <Footer />
