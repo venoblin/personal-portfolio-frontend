@@ -1,8 +1,8 @@
-import NavBar from './components/NavBar'
-import Home from './components/sections/Home'
-import Skills from './components/sections/Skills'
-import Projects from './components/sections/Projects'
-import Contact from './components/sections/Contact'
+import NavBar from './NavBar'
+import Home from './sections/Home'
+import Skills from './sections/Skills'
+import Projects from './sections/Projects'
+import Contact from './sections/Contact'
 
 const Main = () => {
   return (
