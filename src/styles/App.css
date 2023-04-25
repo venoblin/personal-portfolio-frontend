@@ -96,8 +96,6 @@
   .App .emoji-wrapper {
     display: none;
   }
-}
-@media (max-width: 1000px) {
   .App .NavBar .links-container {
     display: none;
   }
@@ -131,6 +129,8 @@
   .App .NavBar.show-menu .icons-container a {
     margin-left: 0;
   }
+}
+@media (max-width: 1000px) {
   .App #contact form {
     width: 100%;
   }
