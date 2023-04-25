@@ -1,17 +1,10 @@
 import '../styles/NavBar.css'
-import { useRef } from 'react'
-import { Link } from 'react-router-dom'
+import { useRef, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 const NavBar = () => {
   const navRef = useRef()
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      navRef.current.classList.add('scroll')
-    } else {
-      navRef.current.classList.remove('scroll')
-    }
-  })
+  const location = useLocation()
 
   const showMenu = () => {
     navRef.current.classList.toggle('show-menu')
@@ -22,6 +15,16 @@ const NavBar = () => {
     navRef.current.classList.remove('show-menu')
     document.body.classList.remove('show-menu')
   }
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50 && location.pathname === '/') {
+        navRef.current.classList.add('scroll')
+      } else {
+        navRef.current.classList.remove('scroll')
+      }
+    })
+  }, [])
 
   return (
     <nav className="NavBar" ref={navRef}>
