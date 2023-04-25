@@ -1,4 +1,5 @@
 import '../styles/NavBar.css'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   window.addEventListener('scroll', () => {
@@ -40,6 +41,9 @@ const NavBar = () => {
         <a className="link" href="#contact" onClick={hideMenu}>
           Contact
         </a>
+
+        <Link className='link' to="/viewer/JonathanResume.pdf">Resume</Link>
+        <Link className='link' to="/viewer/certificate.pdf">Certificate</Link>
 
         <div className="icons-container">
           <a
