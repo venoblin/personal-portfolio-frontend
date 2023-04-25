@@ -1,33 +1,30 @@
 import '../styles/NavBar.css'
+import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 
 const NavBar = () => {
-  window.addEventListener('scroll', () => {
-    const navBar = document.querySelector('.NavBar')
+  const navRef = useRef()
 
+  window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-      navBar.classList.add('scroll')
+      navRef.current.classList.add('scroll')
     } else {
-      navBar.classList.remove('scroll')
+      navRef.current.classList.remove('scroll')
     }
   })
 
   const showMenu = () => {
-    const navbar = document.querySelector('.NavBar')
-
-    navbar.classList.toggle('show-menu')
+    navRef.current.classList.toggle('show-menu')
     document.body.classList.toggle('show-menu')
   }
 
   const hideMenu = () => {
-    const navbar = document.querySelector('.NavBar')
-
-    navbar.classList.remove('show-menu')
+    navRef.current.classList.remove('show-menu')
     document.body.classList.remove('show-menu')
   }
 
   return (
-    <nav className="NavBar">
+    <nav className="NavBar" ref={navRef}>
       <a href="/" className="link logo" onClick={hideMenu}>
         Jon <span>/ Web Dev</span>
       </a>
