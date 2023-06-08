@@ -44,7 +44,7 @@ const NavBar = () => {
 
         <div className="icons-container">
           <a
-            href="https://github.com/VillagomezHJonathan"
+            href="https://github.com/venoblin"
             target="_blank"
             onClick={hideMenu}
           >
