@@ -10,7 +10,7 @@ const Projects = () => {
     {
       title: 'Flixder',
       image: flixderPng,
-      demo: 'https://flixder-frontend.herokuapp.com/',
+      demo: 'https://flixder.netlify.app/',
       repo: 'https://github.com/VillagomezHJonathan/flixder-frontend',
       techs: ['React', 'SCSS', 'Node.js', 'Express', 'MongoDB'],
       desc: 'Dating application for movies, find new movies to watch!'
