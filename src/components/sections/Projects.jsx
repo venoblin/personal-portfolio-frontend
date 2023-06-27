@@ -11,7 +11,7 @@ const Projects = () => {
       title: 'Flixder',
       image: flixderPng,
       demo: 'https://flixder.netlify.app/',
-      repo: 'https://github.com/VillagomezHJonathan/flixder-frontend',
+      repo: 'https://github.com/venoblin/flixder-frontend',
       techs: ['React', 'SCSS', 'Node.js', 'Express', 'MongoDB'],
       desc: 'Dating application for movies, find new movies to watch!'
     },
@@ -19,7 +19,7 @@ const Projects = () => {
       title: 'Fit-Buddy',
       image: fitBuddyPng,
       demo: 'https://fitbuddyapp.netlify.app/',
-      repo: 'https://github.com/VillagomezHJonathan/fit-buddy',
+      repo: 'https://github.com/venoblin/fit-buddy',
       techs: ['Vue', 'SCSS'],
       desc: 'An application used to set up your workout routine for the week!'
     },
@@ -27,7 +27,7 @@ const Projects = () => {
       title: 'Tic-Tac-Toe',
       image: ticTacToePng,
       demo: 'http://tic-tac-toe-jvh.surge.sh/',
-      repo: 'https://github.com/VillagomezHJonathan/tic-tac-toe',
+      repo: 'https://github.com/venoblin/tic-tac-toe',
       techs: ['JavaScript', 'CSS'],
       desc: 'Tic-Tac-Toe game made entirely with JavaScript.'
     }
