@@ -18,7 +18,7 @@ const Projects = () => {
     {
       title: 'Fit-Buddy',
       image: fitBuddyPng,
-      demo: 'https://fit-buddy.herokuapp.com/',
+      demo: 'https://fitbuddyapp.netlify.app/',
       repo: 'https://github.com/VillagomezHJonathan/fit-buddy',
       techs: ['Vue', 'SCSS'],
       desc: 'An application used to set up your workout routine for the week!'
