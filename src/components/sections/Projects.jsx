@@ -16,7 +16,7 @@ const Projects = () => {
       desc: 'Dating application for movies, find new movies to watch!'
     },
     {
-      title: 'Fit-Buddy',
+      title: 'Fit Buddy',
       image: fitBuddyPng,
       demo: 'https://fitbuddyapp.netlify.app/',
       repo: 'https://github.com/venoblin/fit-buddy',
