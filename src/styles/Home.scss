@@ -52,5 +52,11 @@
   .btn {
     margin-top: 2.5rem;
   }
+
+  @media (max-width: 530px) {
+    h1 {
+      font-size: 4.5em;
+    }
+  }
 }
 
