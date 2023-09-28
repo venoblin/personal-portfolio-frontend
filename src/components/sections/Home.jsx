@@ -15,7 +15,7 @@ const Home = () => {
             I'm <span className="highlight">Jonathan</span>,
           </span>
           <span className="wrapper">
-            a <span className="highlight">Software Engineer</span>!
+            a <span className="highlight">Full-Stack Developer</span>!
           </span>
         </h1>
 
