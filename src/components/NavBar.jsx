@@ -3,18 +3,20 @@ import { useRef, useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 const NavBar = () => {
-  const [isExpanded, toggleIsExpanded] = useState(false)
+  const [isExpanded, setIsExpanded] = useState(false)
   const navRef = useRef()
   const location = useLocation()
 
   const showMenu = () => {
     navRef.current.classList.toggle('show-menu')
     document.body.classList.toggle('show-menu')
+    setIsExpanded(!isExpanded)
   }
 
   const hideMenu = () => {
     navRef.current.classList.remove('show-menu')
     document.body.classList.remove('show-menu')
+    setIsExpanded(!isExpanded)
   }
 
   useEffect(() => {
