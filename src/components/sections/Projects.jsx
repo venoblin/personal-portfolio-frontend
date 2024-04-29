@@ -4,6 +4,7 @@ import ProjectCard from '../ProjectCard'
 import flixderPng from '../../images/project-screenshots/flixder.png'
 import fitBuddyPng from '../../images/project-screenshots/fit-buddy.png'
 import ticTacToePng from '../../images/project-screenshots/tic-tac-toe.png'
+import webScraperPng from '../../images/project-screenshots/web-scraper.png'
 
 const Projects = () => {
   const [projects, setProjects] = useState([
@@ -29,7 +30,15 @@ const Projects = () => {
       demo: 'http://tic-tac-toe-jvh.surge.sh/',
       repo: 'https://github.com/venoblin/tic-tac-toe',
       techs: ['JavaScript', 'CSS'],
-      desc: 'Tic-Tac-Toe game made entirely with JavaScript.'
+      desc: 'Tic-Tac-Toe game made entirely with JavaScript!'
+    },
+    {
+      title: 'Web Scraper',
+      image: webScraperPng,
+      demo: 'https://github.com/venoblin/web-scraper?tab=readme-ov-file#usage',
+      repo: 'https://github.com/venoblin/web-scraper',
+      techs: ['Python', 'Selenium', 'BeautifulSoup'],
+      desc: 'Web scraper that returns the data in an organized manner!'
     }
   ])
 
