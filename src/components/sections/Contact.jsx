@@ -23,19 +23,19 @@ const Contact = () => {
 
   const handleSubmit = async (evt) => {
     evt.preventDefault()
-    // await axios.post(BACKEND_API, formState)
-    //   .then(res => {
-    //     console.log(res)
-    //   }).catch(err => {
-    //     console.log(err)
-    //   })
+    await axios.post(BACKEND_API, formState)
+      .then(res => {
+        setPopUpMsg('Successfully sent email!')
+      }).catch(err => {
+        setPopUpMsg('Error: Email not sent!')
+      })
     
-    // setFormState({
-    //   name: '',
-    //   email: '',
-    //   subject: '',
-    //   message: ''
-    // })
+    setFormState({
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    })
     toggleIsPopUp(currentState => !currentState)
   }
 
