@@ -1,9 +1,9 @@
-import '../styles/Error.css'
+import '../styles/PopUp.css'
 import { Link } from 'react-router-dom'
 
-const Error = (props) => {
+const PopUp = (props) => {
   return (
-    <div className='Error'>
+    <div className='PopUp'>
       <h1>{props.code}</h1>
       <h2>{props.msg}</h2>
       <Link className='btn' to='/'>Home</Link>
@@ -11,4 +11,4 @@ const Error = (props) => {
   )
 }
 
-export default Error
+export default PopUp
