@@ -26,8 +26,7 @@ const Contact = () => {
     await axios.post(BACKEND_API, formState)
       .then(() => {
         setPopUpMsg('Successfully sent email!')
-      }).catch((err) => {
-        console.log(err)
+      }).catch(() => {
         setPopUpMsg('Error: Email not sent!')
       })
     
