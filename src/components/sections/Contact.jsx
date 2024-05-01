@@ -3,6 +3,7 @@ import emojiWaving from './../../images/emoji-waving.gif'
 import axios from 'axios'
 import { BACKEND_API } from '../../global'
 import { useState } from 'react'
+import PopUp from '../PopUp'
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -11,6 +12,8 @@ const Contact = () => {
     subject: '',
     message: ''
   })
+  const [isPopUp, toggleIsPopUp] = useState(false)
+  const [popUpMsg, setPopUpMsg] = useState('')
 
   const handleChange = (evt) => {
     const input = evt.target
@@ -20,19 +23,21 @@ const Contact = () => {
 
   const handleSubmit = async (evt) => {
     evt.preventDefault()
-    await axios.post(BACKEND_API, formState)
-      .then(res => {
-        console.log(res)
-      }).catch(err => {
-        console.log(err)
-      })
+    // await axios.post(BACKEND_API, formState)
+    //   .then(res => {
+    //     console.log(res)
+    //   }).catch(err => {
+    //     console.log(err)
+    //   })
     
-    setFormState({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    })
+    // setFormState({
+    //   name: '',
+    //   email: '',
+    //   subject: '',
+    //   message: ''
+    // })
+
+    toggleIsPopUp(currentState => !currentState)
   }
 
   return (
@@ -89,6 +94,10 @@ const Contact = () => {
           <button className="btn" type="submit">
             Send!
           </button>
+
+          {isPopUp && 
+            <PopUp msg={popUpMsg} toggleState={toggleIsPopUp} />
+          }
         </form>
 
         <div className="emoji-wrapper">
