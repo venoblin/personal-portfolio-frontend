@@ -1,14 +1,22 @@
+import { useState } from 'react'
 import '../styles/PopUp.css'
+import Loader from './Loader'
 
 const PopUp = (props) => {
   const clickHandler = () => {
-    props.toggleState(currentState => !currentState)
+    props.togglePopUp(currentState => !currentState)
   }
   
   return (
     <div className='PopUp'>
-      <p>{props.msg || 'No message'}</p>
-      <button type='button' className='btn' onClick={clickHandler}>Ok</button>
+      {!props.msg.length ? (
+        <Loader />
+      ) : (
+        <div>
+          <p>{props.msg}</p>
+          <button type='button' className='btn' onClick={clickHandler}>Ok</button>
+        </div>
+      )}
     </div>
   )
 }

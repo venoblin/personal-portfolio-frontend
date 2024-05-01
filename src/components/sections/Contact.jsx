@@ -23,6 +23,8 @@ const Contact = () => {
 
   const handleSubmit = async (evt) => {
     evt.preventDefault()
+    toggleIsPopUp(currentState => !currentState)
+
     await axios.post(BACKEND_API, formState)
       .then(() => {
         setPopUpMsg('Successfully sent email!')
@@ -36,7 +38,6 @@ const Contact = () => {
       subject: '',
       message: ''
     })
-    toggleIsPopUp(currentState => !currentState)
   }
 
   return (
@@ -95,7 +96,10 @@ const Contact = () => {
           </button>
 
           {isPopUp && 
-            <PopUp msg={popUpMsg} toggleState={toggleIsPopUp} />
+            <PopUp 
+              msg={popUpMsg} 
+              togglePopUp={toggleIsPopUp} 
+            />
           }
         </form>
 
