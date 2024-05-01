@@ -19,6 +19,7 @@
   display: flex;
   flex-direction: column;
   z-index: 2;
+  position: relative;
 }
 .Contact-class form input, .Contact-class form textarea {
   margin-bottom: 1rem;
@@ -43,7 +44,6 @@
   margin-top: 0.5rem;
 }
 .Contact-class .emoji-wrapper {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   position: relative;

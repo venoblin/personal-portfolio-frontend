@@ -36,7 +36,6 @@ const Contact = () => {
     //   subject: '',
     //   message: ''
     // })
-
     toggleIsPopUp(currentState => !currentState)
   }
 

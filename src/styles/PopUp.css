@@ -1,1 +1,18 @@
-/*# sourceMappingURL=PopUp.css.map */
+.PopUp {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 12, 17, 0.95);
+  border-radius: 5px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.PopUp p {
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=PopUp.css.map */
