@@ -1,5 +1,7 @@
 import '../../styles/Contact.css'
 import emojiWaving from './../../images/emoji-waving.gif'
+import axios from 'axios'
+import { BACKEND_API } from '../../global'
 import { useState } from 'react'
 
 const Contact = () => {
@@ -16,12 +18,22 @@ const Contact = () => {
     setFormState({ ...formState, [input.id]: input.value })
   }
 
+  const handleSubmit = async (evt) => {
+    evt.preventDefault()
+    await axios.post(BACKEND_API, formState)
+      .then(res => {
+        console.log(res)
+      }).catch(err => {
+        console.log(err)
+      })
+  }
+
   return (
     <section className="Contact-class" id="contact">
       <h2>Contact</h2>
 
       <div className="wrapper">
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="upper-form">
             <label htmlFor="name">Name</label>
             <input
