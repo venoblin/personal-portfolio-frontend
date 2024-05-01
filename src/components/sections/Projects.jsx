@@ -10,12 +10,28 @@ import projectManagerPng from '../../images/project-screenshots/project-manager.
 const Projects = () => {
   const [projects, setProjects] = useState([
     {
+      title: 'Project Manager',
+      image: projectManagerPng,
+      demo: 'https://projectmanagerweb.netlify.app/',
+      repo: 'https://github.com/venoblin/project-manager-frontend',
+      techs: ['React', 'TypeScript', 'SCSS', 'Python', 'Flask', 'PostgreSQL', 'SQLAlchemy'],
+      desc: 'Web application that allows you to organize your projects and most importantly your workflow.'
+    },
+    {
       title: 'Flixder',
       image: flixderPng,
       demo: 'https://flixder.netlify.app/',
       repo: 'https://github.com/venoblin/flixder-frontend',
       techs: ['React', 'SCSS', 'Node.js', 'Express', 'MongoDB'],
       desc: 'Dating application for movies, find new movies to watch.'
+    },
+    {
+      title: 'Web Scraper',
+      image: webScraperPng,
+      demo: 'https://github.com/venoblin/web-scraper?tab=readme-ov-file#usage',
+      repo: 'https://github.com/venoblin/web-scraper',
+      techs: ['Python', 'Selenium', 'BeautifulSoup'],
+      desc: 'Web scraper that returns the data in an organized manner.'
     },
     {
       title: 'Fit Buddy',
@@ -32,22 +48,6 @@ const Projects = () => {
       repo: 'https://github.com/venoblin/tic-tac-toe',
       techs: ['JavaScript', 'CSS'],
       desc: 'Tic-Tac-Toe game made entirely with JavaScript.'
-    },
-    {
-      title: 'Web Scraper',
-      image: webScraperPng,
-      demo: 'https://github.com/venoblin/web-scraper?tab=readme-ov-file#usage',
-      repo: 'https://github.com/venoblin/web-scraper',
-      techs: ['Python', 'Selenium', 'BeautifulSoup'],
-      desc: 'Web scraper that returns the data in an organized manner.'
-    },
-    {
-      title: 'Project Manager',
-      image: projectManagerPng,
-      demo: 'https://projectmanagerweb.netlify.app/',
-      repo: 'https://github.com/venoblin/project-manager-frontend',
-      techs: ['React', 'TypeScript', 'SCSS', 'Python', 'Flask', 'PostgreSQL', 'SQLAlchemy'],
-      desc: 'Web application that allows you to organize your projects and most importantly your workflow.'
     }
   ])
 
