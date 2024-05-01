@@ -24,9 +24,9 @@ const Contact = () => {
   const handleSubmit = async (evt) => {
     evt.preventDefault()
     await axios.post(BACKEND_API, formState)
-      .then(res => {
+      .then(() => {
         setPopUpMsg('Successfully sent email!')
-      }).catch(err => {
+      }).catch(() => {
         setPopUpMsg('Error: Email not sent!')
       })
     
