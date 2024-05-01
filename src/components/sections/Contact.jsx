@@ -26,6 +26,13 @@ const Contact = () => {
       }).catch(err => {
         console.log(err)
       })
+    
+    setFormState({
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    })
   }
 
   return (
