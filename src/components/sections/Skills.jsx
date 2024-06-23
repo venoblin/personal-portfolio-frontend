@@ -40,8 +40,8 @@ const Skills = () => {
           <button id="databases" onClick={(evt) => handleClick(evt)}>
             Databases
           </button>
-          <button id="software" onClick={(evt) => handleClick(evt)}>
-            Software
+          <button id="tools" onClick={(evt) => handleClick(evt)}>
+            Tools
           </button>
         </div>
 
@@ -155,7 +155,7 @@ const Skills = () => {
           </div>
         )}
 
-        {skillSet === 'software' && (
+        {skillSet === 'tools' && (
           <div className="skill-container">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">

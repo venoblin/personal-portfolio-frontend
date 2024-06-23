@@ -15,11 +15,11 @@ const Home = () => {
             I'm <span className="highlight">Jonathan</span>,
           </span>
           <span className="wrapper">
-            a <span className="highlight">Full-Stack Developer</span>!
+            a Junior <span className="highlight">Software Engineer</span>!
           </span>
         </h1>
 
-        <p>Passionate about coding and learning new things...</p>
+        <p>Passionate about engineering software solutions.</p>
 
         <a
           className="btn"
