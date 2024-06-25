@@ -6,6 +6,7 @@ import fitBuddyPng from '../../images/project-screenshots/fit-buddy.png'
 import ticTacToePng from '../../images/project-screenshots/tic-tac-toe.png'
 import webScraperPng from '../../images/project-screenshots/web-scraper.png'
 import projectManagerPng from '../../images/project-screenshots/project-manager.png'
+import RadioButtons from '../RadioButtons'
 
 const Projects = () => {
   const [projects, setProjects] = useState([
@@ -63,6 +64,8 @@ const Projects = () => {
 
       <div className="wrapper">
         <h2>Projects</h2>
+
+        <RadioButtons />
 
         <div className="projects">
           {projects.map((project) => (
