@@ -50,9 +50,9 @@
 }
 .Contact-class .emoji-wrapper .emoji {
   width: 100%;
+  height: 500px;
 }
 .Contact-class .emoji-wrapper svg {
-  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
