@@ -24,8 +24,14 @@
   margin-bottom: 1rem;
   border-bottom: 1px solid #e12c44;
 }
-.App li, .App p {
-  font-size: 1.5em;
+.App li,
+.App p,
+.App input,
+.App textarea,
+.App button,
+.App .btn,
+.App .link {
+  font-size: 1.25em;
 }
 .App label {
   position: absolute;
@@ -39,7 +45,6 @@
 }
 .App .link {
   padding: 1rem;
-  font-size: 1.25em;
   font-weight: 200;
   text-decoration: none;
   text-transform: uppercase;
@@ -57,7 +62,6 @@
   display: block;
   padding: 0.5rem 2rem;
   border-radius: 10px;
-  font-size: 1.5em;
   text-decoration: none;
   text-transform: capitalize;
   font-weight: bold;
