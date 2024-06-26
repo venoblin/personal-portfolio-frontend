@@ -13,6 +13,7 @@ const Projects = () => {
   const [projects, setProjects] = useState([
     {
       title: 'Project Manager',
+      types: ['featured', 'web'],
       image: projectManagerPng,
       demo: 'https://projectmanagerweb.netlify.app/',
       repo: 'https://github.com/venoblin/project-manager-frontend',
@@ -21,6 +22,7 @@ const Projects = () => {
     },
     {
       title: 'Flixder',
+      types: ['featured', 'web'],
       image: flixderPng,
       demo: 'https://flixder.netlify.app/',
       repo: 'https://github.com/venoblin/flixder-frontend',
@@ -29,6 +31,7 @@ const Projects = () => {
     },
     {
       title: 'Web Scraper',
+      types: ['tools'],
       image: webScraperPng,
       demo: 'https://github.com/venoblin/web-scraper?tab=readme-ov-file#usage',
       repo: 'https://github.com/venoblin/web-scraper',
@@ -37,6 +40,7 @@ const Projects = () => {
     },
     {
       title: 'Fit Buddy',
+      types: ['web'],
       image: fitBuddyPng,
       demo: 'https://fitbuddyapp.netlify.app/',
       repo: 'https://github.com/venoblin/fit-buddy',
@@ -45,6 +49,7 @@ const Projects = () => {
     },
     {
       title: 'Tic-Tac-Toe',
+      types: ['games'],
       image: ticTacToePng,
       demo: 'http://tic-tac-toe-jvh.surge.sh/',
       repo: 'https://github.com/venoblin/tic-tac-toe',
@@ -52,6 +57,14 @@ const Projects = () => {
       desc: 'Tic-Tac-Toe game made entirely with JavaScript.'
     }
   ])
+
+  const checkType = (project) => {
+    project.types.forEach((type) => {
+      if (type === setProjectSet) {
+        return project
+      }
+    })
+  }
 
   return (
     <section className="Projects-class" id="projects">
@@ -77,7 +90,9 @@ const Projects = () => {
         />
 
         <div className="projects">
-          {projects.map((project) => (
+          {projects.filter((project) => {
+            return projectSet === "all" || project.types.some((t) => t.toLowerCase() === projectSet.toLowerCase());
+          }).map((project) => (
             <ProjectCard key={project.title} project={project} />
           ))}
         </div>
