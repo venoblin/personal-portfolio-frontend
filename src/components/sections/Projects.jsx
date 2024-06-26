@@ -9,6 +9,7 @@ import projectManagerPng from '../../images/project-screenshots/project-manager.
 import RadioButtons from '../RadioButtons'
 
 const Projects = () => {
+  const [projectSet, setProjectSet] = useState('featured')
   const [projects, setProjects] = useState([
     {
       title: 'Project Manager',
@@ -65,7 +66,15 @@ const Projects = () => {
       <div className="wrapper">
         <h2>Projects</h2>
 
-        <RadioButtons />
+        <RadioButtons labels={[
+            'featured', 
+            'web', 
+            'games', 
+            'tools'
+          ]}
+          state={projectSet}
+          setState={setProjectSet}
+        />
 
         <div className="projects">
           {projects.map((project) => (
