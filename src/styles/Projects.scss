@@ -8,6 +8,18 @@
   margin-right: 0;
   margin-bottom: 0;
 
+  .radio-btns {
+    display: flex;
+    justify-content: center;
+
+    button {
+
+      &.active {
+        background-color: cyan;
+      }
+    }
+  }
+
   h2 {
     color: $blackColor;
     border: none;

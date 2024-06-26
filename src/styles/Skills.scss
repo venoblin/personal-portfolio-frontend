@@ -19,6 +19,12 @@
         border-color: $mutedWhiteColor;
         cursor: default;
       }
+
+      &:not(.active) {
+        &:hover {
+          transform: translateY(3px);
+        }
+      }
     }
   }
   

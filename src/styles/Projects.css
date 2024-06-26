@@ -6,6 +6,13 @@
   margin-right: 0;
   margin-bottom: 0;
 }
+#projects .radio-btns {
+  display: flex;
+  justify-content: center;
+}
+#projects .radio-btns button.active {
+  background-color: cyan;
+}
 #projects h2 {
   color: #15131b;
   border: none;
