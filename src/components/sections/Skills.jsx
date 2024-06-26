@@ -1,8 +1,9 @@
 import '../../styles/Skills.css'
 import { useState } from 'react'
+import RadioButtons from '../RadioButtons'
 
 const Skills = () => {
-  const [skillSet, setSkillSet] = useState('langs')
+  const [skillSet, setSkillSet] = useState('languages')
 
   const resetButtonsActive = () => {
     const buttons = document.querySelectorAll('.Skills-class button')
@@ -26,7 +27,7 @@ const Skills = () => {
       <h2>Skills</h2>
 
       <div className="skills-container">
-        <div className="inputs">
+        {/* <div className="inputs">
           <button
             id="langs"
             className="active"
@@ -43,9 +44,18 @@ const Skills = () => {
           <button id="tools" onClick={(evt) => handleClick(evt)}>
             Tools
           </button>
-        </div>
+        </div> */}
+        <RadioButtons labels={[
+            'languages', 
+            'libraries/frameworks', 
+            'databases', 
+            'tools'
+          ]}
+          state={skillSet}
+          setState={setSkillSet}
+        />
 
-        {skillSet === 'langs' && (
+        {skillSet === 'languages' && (
           <div className="skill-container">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -98,7 +108,7 @@ const Skills = () => {
           </div>
         )}
 
-        {skillSet === 'frameworks' && (
+        {skillSet === 'libraries/frameworks' && (
           <div className="skill-container">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

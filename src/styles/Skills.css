@@ -1,4 +1,4 @@
-.Skills-class button {
+.Skills-class .radio-btns button {
   padding: 1rem 2rem;
   font-weight: bold;
   border-radius: 1rem 1rem 0 0;
@@ -8,7 +8,7 @@
   color: #15131b;
   transition: all 0.3s ease;
 }
-.Skills-class button.active {
+.Skills-class .radio-btns button.active {
   background-color: transparent;
   color: #8b8a8a;
   border-color: #8b8a8a;

@@ -2,23 +2,26 @@
 
 .Skills-class {
 
-  button {
-    padding: 1rem 2rem;
-    font-weight: bold;
-    border-radius: 1rem 1rem 0 0;
-    border: 2px solid $redColor;
-    border-bottom: none;
-    background-color: $redColor;
-    color: $blackColor;
-    @include defaultTransition(all);
+  .radio-btns {
+    button {
+      padding: 1rem 2rem;
+      font-weight: bold;
+      border-radius: 1rem 1rem 0 0;
+      border: 2px solid $redColor;
+      border-bottom: none;
+      background-color: $redColor;
+      color: $blackColor;
+      @include defaultTransition(all);
 
-    &.active {
-      background-color: transparent; 
-      color: $mutedWhiteColor;
-      border-color: $mutedWhiteColor;
-      cursor: default;
+      &.active {
+        background-color: transparent; 
+        color: $mutedWhiteColor;
+        border-color: $mutedWhiteColor;
+        cursor: default;
+      }
     }
   }
+  
 
   .skill-container {
     min-height: 500px;
