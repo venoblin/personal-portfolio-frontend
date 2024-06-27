@@ -97,7 +97,7 @@
   fill: #8b8a8a;
 }
 @media (max-width: 1400px) {
-  .App .emoji-wrapper {
+  .App .emoji-background {
     display: none;
   }
   .App .NavBar .links-container {
