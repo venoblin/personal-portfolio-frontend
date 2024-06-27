@@ -15,7 +15,7 @@
   cursor: default;
 }
 .Skills-class .radio-btns button:not(.active):hover {
-  transform: translateY(3px);
+  transform: translateY(2px);
 }
 .Skills-class .skill-container {
   min-height: 500px;

@@ -6,6 +6,7 @@ import fitBuddyPng from '../../images/project-screenshots/fit-buddy.png'
 import ticTacToePng from '../../images/project-screenshots/tic-tac-toe.png'
 import webScraperPng from '../../images/project-screenshots/web-scraper.png'
 import projectManagerPng from '../../images/project-screenshots/project-manager.png'
+import hoverOrbPng from '../../images/project-screenshots/hover-orb.jpg'
 import RadioButtons from '../RadioButtons'
 
 const Projects = () => {
@@ -27,7 +28,16 @@ const Projects = () => {
       demo: 'https://flixder.netlify.app/',
       repo: 'https://github.com/venoblin/flixder-frontend',
       techs: ['React', 'SCSS', 'Node.js', 'Express', 'MongoDB'],
-      desc: 'Dating application for movies, find new movies to watch.'
+      desc: 'Dating application for movies, gives you a way to find new movies to watch.'
+    },
+    {
+      title: 'HoverOrb',
+      types: ['featured', 'games'],
+      image: hoverOrbPng,
+      demo: 'https://github.com/venoblin/hover-orb',
+      repo: 'https://github.com/venoblin/hover-orb',
+      techs: ['Java', 'LibGDX'],
+      desc: 'Mobile game where the goal is to keep the ball airbourne without it touching the floor.'
     },
     {
       title: 'Web Scraper',
@@ -68,7 +78,7 @@ const Projects = () => {
 
   return (
     <section className="Projects-class" id="projects">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg className='border' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#e12c44"
           fillOpacity="1"

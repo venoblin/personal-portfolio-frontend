@@ -10,8 +10,27 @@
   display: flex;
   justify-content: center;
 }
+#projects .radio-btns button {
+  padding: 1rem 2rem;
+  background-color: #15131b;
+  color: #8b8a8a;
+  font-weight: bold;
+  border: 2px solid #e12c44;
+  transition: all 0.3s ease;
+}
+#projects .radio-btns button:first-of-type {
+  border-radius: 1rem 0 0 1rem;
+}
+#projects .radio-btns button:last-of-type {
+  border-radius: 0 1rem 1rem 0;
+}
 #projects .radio-btns button.active {
-  background-color: cyan;
+  border: 2px solid #dad7da;
+  color: #dad7da;
+  background: #e12c44;
+}
+#projects .radio-btns button:hover:not(.active) {
+  transform: translateY(2px);
 }
 #projects h2 {
   color: #15131b;
@@ -32,6 +51,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 1rem;
 }
 #projects .ProjectCard {
   margin: 0.5rem;

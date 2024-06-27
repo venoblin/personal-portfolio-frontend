@@ -11,11 +11,33 @@
   .radio-btns {
     display: flex;
     justify-content: center;
-
+    
     button {
+      padding: 1rem 2rem; 
+      background-color: $blackColor;
+      color: $mutedWhiteColor;
+      font-weight: bold;
+      border: 2px solid $redColor;
+      @include defaultTransition(all);
+      
+      &:first-of-type {
+        border-radius: 1rem 0 0 1rem;
+      }
 
+      &:last-of-type {
+        border-radius: 0 1rem 1rem 0;
+      }
+      
       &.active {
-        background-color: cyan;
+        border: 2px solid $whiteColor;
+        color: $whiteColor;
+        background: $redColor;
+      }
+
+      &:hover {
+        &:not(.active) {
+          transform: translateY(2px);
+        }
       }
     }
   }
@@ -42,6 +64,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 1rem;
   }
 
   .ProjectCard {
