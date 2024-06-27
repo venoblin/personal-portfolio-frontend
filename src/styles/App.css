@@ -153,6 +153,11 @@
     width: 100%;
     margin: 0 0 1rem 0;
   }
+  .App #skills .radio-btns button,
+  .App #projects .radio-btns button {
+    padding: 1rem 0.5rem;
+    font-size: 1em;
+  }
 }
 @media (max-width: 650px) {
   .App section {

@@ -144,6 +144,12 @@
       width: 100%;
       margin: 0 0 1rem 0;
     }
+
+    #skills .radio-btns button,
+    #projects .radio-btns button {
+      padding: 1rem 0.5rem; 
+      font-size: 1em; 
+    }
   }
 
   @media (max-width: 650px) {

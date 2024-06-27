@@ -27,24 +27,6 @@ const Skills = () => {
       <h2>Skills</h2>
 
       <div className="skills-container">
-        {/* <div className="inputs">
-          <button
-            id="langs"
-            className="active"
-            onClick={(evt) => handleClick(evt)}
-          >
-            Languages
-          </button>
-          <button id="frameworks" onClick={(evt) => handleClick(evt)}>
-            Libraries/Frameworks
-          </button>
-          <button id="databases" onClick={(evt) => handleClick(evt)}>
-            Databases
-          </button>
-          <button id="tools" onClick={(evt) => handleClick(evt)}>
-            Tools
-          </button>
-        </div> */}
         <RadioButtons labels={[
             'languages', 
             'libraries/frameworks', 
