@@ -34,7 +34,7 @@ const Projects = () => {
       title: 'HoverOrb',
       types: ['featured', 'games'],
       image: hoverOrbPng,
-      demo: 'https://github.com/venoblin/hover-orb',
+      demo: '',
       repo: 'https://github.com/venoblin/hover-orb',
       techs: ['Java', 'LibGDX'],
       desc: 'Mobile game where the goal is to keep the ball airbourne without it touching the floor.'
@@ -67,14 +67,6 @@ const Projects = () => {
       desc: 'Tic-Tac-Toe game made entirely with JavaScript.'
     }
   ])
-
-  const checkType = (project) => {
-    project.types.forEach((type) => {
-      if (type === setProjectSet) {
-        return project
-      }
-    })
-  }
 
   return (
     <section className="Projects-class" id="projects">

@@ -16,9 +16,14 @@ const ProjectCard = (props) => {
       <p className="desc">{props.project.desc}</p>
 
       <div className="links">
-        <a className="btn" href={props.project.demo} target="_blank">
-          Demo
-        </a>
+        {props.project.demo.length ? (
+          <a className="btn" href={props.project.demo} target="_blank">
+            Demo
+          </a>
+          ) : (
+            ''
+          )
+        }
         <a className="btn" href={props.project.repo} target="_blank">
           Repo
         </a>
