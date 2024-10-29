@@ -16,8 +16,8 @@ const Projects = () => {
       title: 'TeamHub',
       types: ['featured', 'web'],
       image: teamHubPng,
-      demo: 'https://projectmanagerweb.netlify.app/',
-      repo: 'https://github.com/venoblin/project-manager-frontend',
+      demo: 'https://teamhubweb.netlify.app',
+      repo: 'https://github.com/venoblin/teamhub-frontend',
       techs: ['React', 'TypeScript', 'SCSS', 'Python', 'Flask', 'PostgreSQL', 'SQLAlchemy'],
       desc: 'Web application that allows you to organize your projects and most importantly your workflow.'
     },
