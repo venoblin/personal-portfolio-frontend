@@ -5,7 +5,7 @@ import flixderPng from '../../images/project-screenshots/flixder.png'
 import fitBuddyPng from '../../images/project-screenshots/fit-buddy.png'
 import ticTacToePng from '../../images/project-screenshots/tic-tac-toe.png'
 import webScraperPng from '../../images/project-screenshots/web-scraper.png'
-import projectManagerPng from '../../images/project-screenshots/project-manager.png'
+import teamHubPng from '../../images/project-screenshots/team-hub.png'
 import hoverOrbPng from '../../images/project-screenshots/hover-orb.jpg'
 import RadioButtons from '../RadioButtons'
 
@@ -13,9 +13,9 @@ const Projects = () => {
   const [projectSet, setProjectSet] = useState('featured')
   const [projects, setProjects] = useState([
     {
-      title: 'Project Manager',
+      title: 'TeamHub',
       types: ['featured', 'web'],
-      image: projectManagerPng,
+      image: teamHubPng,
       demo: 'https://projectmanagerweb.netlify.app/',
       repo: 'https://github.com/venoblin/project-manager-frontend',
       techs: ['React', 'TypeScript', 'SCSS', 'Python', 'Flask', 'PostgreSQL', 'SQLAlchemy'],
