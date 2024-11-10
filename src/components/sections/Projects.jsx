@@ -6,7 +6,8 @@ import fitBuddyPng from '../../images/project-screenshots/fit-buddy.png'
 import ticTacToePng from '../../images/project-screenshots/tic-tac-toe.png'
 import webScraperPng from '../../images/project-screenshots/web-scraper.png'
 import teamHubPng from '../../images/project-screenshots/team-hub.png'
-import hoverOrbPng from '../../images/project-screenshots/hover-orb.jpg'
+import hoverOrbPng from '../../images/project-screenshots/hover-orb.png'
+import downloadFileSorterPng from '../../images/project-screenshots/download-file-sorter.png'
 import RadioButtons from '../RadioButtons'
 
 const Projects = () => {
@@ -65,6 +66,14 @@ const Projects = () => {
       repo: 'https://github.com/venoblin/tic-tac-toe',
       techs: ['JavaScript', 'CSS'],
       desc: 'Tic-Tac-Toe game made entirely with JavaScript.'
+    },
+    {
+      title: 'Download File Sorter',
+      types: ['tools'],
+      image: downloadFileSorterPng,
+      repo: 'https://github.com/venoblin/download-file-sorter',
+      techs: ['Python'],
+      desc: 'Sorts files from download directory into user specified directories in a Unix based system.'
     }
   ])
 
