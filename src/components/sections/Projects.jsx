@@ -71,6 +71,7 @@ const Projects = () => {
       title: 'Download File Sorter',
       types: ['tools'],
       image: downloadFileSorterPng,
+      demo: '',
       repo: 'https://github.com/venoblin/download-file-sorter',
       techs: ['Python'],
       desc: 'Sorts files from download directory into user specified directories in a Unix based system.'
