@@ -1,39 +1,4 @@
-.Skills-class .radio-btns button {
-  padding: 1rem 2rem;
-  font-weight: bold;
-  border-radius: 1rem 1rem 0 0;
-  border: 2px solid #e12c44;
-  border-bottom: none;
-  background-color: #e12c44;
-  color: #15131b;
-  transition: all 0.3s ease;
-}
-.Skills-class .radio-btns button.active {
-  background-color: transparent;
-  color: #8b8a8a;
-  border-color: #8b8a8a;
-  cursor: default;
-}
-.Skills-class .radio-btns button:not(.active):hover {
-  transform: translateY(2px);
-}
-.Skills-class .skill-container {
-  min-height: 500px;
-  padding: 3rem 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 0 0 0 2rem;
-  border: 2px solid #8b8a8a;
-  border-top: none;
-  border-right: none;
-}
-.Skills-class .skill-container div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 2rem;
-}
-.Skills-class .skill-container svg {
+.Skills-class svg {
   width: 3rem;
   height: 3rem;
   fill: #e12c44;

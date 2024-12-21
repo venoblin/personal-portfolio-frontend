@@ -1,55 +1,10 @@
 @import './vars/variables.scss';
 
 .Skills-class {
-
-  .radio-btns {
-    button {
-      padding: 1rem 2rem;
-      font-weight: bold;
-      border-radius: 1rem 1rem 0 0;
-      border: 2px solid $redColor;
-      border-bottom: none;
-      background-color: $redColor;
-      color: $blackColor;
-      @include defaultTransition(all);
-
-      &.active {
-        background-color: transparent; 
-        color: $mutedWhiteColor;
-        border-color: $mutedWhiteColor;
-        cursor: default;
-      }
-
-      &:not(.active) {
-        &:hover {
-          transform: translateY(2px);
-        }
-      }
-    }
-  }
-  
-
-  .skill-container {
-    min-height: 500px;
-    padding: 3rem 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 0 0 0 2rem;
-    border: 2px solid $mutedWhiteColor;
-    border-top: none;
-    border-right: none;
-
-    div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 0 2rem;
-    } 
     
-    svg {
-      width: 3rem;
-      height: 3rem;
-      fill: $redColor;
-    }
+  svg {
+    width: 3rem;
+    height: 3rem;
+    fill: $redColor;
   }
 }

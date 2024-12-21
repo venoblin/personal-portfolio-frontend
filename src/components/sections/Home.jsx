@@ -1,5 +1,6 @@
 import '../../styles/Home.css'
 import emojiTyping from '../../images/emoji-typing.gif'
+import Skills from '../Skills'
 
 const Home = () => {
   return (
@@ -15,11 +16,9 @@ const Home = () => {
             I'm <span className="highlight">Jonathan</span>,
           </span>
           <span className="wrapper">
-            a <span className="highlight">Software Engineer</span>!
+            a <span className="highlight">Full-Stack Engineer</span>!
           </span>
         </h1>
-
-        <p>Passionate about engineering software solutions.</p>
 
         <a
           className="btn"
@@ -29,6 +28,8 @@ const Home = () => {
           Let's Connect!
         </a>
       </div>
+
+      <Skills />
     </section>
   )
 }

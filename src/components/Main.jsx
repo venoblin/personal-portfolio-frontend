@@ -1,6 +1,5 @@
 import NavBar from './NavBar'
 import Home from './sections/Home'
-import Skills from './sections/Skills'
 import Projects from './sections/Projects'
 import Contact from './sections/Contact'
 
@@ -13,7 +12,6 @@ const Main = () => {
 
       <main>
         <Home />
-        <Skills />
         <Projects />
         <Contact />
       </main>
