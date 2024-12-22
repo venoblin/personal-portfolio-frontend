@@ -1,19 +1,13 @@
 @import './vars/variables.scss';
 
 section {
-  max-width: 1500px;
-  padding: 1rem 3rem;
+  padding: 1rem;
   margin: 0 auto 0 auto;
 }
 
 .App {
-  background: rgb(21,19,27);
-  background: linear-gradient(180deg, rgba(21,19,27,1) 0%, rgb(13, 12, 17) 100%);
-  color: $whiteColor;
-
-  main {
-    padding-top: 5rem;
-  }
+  color: $blackColor;
+  background: $whiteColor;
 
   h1 {
     font-size: 4em;

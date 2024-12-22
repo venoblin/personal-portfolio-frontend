@@ -1,12 +1,8 @@
 @import './vars/variables.scss';
 
 .Home {
-  padding-top: 4rem;
-  padding-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  padding: 0.5rem 0.5rem 0 0.5rem;
 
   .btn {
     margin-top: 1rem;
@@ -17,6 +13,19 @@
       font-size: 4.5em;
     }
   }
+}
+
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  background: $blackColor;
+  color: $whiteColor;
+  min-height: 100%;
+  width: 100%;
 }
 
 .emoji-wrapper {
