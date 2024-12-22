@@ -1,5 +1,6 @@
 import '../styles/NavBar.css'
 import { useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const NavBar = (props) => {
   const [isExpanded, setIsExpanded] = useState(false)
@@ -19,9 +20,9 @@ const NavBar = (props) => {
 
   return (
     <nav className={props.isScrolling ? 'NavBar scroll' : 'NavBar'} ref={navRef}>
-      <a href="/" className="link logo" onClick={hideMenu}>
+      <Link to="/" className="link logo" onClick={hideMenu}>
         Jon <span>/ Web Dev</span>
-      </a>
+      </Link>
       <div className="links-container">
         <a className="link" href="#projects" onClick={hideMenu}>
           Projects

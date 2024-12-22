@@ -12,6 +12,9 @@ section {
 
 .sections {
   padding: 0 0.5rem;
+  padding-top: 48rem;
+  position: relative;
+  z-index: 5;
 
   section:first-of-type {
     border-radius: 5rem 5rem 0 0;
@@ -23,9 +26,6 @@ section {
 }
 
 .App {
-  color: $whiteColor;
-  background: $blackColor;
-
   h1 {
     font-size: 4em;
   }
