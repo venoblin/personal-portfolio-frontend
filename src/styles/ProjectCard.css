@@ -1,9 +1,10 @@
 .ProjectCard {
   width: 400px;
-  padding: 1rem 1rem 7rem 1rem;
-  border-radius: 1rem;
-  background-color: #15131b;
+  border-radius: 10rem;
+  background-color: #dad7da;
+  border: 5px solid #15131b;
   position: relative;
+  overflow: hidden;
 }
 .ProjectCard img {
   width: 100%;
@@ -14,12 +15,16 @@
      object-position: center;
 }
 .ProjectCard .links {
+  width: 100%;
   padding: 2rem 0;
   display: flex;
+  justify-content: center;
   position: absolute;
   bottom: 0;
+  left: 0;
+  right: 0;
 }
-.ProjectCard .links .btn {
+.ProjectCard .links .btn:first-of-type {
   margin-right: 1rem;
 }
 .ProjectCard .title {
@@ -38,4 +43,8 @@
 }
 .ProjectCard .desc {
   margin-top: 1.5rem;
+}
+
+.info {
+  padding: 1rem 1rem 7rem 1rem;
 }/*# sourceMappingURL=ProjectCard.css.map */

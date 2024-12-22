@@ -8,7 +8,7 @@ const Projects = () => {
   const [projectSet, setProjectSet] = useState('featured')
 
   return (
-    <section className="Projects-class" id="projects">
+    <section className="Projects" id="projects">
       
       <div className="wrapper">
         <h2>Projects</h2>

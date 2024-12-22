@@ -1,16 +1,16 @@
-#projects {
+.Projects {
   width: 100%;
   max-width: 100%;
-  padding: 0;
+  padding: 4rem 0;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 0;
 }
-#projects .radio-btns {
+.Projects .radio-btns {
   display: flex;
   justify-content: center;
 }
-#projects .radio-btns button {
+.Projects .radio-btns button {
   padding: 1rem 2rem;
   background-color: #15131b;
   color: #8b8a8a;
@@ -18,41 +18,40 @@
   border: 2px solid #e12c44;
   transition: all 0.3s ease;
 }
-#projects .radio-btns button:first-of-type {
+.Projects .radio-btns button:first-of-type {
   border-radius: 1rem 0 0 1rem;
 }
-#projects .radio-btns button:last-of-type {
+.Projects .radio-btns button:last-of-type {
   border-radius: 0 1rem 1rem 0;
 }
-#projects .radio-btns button.active {
+.Projects .radio-btns button.active {
   border: 2px solid #dad7da;
   color: #dad7da;
   background: #e12c44;
 }
-#projects .radio-btns button:hover:not(.active) {
+.Projects .radio-btns button:hover:not(.active) {
   transform: translateY(2px);
 }
-#projects h2 {
+.Projects h2 {
   color: #15131b;
   border: none;
   margin: 0 auto;
 }
-#projects svg {
+.Projects svg {
   width: 100%;
   margin-bottom: -1rem;
 }
-#projects .wrapper {
+.Projects .wrapper {
   width: 100%;
   margin-top: 0;
   padding: 0 2rem;
-  background-color: #e12c44;
 }
-#projects .projects {
+.Projects .projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 1rem;
 }
-#projects .ProjectCard {
+.Projects .ProjectCard {
   margin: 0.5rem;
 }/*# sourceMappingURL=Projects.css.map */

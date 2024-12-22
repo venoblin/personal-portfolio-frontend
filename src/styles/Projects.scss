@@ -1,9 +1,9 @@
 @import './vars/variables.scss';
 
-#projects {
+.Projects {
   width: 100%;
   max-width: 100%;
-  padding: 0;
+  padding: 4rem 0;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 0;
@@ -57,7 +57,6 @@
     width: 100%;
     margin-top: 0;
     padding: 0 2rem;
-    background-color: $redColor;
   }
 
   .projects {
