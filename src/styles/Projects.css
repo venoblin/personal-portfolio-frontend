@@ -1,40 +1,34 @@
 .Projects {
   width: 100%;
   max-width: 100%;
-  padding: 4rem 0;
+  padding: 1rem 0;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 0;
 }
 .Projects .radio-btns {
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
 }
 .Projects .radio-btns button {
+  margin: 0 0.25rem;
   padding: 1rem 2rem;
-  background-color: #15131b;
-  color: #8b8a8a;
+  color: #15131b;
+  background: none;
   font-weight: bold;
-  border: 2px solid #e12c44;
+  border-bottom: 5px solid #15131b;
   transition: all 0.3s ease;
 }
-.Projects .radio-btns button:first-of-type {
-  border-radius: 1rem 0 0 1rem;
-}
-.Projects .radio-btns button:last-of-type {
-  border-radius: 0 1rem 1rem 0;
-}
 .Projects .radio-btns button.active {
-  border: 2px solid #dad7da;
   color: #dad7da;
   background: #e12c44;
+  border: none;
 }
 .Projects .radio-btns button:hover:not(.active) {
   transform: translateY(2px);
 }
 .Projects h2 {
-  color: #15131b;
-  border: none;
   margin: 0 auto;
 }
 .Projects svg {

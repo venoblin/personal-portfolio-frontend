@@ -3,35 +3,29 @@
 .Projects {
   width: 100%;
   max-width: 100%;
-  padding: 4rem 0;
+  padding: 1rem 0;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 0;
 
   .radio-btns {
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     
     button {
+      margin: 0 0.25rem;
       padding: 1rem 2rem; 
-      background-color: $blackColor;
-      color: $mutedWhiteColor;
+      color: $blackColor;
+      background: none;
       font-weight: bold;
-      border: 2px solid $redColor;
+      border-bottom: 5px solid $blackColor;
       @include defaultTransition(all);
       
-      &:first-of-type {
-        border-radius: 1rem 0 0 1rem;
-      }
-
-      &:last-of-type {
-        border-radius: 0 1rem 1rem 0;
-      }
-      
       &.active {
-        border: 2px solid $whiteColor;
         color: $whiteColor;
         background: $redColor;
+        border: none;
       }
 
       &:hover {
@@ -43,8 +37,6 @@
   }
 
   h2 {
-    color: $blackColor;
-    border: none;
     margin: 0 auto;
   }
 

@@ -15,7 +15,8 @@ section {
   width: fit-content;
   font-size: 3em;
   margin-bottom: 1rem;
-  border-bottom: 1px solid #e12c44;
+  border-bottom: 10px solid #e12c44;
+  padding: 0 1rem;
 }
 .App li,
 .App p,
