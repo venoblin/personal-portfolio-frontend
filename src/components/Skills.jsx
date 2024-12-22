@@ -1,8 +1,10 @@
 import '../styles/Skills.css'
-import { useState } from 'react'
-import RadioButtons from './RadioButtons'
 
 const Skills = () => {
+
+  const skills = {
+    
+  }
 
   return (
     <div className="Skills-class">
