@@ -7,7 +7,7 @@ const Home = (props) => {
   const innerWrapperRef = useRef()
 
   useEffect(() => {
-    if (props.scrollState.isScrolling && props.scrollState.currentScrollY <= 50) {
+    if (props.scrollState.isScrolling && props.scrollState.currentScrollY <= 75) {
       innerWrapperRef.current.style.margin = `${props.scrollState.currentScrollY}px 0 0 0`
     }
   })
