@@ -5,11 +5,11 @@ import Skills from '../Skills'
 const Home = () => {
   return (
     <section className="Home">
-      <div className="wrapper-top">
+      <div className='emoji-wrapper'>
         <img className="emoji" src={emojiTyping} alt="Emoji typing" />
       </div>
-
-      <div className="wrapper-bottom">
+      
+      <div>
         <h1 className="intro-heading">
           Hello there!{' '}
           <span className="wrapper">
@@ -19,7 +19,6 @@ const Home = () => {
             a <span className="highlight">Full-Stack Engineer</span>!
           </span>
         </h1>
-
         <a
           className="btn"
           href="https://www.linkedin.com/in/jonathanvillagomezhernandez/"
@@ -28,7 +27,6 @@ const Home = () => {
           Let's Connect!
         </a>
       </div>
-
       <Skills />
     </section>
   )

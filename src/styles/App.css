@@ -1,15 +1,13 @@
+section {
+  max-width: 1500px;
+  padding: 1rem 3rem;
+  margin: 0 auto 0 auto;
+}
+
 .App {
   background: rgb(21, 19, 27);
   background: linear-gradient(180deg, rgb(21, 19, 27) 0%, rgb(13, 12, 17) 100%);
   color: #dad7da;
-}
-.App section {
-  max-width: 1500px;
-  padding: 1rem 3rem;
-  margin: 0 auto 6rem auto;
-}
-.App section.Home {
-  margin-bottom: 0;
 }
 .App main {
   padding-top: 5rem;

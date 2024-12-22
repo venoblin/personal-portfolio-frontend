@@ -1,47 +1,15 @@
 @import './vars/variables.scss';
 
 .Home {
-  margin-bottom: 0;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 
-  .wrapper-bottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 1;
-  }
-
-  .intro-heading {
-    line-height: 0.75em;
-  
-    span.wrapper {
-      display: block;
-    }
-  
-    span.highlight {
-      color: $redColor;
-    }
-  }
-
-  .wrapper-top {
-    max-width: 200px;
-    height: fit-content;
-    border-radius: 50%;
-    background-color: $redColor;
-    overflow: hidden;
-  }
-
-  .emoji {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    transform: translateY(20px);
-  }
-
   .btn {
-    margin-top: 2.5rem;
+    margin-top: 1rem;
   }
 
   @media (max-width: 530px) {
@@ -51,3 +19,32 @@
   }
 }
 
+.emoji-wrapper {
+  max-width: 200px;
+  height: fit-content;
+  border-radius: 50%;
+  background-color: $redColor;
+  overflow: hidden;
+
+  .emoji {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: translateY(20px);
+  }  
+}
+.intro-heading {
+  line-height: 0.75em;
+
+  span.wrapper {
+    display: block;
+  }
+
+  span.highlight {
+    color: $redColor;
+  }
+}
+
+.Skills {
+  margin-top: 2rem;
+}

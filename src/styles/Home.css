@@ -1,25 +1,21 @@
 .Home {
-  margin-bottom: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.Home .wrapper-bottom {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 1;
+  align-items: center;
 }
-.Home .intro-heading {
-  line-height: 0.75em;
+.Home .btn {
+  margin-top: 1rem;
 }
-.Home .intro-heading span.wrapper {
-  display: block;
+@media (max-width: 530px) {
+  .Home h1 {
+    font-size: 4.5em;
+  }
 }
-.Home .intro-heading span.highlight {
-  color: #e12c44;
-}
-.Home .wrapper-top {
+
+.emoji-wrapper {
   max-width: 200px;
   height: -moz-fit-content;
   height: fit-content;
@@ -27,7 +23,7 @@
   background-color: #e12c44;
   overflow: hidden;
 }
-.Home .emoji {
+.emoji-wrapper .emoji {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -35,11 +31,17 @@
      object-position: center;
   transform: translateY(20px);
 }
-.Home .btn {
-  margin-top: 2.5rem;
+
+.intro-heading {
+  line-height: 0.75em;
 }
-@media (max-width: 530px) {
-  .Home h1 {
-    font-size: 4.5em;
-  }
+.intro-heading span.wrapper {
+  display: block;
+}
+.intro-heading span.highlight {
+  color: #e12c44;
+}
+
+.Skills {
+  margin-top: 2rem;
 }/*# sourceMappingURL=Home.css.map */

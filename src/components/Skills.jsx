@@ -4,7 +4,7 @@ import skills from '../skills';
 const Skills = () => {
 
   return (
-    <div className="Skills-class">
+    <div className="Skills">
 
       {skills.map(skill => (
         <div className='skill'>
