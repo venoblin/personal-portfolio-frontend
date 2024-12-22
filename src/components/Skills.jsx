@@ -9,7 +9,7 @@ const Skills = () => {
       {skills.map(skill => (
         <div className='skill'>
           {skill.svg}
-          <p>{skill.name}</p>
+          <p className='name'>{skill.name}</p>
         </div>
       ))}
     

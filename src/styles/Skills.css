@@ -1,5 +1,16 @@
-.Skills-class svg {
-  width: 3rem;
-  height: 3rem;
-  fill: #e12c44;
+.Skills-class {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+svg {
+  width: 2rem;
+  height: 2rem;
 }/*# sourceMappingURL=Skills.css.map */
