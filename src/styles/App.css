@@ -1,11 +1,26 @@
 section {
   padding: 1rem;
   margin: 0 auto 0 auto;
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: #15131b;
+  background: #dad7da;
+}
+
+.sections {
+  padding: 0 0.5rem;
+}
+.sections section:first-of-type {
+  border-radius: 5rem 5rem 0 0;
+}
+.sections section:last-of-type {
+  border-radius: 0 0 10px 10px;
 }
 
 .App {
-  color: #15131b;
-  background: #dad7da;
+  color: #dad7da;
+  background: #15131b;
 }
 .App h1 {
   font-size: 4em;

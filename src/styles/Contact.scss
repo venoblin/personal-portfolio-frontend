@@ -1,7 +1,6 @@
 @import './vars/variables.scss';
 
-.Contact-class {
-  
+.Contact {
   .wrapper {
     display: flex;
     position: relative;
@@ -31,7 +30,7 @@
     input, textarea {
       margin-bottom: 1rem;
       padding: 1rem;
-      background-color: transparent;
+      background: $blackColor;
       color: $whiteColor;
       outline: none;
       border: none;
@@ -52,30 +51,6 @@
 
   button {
     margin-top: 0.5rem;
-  }
-
-  .emoji-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .emoji-background {
-    width: fit-content;
-    position: relative;
-    z-index: 0;
-
-    .emoji {
-      width: 100%;
-      height: 500px;
-    }
-  
-    svg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
   }
 }
 

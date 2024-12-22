@@ -1,11 +1,9 @@
 import '../styles/NavBar.css'
 import { useRef, useEffect, useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
 
-const NavBar = () => {
+const NavBar = (props) => {
   const [isExpanded, setIsExpanded] = useState(false)
   const navRef = useRef()
-  const location = useLocation()
 
   const showMenu = () => {
     navRef.current.classList.toggle('show-menu')
@@ -19,18 +17,8 @@ const NavBar = () => {
     setIsExpanded(!isExpanded)
   }
 
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50 && location.pathname === '/') {
-        navRef.current.classList.add('scroll')
-      } else {
-        navRef.current.classList.remove('scroll')
-      }
-    })
-  }, [])
-
   return (
-    <nav className="NavBar" ref={navRef}>
+    <nav className={props.isScrolling ? 'NavBar scroll' : 'NavBar'} ref={navRef}>
       <a href="/" className="link logo" onClick={hideMenu}>
         Jon <span>/ Web Dev</span>
       </a>

@@ -1,6 +1,22 @@
 .Home {
   width: 100%;
-  padding: 0.5rem 0.5rem 0 0.5rem;
+  padding: 0;
+}
+.Home .emoji-wrapper {
+  max-width: 200px;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 50%;
+  background-color: #e12c44;
+  overflow: hidden;
+}
+.Home .emoji-wrapper .emoji {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transform: translateY(20px);
 }
 .Home .btn {
   margin-top: 1rem;
@@ -15,30 +31,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 2rem;
   padding-top: 8rem;
   padding-bottom: 2rem;
   background: #15131b;
   color: #dad7da;
   min-height: 100%;
   width: 100%;
-}
-
-.emoji-wrapper {
-  max-width: 200px;
-  height: -moz-fit-content;
-  height: fit-content;
-  border-radius: 50%;
-  background-color: #e12c44;
-  overflow: hidden;
-}
-.emoji-wrapper .emoji {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  transform: translateY(20px);
 }
 
 .intro-heading {
@@ -52,5 +50,5 @@
 }
 
 .Skills {
-  margin-top: 2rem;
+  margin-top: 4rem;
 }/*# sourceMappingURL=Home.css.map */
