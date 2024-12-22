@@ -31,10 +31,14 @@
   }
 }
 
-.home-wrapper {
+.inner-wrapper {
+  @include defaultTransition(all);
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.home-wrapper {
   padding-top: 8rem;
   padding-bottom: 2rem;
   background: $blackColor;

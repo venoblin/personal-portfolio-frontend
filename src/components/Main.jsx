@@ -7,15 +7,24 @@ import Contact from './sections/Contact'
 
 
 const Main = () => {
-  const [isScrolling, setIsStrolling] = useState(false)
-    const location = useLocation()
+  const [scrollState, setScrollState] = useState({
+    isScrolling: false,
+    currentScrollY: 0
+  })
+  const location = useLocation()
 
   useEffect(() => {
       window.addEventListener('scroll', () => {
         if (window.scrollY > 50 && location.pathname === '/') {
-          setIsStrolling(true)
+          setScrollState({
+            isScrolling: true,
+            currentScrollY: window.scrollY - 50
+          })
         } else {
-          setIsStrolling(false)
+          setScrollState({
+            isScrolling: false,
+            currentScrollY: 0
+          })
         }
       })
   }, [])
@@ -23,11 +32,11 @@ const Main = () => {
   return (
     <div>
       <header>
-        <NavBar isScrolling={isScrolling} />
+        <NavBar scrollState={scrollState} />
       </header>
 
       <main>
-        <Home />
+        <Home scrollState={scrollState} />
         <div className='sections'>
           <Projects />
           <Contact />

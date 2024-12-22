@@ -19,7 +19,7 @@ const NavBar = (props) => {
   }
 
   return (
-    <nav className={props.isScrolling ? 'NavBar scroll' : 'NavBar'} ref={navRef}>
+    <nav className={props.scrollState.isScrolling ? 'NavBar scroll' : 'NavBar'} ref={navRef}>
       <Link to="/" className="link logo" onClick={hideMenu}>
         Jon <span>/ Web Dev</span>
       </Link>
