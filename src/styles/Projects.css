@@ -24,6 +24,7 @@
   color: #dad7da;
   background: #e12c44;
   border: none;
+  border-radius: 10px;
 }
 .Projects .radio-btns button:hover:not(.active) {
   transform: translateY(2px);
