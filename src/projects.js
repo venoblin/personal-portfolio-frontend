@@ -73,7 +73,7 @@ const projects = [
     title: 'Download File Sorter',
     types: ['tools'],
     image: downloadFileSorterPng,
-    demo: '',
+    demo: 'https://github.com/venoblin/download-file-sorter?tab=readme-ov-file#installation',
     repo: 'https://github.com/venoblin/download-file-sorter',
     techs: ['Python'],
     desc: 'Sorts files from download directory into user specified directories in a Unix based system.'

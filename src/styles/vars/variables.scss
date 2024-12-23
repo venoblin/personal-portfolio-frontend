@@ -16,7 +16,7 @@ $mutedWhiteColor: #8b8a8a;
 } 
 
 @mixin link() {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   font-weight: 200;
   text-decoration: none;
   text-transform: uppercase;

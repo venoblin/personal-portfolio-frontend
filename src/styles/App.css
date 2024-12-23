@@ -14,7 +14,7 @@ section .wrapper {
 
 .sections {
   padding: 0 0.5rem;
-  padding-top: 40rem;
+  margin-top: 40rem;
   position: relative;
   z-index: 5;
 }
@@ -58,7 +58,7 @@ section .wrapper {
   border: none;
 }
 .App .link {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   font-weight: 200;
   text-decoration: none;
   text-transform: uppercase;

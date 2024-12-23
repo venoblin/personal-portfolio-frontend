@@ -1,6 +1,9 @@
 .About .emoji {
   height: 400px;
 }
+.About .wrapper {
+  display: flex;
+}
 
 .about-me {
   max-width: 500px;

@@ -2,9 +2,11 @@
   width: 100%;
   padding: 0;
   position: fixed;
-  z-index: 0;
   color: #dad7da;
   background: #15131b;
+  z-index: 1;
+  top: 0;
+  padding-top: 5rem;
 }
 .Home .emoji-wrapper {
   max-width: 200px;

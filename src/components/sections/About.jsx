@@ -3,7 +3,7 @@ import emojiWaving from '../../images/emoji-waving.gif'
 
 const About = () => {
   return (
-    <section className='About' id='#about'>
+    <section className='About' id='about'>
       <div className='wrapper'>
         <div className='about-me'>
           <h2>About Me</h2>
