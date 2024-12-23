@@ -4,6 +4,9 @@
   width: 100%;
   padding: 0;
   position: fixed;
+  z-index: 0;
+  color: $whiteColor;
+  background: $blackColor;
 
   .emoji-wrapper {
     max-width: 200px;
@@ -39,8 +42,6 @@
 }
 
 .home-wrapper {
-  padding-top: 8rem;
-  padding-bottom: 2rem;
   background: $blackColor;
   color: $whiteColor;
   min-height: 100%;

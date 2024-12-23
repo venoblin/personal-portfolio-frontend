@@ -2,6 +2,10 @@
   width: 100%;
   padding: 5rem 0;
   text-align: center;
+  position: relative;
+  z-index: 5;
+  color: #dad7da;
+  background: #15131b;
 }
 .Foot p {
   font-size: 1em;

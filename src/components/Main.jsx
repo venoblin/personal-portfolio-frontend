@@ -31,9 +31,7 @@ const Main = () => {
   
   return (
     <div>
-      <header>
-        <NavBar scrollState={scrollState} />
-      </header>
+      <NavBar scrollState={scrollState} />
 
       <main>
         <Home scrollState={scrollState} />
