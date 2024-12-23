@@ -5,7 +5,7 @@ $darkGrayColor: #2E2E3A;
 $whiteColor: #dad7da;
 $mutedWhiteColor: #8b8a8a; 
 
-$bgColor: $darkGrayColor;
+$bgColor: #141414;
 
 @mixin defaultTransition($property) {
   transition: $property 0.3s ease;

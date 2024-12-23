@@ -24,7 +24,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #dad7da;
-  background: #2E2E3A;
+  background: #141414;
 }
 
 body.show-menu {
@@ -38,7 +38,7 @@ body.show-menu {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2E2E3A;
+  background: #141414;
 }
 
 /* Handle */

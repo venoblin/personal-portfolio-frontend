@@ -14,7 +14,7 @@
   @include defaultTransition(all);
 
   &.scroll {
-    background: rgba( 21, 19, 27, 0.95 );
+    background: rgba($bgColor, 0.95 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
   }
