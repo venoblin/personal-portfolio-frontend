@@ -8,6 +8,11 @@ section {
   padding-right: 0.5rem;
   color: $blackColor;
   background: $whiteColor;
+
+  .wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
 }
 
 .sections {
@@ -34,7 +39,7 @@ section {
 
   h2 {
     width: fit-content;
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom: 1rem;
     border-bottom: 10px solid $redColor;
     padding: 0 1rem;

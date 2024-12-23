@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom'
 import NavBar from './NavBar'
 import Home from './sections/Home'
 import Projects from './sections/Projects'
+import About from './sections/About'
 import Contact from './sections/Contact'
 
 
@@ -37,6 +38,7 @@ const Main = () => {
         <Home scrollState={scrollState} />
         <div className='sections'>
           <Projects />
+          <About />
           <Contact />
         </div>
       </main>

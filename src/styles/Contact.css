@@ -1,7 +1,3 @@
-.Contact .wrapper {
-  display: flex;
-  position: relative;
-}
 .Contact .upper-form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

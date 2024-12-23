@@ -27,6 +27,9 @@ const NavBar = (props) => {
         <a className="link" href="#projects" onClick={hideMenu}>
           Projects
         </a>
+        <a className="link" href="#about" onClick={hideMenu}>
+          About
+        </a>
         <a className="link" href="#contact" onClick={hideMenu}>
           Contact
         </a>

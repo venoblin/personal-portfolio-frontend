@@ -42,9 +42,9 @@ const Contact = () => {
 
   return (
     <section className="Contact" id="contact">
-      <h2>Contact</h2>
 
       <div className="wrapper">
+      <h2>Contact</h2>
         <form onSubmit={handleSubmit}>
           <div className="upper-form">
             <label htmlFor="name">Name</label>

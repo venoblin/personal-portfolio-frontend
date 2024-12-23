@@ -1,15 +1,5 @@
-.Projects {
-  width: 100%;
-  max-width: 100%;
-  padding: 1rem 0;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-}
 .Projects .radio-btns {
   margin-top: 1rem;
-  display: flex;
-  justify-content: center;
 }
 .Projects .radio-btns button {
   margin: 0 0.25rem;
@@ -29,22 +19,14 @@
 .Projects .radio-btns button:hover:not(.active) {
   transform: translateY(2px);
 }
-.Projects h2 {
-  margin: 0 auto;
-}
 .Projects svg {
   width: 100%;
   margin-bottom: -1rem;
 }
-.Projects .wrapper {
-  width: 100%;
-  margin-top: 0;
-  padding: 0 2rem;
-}
 .Projects .projects {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 1rem;
 }
 .Projects .ProjectCard {
