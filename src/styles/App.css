@@ -14,7 +14,7 @@ section .wrapper {
 
 .border {
   overflow: hidden;
-  background: #15131b;
+  background: #2E2E3A;
 }
 .border svg {
   width: 100%;

@@ -1,17 +1,18 @@
 @import './vars/variables.scss';
 
-.About {  
+.About {
+  
   .emoji {
     height: 400px;
   }
-
+  
   .emoji-wrapper {
     padding: 0.5rem;
     background: $redColor;
     margin: 0 auto;
     border-radius: 30% 70% 67% 33% / 32% 30% 70% 68% ;
   }
-
+  
   .wrapper {
     display: flex;
     margin: 4rem auto;

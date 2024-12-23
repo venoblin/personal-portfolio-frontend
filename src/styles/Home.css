@@ -3,7 +3,7 @@
   padding: 0;
   position: fixed;
   color: #dad7da;
-  background: #15131b;
+  background: #2E2E3A;
   z-index: 1;
   top: 0;
   padding-top: 5rem;
@@ -45,7 +45,6 @@
 }
 
 .home-wrapper {
-  background: #15131b;
   color: #dad7da;
   min-height: 100%;
   width: 100%;

@@ -26,7 +26,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $whiteColor;
-  background: $blackColor;
+  background: $bgColor;
 }
 
 body.show-menu {
@@ -40,7 +40,7 @@ body.show-menu {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: $blackColor;
+  background: $bgColor;
 }
 
 /* Handle */

@@ -5,7 +5,7 @@
   padding: 0;
   position: fixed;
   color: $whiteColor;
-  background: $blackColor;
+  background: $bgColor;
   z-index: 1;
   top: 0;
   padding-top: 5rem;
@@ -48,7 +48,6 @@
 }
 
 .home-wrapper {
-  background: $blackColor;
   color: $whiteColor;
   min-height: 100%;
   width: 100%;
