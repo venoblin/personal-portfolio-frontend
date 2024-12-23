@@ -8,7 +8,7 @@ const Skills = () => {
       <p className='command'>
         <span className='keyword'>void </span> 
         <span className='name'>displayTechnologies </span> 
-        <span className='braces'>{`() {`}</span>
+        <span className='braces'>{`( ) {`}</span>
       </p>
 
       <div className='techs'>
