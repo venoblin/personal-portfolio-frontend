@@ -1,9 +1,5 @@
 @import './vars/variables.scss';
 
-.Skills {
-  display: flex;
-}
-
 .skill {
   display: flex;
   align-items: center;
@@ -14,4 +10,20 @@
 svg {
   width: 2rem;
   height: 2rem;
+}
+
+p.command {
+  font-size: 1.75em;
+  
+  .keyword {
+    color: $mutedWhiteColor;
+  }
+
+  .name {
+    color: $redColor;
+  }
+}
+
+.techs {
+  display: flex;
 }

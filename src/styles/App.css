@@ -23,7 +23,7 @@ section .wrapper {
 
 .sections {
   padding: 0 0.5rem;
-  margin-top: 45rem;
+  margin-top: 50rem;
   position: relative;
   z-index: 5;
 }

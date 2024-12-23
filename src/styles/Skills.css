@@ -1,7 +1,3 @@
-.Skills {
-  display: flex;
-}
-
 .skill {
   display: flex;
   align-items: center;
@@ -12,4 +8,18 @@
 svg {
   width: 2rem;
   height: 2rem;
+}
+
+p.command {
+  font-size: 1.75em;
+}
+p.command .keyword {
+  color: #8b8a8a;
+}
+p.command .name {
+  color: #e12c44;
+}
+
+.techs {
+  display: flex;
 }/*# sourceMappingURL=Skills.css.map */
