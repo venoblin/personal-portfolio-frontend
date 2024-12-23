@@ -12,18 +12,26 @@ section .wrapper {
   margin: 0 auto;
 }
 
+.border {
+  overflow: hidden;
+  background: #15131b;
+}
+.border svg {
+  width: 100%;
+  fill: #dad7da;
+}
+
 .sections {
   padding: 0 0.5rem;
-  margin-top: 40rem;
+  margin-top: 45rem;
   position: relative;
   z-index: 5;
 }
 .sections section:first-of-type {
   border-radius: 5rem 5rem 0 0;
-  padding-top: 2rem;
+  padding-top: 4rem;
 }
 .sections section:last-of-type {
-  border-radius: 0 0 10px 10px;
   padding-bottom: 4rem;
 }
 

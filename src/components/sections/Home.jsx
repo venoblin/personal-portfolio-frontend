@@ -30,6 +30,7 @@ const Home = (props) => {
                 a <span className="highlight">Full-Stack Engineer</span>!
               </span>
             </h1>
+            <p className='location'>Located in Wilmington, Delaware 📍</p>
             <a
               className="btn"
               href="https://www.linkedin.com/in/jonathanvillagomezhernandez/"

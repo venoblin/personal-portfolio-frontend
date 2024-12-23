@@ -33,6 +33,10 @@
   }
 }
 
+.location {
+  margin-top: 5px;
+}
+
 .inner-wrapper {
   transition: all 0.3s ease;
   display: flex;
