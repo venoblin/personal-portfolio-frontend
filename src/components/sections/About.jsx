@@ -8,9 +8,11 @@ const About = () => {
         <div className='about-me'>
           <h2>About Me</h2>
           <p>
-            Hi, I'm Jonathan, a highly motivated software engineer with a passion for building innovative and user-friendly 
-            applications. I recently graduated from General Assembly's Software Engineering Immersive program and I'm eager to 
-            contribute my skills to a dynamic team.
+            Hi, I'm Jonathan, a highly motivated Full-Stack Developer. 
+            I enjoy solving issues, building things, and everything involving technology, which naturally
+            led me to coding. While I do specialize in Full-Stack Development, I love delving into other aspects
+            of programming in my free time. Outside of programming, I enjoy spending time with friends and family, 
+            working out, gaming, and everything Star Wars.
           </p>
         </div>
 

@@ -1,7 +1,6 @@
 import '../../styles/Home.css'
 import emojiTyping from '../../images/emoji-typing.gif'
 import { useEffect, useRef } from 'react'
-import Skills from '../Skills'
 
 const Home = (props) => {
   const innerWrapperRef = useRef()
@@ -27,7 +26,7 @@ const Home = (props) => {
                 I'm <span className="highlight">Jonathan</span>,
               </span>
               <span className="wrapper">
-                a <span className="highlight">Full-Stack Engineer</span>!
+                a <span className="highlight">Full-Stack Developer</span>!
               </span>
             </h1>
             <p className='location'>Located in Wilmington, Delaware 📍</p>
