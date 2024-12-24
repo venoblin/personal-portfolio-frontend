@@ -39,7 +39,6 @@ const Home = (props) => {
               Let's Connect!
             </a>
           </div>
-          <Skills />
         </div>
       </div>
     </section>

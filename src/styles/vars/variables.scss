@@ -22,7 +22,7 @@ $bgColor: #141414;
   padding: 0.5rem 1rem;
   font-weight: 200;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 0.2em;
   color: $whiteColor;
   @include defaultTransition(color);

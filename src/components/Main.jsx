@@ -5,6 +5,7 @@ import Home from './sections/Home'
 import Projects from './sections/Projects'
 import About from './sections/About'
 import Contact from './sections/Contact'
+import Skills from './Skills'
 
 
 const Main = () => {
@@ -37,6 +38,7 @@ const Main = () => {
       <main>
         <Home scrollState={scrollState} />
         <div className='sections'>
+          <Skills />
           <Projects />
           <About />
           <Contact />
