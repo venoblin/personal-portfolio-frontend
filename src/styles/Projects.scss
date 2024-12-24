@@ -1,60 +1,7 @@
 @import './vars/variables.scss';
 
 .Projects {
-
-  .category {
-    text-transform: capitalize;
-  }
-
-  p.category {
-    cursor: pointer;
-  }
-
-  span.category {
-    display: inline;
-    background: $redColor;
-    padding: 0 0.5rem;
-    border-radius: 5px 5px 0 0;
-    cursor: pointer;
-
-    svg {
-      width: 15px;
-      height: 15px;
-      margin: auto 0;
-      margin-left: 0.5rem;
-    }
-  }
   
-  .radio-btns {    
-    button {
-      margin: 0 0.25rem;
-      padding: 1rem 2rem; 
-      color: $blackColor;
-      background: none;
-      font-weight: bold;
-      border-bottom: 5px solid $blackColor;
-      @include defaultTransition(all);
-      
-      &.active {
-        color: $whiteColor;
-        background: $redColor;
-        border: none;
-        border-radius: 10px;
-      }
-
-      &:hover {
-        &:not(.active) {
-          transform: translateY(2px);
-        }
-      }
-    }
-  }
-
-  svg {
-    width: 100%;
-    margin-bottom: -1rem;
-  }
-
   .projects {
     display: flex;
     justify-content: center;
@@ -64,5 +11,73 @@
 
   .ProjectCard {
     margin: 0.5rem;
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+}
+
+.category {
+  text-transform: capitalize;
+}
+
+button.category {
+  display: block;
+  margin-bottom: 0.5rem;
+  background: none;
+  font-weight: 800;
+  @include defaultTransition(color);
+
+  &:hover {
+    color: $whiteColor;
+  }
+}
+
+span.category {
+  display: inline;
+  background: $redColor;
+  padding: 0 0.5rem;
+  border-radius: 5px 5px 0 0;
+  cursor: default;
+  @include defaultTransition(all);
+
+  svg {
+    width: 15px;
+    height: 15px;
+    margin: auto 0;
+    margin-left: 0.5rem;
+    @include defaultTransition(all);
+  }
+
+  &.active {
+    color: $whiteColor;
+
+    svg {
+      fill: $whiteColor;
+    }
+  }
+}
+
+.switcher {
+  margin-top: -10px;
+  position: relative;
+}
+
+.categories {
+  font-size: 0;
+  padding: 0;
+  width: 0;
+  position: absolute;
+  top: 0;
+  background: $redColor;
+  z-index: 8;
+  border-radius: 0 0 5px 5px;
+  @include defaultTransition(all);
+  
+  &.active {
+    width: 200px;
+    font-size: initial;
+    padding: 0.5rem 1.5rem;
   }
 }
