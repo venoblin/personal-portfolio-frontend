@@ -23,8 +23,7 @@ const Projects = () => {
       <div className="wrapper">
         <div className='h2-switcher'>
           <h2>
-            <span className='category'>{projectCategory} </span> 
-            Projects
+            <span className='category'>{projectCategory}</span> Projects
           </h2>
 
           <div className='switcher'>

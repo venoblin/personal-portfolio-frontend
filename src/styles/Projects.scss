@@ -9,6 +9,12 @@
   p.category {
     cursor: pointer;
   }
+
+  span.category {
+    background: $redColor;
+    padding: 0 0.5rem;
+    border-radius: 5px 5px 0 0;
+  }
   
   .radio-btns {    
     button {
