@@ -4,7 +4,7 @@ section {
   width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  color: #15131b;
+  color: #141414;
   background: #dad7da;
 }
 section .wrapper {
@@ -67,10 +67,8 @@ section .wrapper {
 }
 .App .link {
   padding: 0.5rem 1rem;
-  font-weight: 200;
   text-decoration: none;
   text-transform: capitalize;
-  letter-spacing: 0.2em;
   color: #dad7da;
   transition: color 0.3s ease;
 }
@@ -88,7 +86,7 @@ section .wrapper {
   text-transform: capitalize;
   font-weight: bold;
   background-color: #09BC8A;
-  color: #15131b;
+  color: #141414;
   transition: all 0.3s ease;
 }
 .App .btn:hover {
@@ -96,7 +94,6 @@ section .wrapper {
 }
 .App .logo {
   font-size: 1.5em;
-  font-weight: 400;
 }
 .App .logo:hover {
   color: #e12c44;

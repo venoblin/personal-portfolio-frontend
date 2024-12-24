@@ -20,10 +20,8 @@ $bgColor: $blackColor;
 
 @mixin link() {
   padding: 0.5rem 1rem;
-  font-weight: 200;
   text-decoration: none;
   text-transform: capitalize;
-  letter-spacing: 0.2em;
   color: $whiteColor;
   @include defaultTransition(color);
   @include hoverMutedWhite();
@@ -31,7 +29,6 @@ $bgColor: $blackColor;
 
 @mixin logo() {
   font-size: 1.5em;
-  font-weight: 400;
 
   &:hover {
     color: $redColor;

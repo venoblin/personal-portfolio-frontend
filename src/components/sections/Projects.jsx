@@ -23,7 +23,14 @@ const Projects = () => {
       <div className="wrapper">
         <div className='h2-switcher'>
           <h2>
-            <span className='category'>{projectCategory}</span> Projects
+            <span className='category'>
+              {projectCategory}
+              <span className='indicator'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+	                <path d="M5.143 9.847a1 1 0 0 0 1.715 0l3.999-6.665a1 1 0 0 0-.858-1.515H2.001a1 1 0 0 0-.858 1.515z" />
+                </svg>
+              </span>
+            </span> Projects
           </h2>
 
           <div className='switcher'>

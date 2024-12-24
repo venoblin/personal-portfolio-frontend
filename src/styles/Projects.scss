@@ -11,9 +11,18 @@
   }
 
   span.category {
+    display: inline;
     background: $redColor;
     padding: 0 0.5rem;
     border-radius: 5px 5px 0 0;
+    cursor: pointer;
+
+    svg {
+      width: 15px;
+      height: 15px;
+      margin: auto 0;
+      margin-left: 0.5rem;
+    }
   }
   
   .radio-btns {    
