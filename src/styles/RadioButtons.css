@@ -1,3 +1,7 @@
+.radio-btns {
+  width: -moz-max-content;
+  width: max-content;
+}
 .radio-btns button {
   text-transform: capitalize;
 }/*# sourceMappingURL=RadioButtons.css.map */

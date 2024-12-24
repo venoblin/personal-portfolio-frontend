@@ -22,4 +22,11 @@ p.command .name {
 
 .techs {
   display: flex;
+}
+
+.code-block {
+  color: #dad7da;
+  background: #141414;
+  padding: 1rem;
+  border-radius: 10px;
 }/*# sourceMappingURL=Skills.css.map */

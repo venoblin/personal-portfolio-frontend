@@ -5,27 +5,40 @@ import ProjectCard from '../ProjectCard'
 import RadioButtons from '../RadioButtons'
 
 const Projects = () => {
-  const [projectSet, setProjectSet] = useState('featured')
+  const [projectCategory, setProjectCategory] = useState('featured')
+  const categories = [
+    'featured', 
+    'web', 
+    'games', 
+    'tools'
+  ]
+
+  const switchCategory = (category) => {
+    setProjectCategory(category)
+  }
 
   return (
     <section className="Projects" id="projects">
       
       <div className="wrapper">
-        <h2>Projects</h2>
+        <div className='h2-switcher'>
+          <h2>
+            <span className='category'>{projectCategory} </span> 
+            Projects
+          </h2>
 
-        <RadioButtons labels={[
-            'featured', 
-            'web', 
-            'games', 
-            'tools'
-          ]}
-          state={projectSet}
-          setState={setProjectSet}
-        />
+          <div className='switcher'>
+            {categories.filter((category) => {
+              return category !== projectCategory
+            }).map((category) => (
+              <p className='category' key={category} onClick={() => switchCategory(category)}>{category}</p>
+            ))}
+          </div>
+        </div>
 
         <div className="projects">
           {projects.filter((project) => {
-            return projectSet === "all" || project.types.some((t) => t.toLowerCase() === projectSet.toLowerCase());
+            return projectCategory === "all" || project.types.some((t) => t.toLowerCase() === projectCategory.toLowerCase())
           }).map((project) => (
             <ProjectCard key={project.title} project={project} />
           ))}

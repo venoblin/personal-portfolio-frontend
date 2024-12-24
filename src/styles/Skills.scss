@@ -27,3 +27,10 @@ p.command {
 .techs {
   display: flex;
 }
+
+.code-block {
+  color: $whiteColor;
+  background: $blackColor;
+  padding: 1rem;
+  border-radius: 10px;
+}

@@ -1,11 +1,11 @@
 $redColor: #e12c44;
 $greenColor: #09BC8A;
-$blackColor: #15131b;
+$blackColor: #141414;
 $darkGrayColor: #2E2E3A;
 $whiteColor: #dad7da;
 $mutedWhiteColor: #8b8a8a; 
 
-$bgColor: #141414;
+$bgColor: $blackColor;
 
 @mixin defaultTransition($property) {
   transition: $property 0.3s ease;
