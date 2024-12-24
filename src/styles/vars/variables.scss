@@ -8,7 +8,7 @@ $mutedWhiteColor: #8b8a8a;
 $bgColor: $blackColor;
 
 @mixin defaultTransition($property) {
-  transition: $property 0.3s ease;
+  transition: $property 0.2s ease;
 }
 
 @mixin hoverMutedWhite() {

@@ -55,6 +55,7 @@ span.category {
 
     svg {
       fill: $whiteColor;
+      transform: rotate(180deg);
     }
   }
 }
