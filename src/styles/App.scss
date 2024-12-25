@@ -139,4 +139,10 @@ section {
       }
     }
   }
+
+  @media (max-width: 900px) {
+    .ProjectCard {
+      width: 100%;
+    }
+  }
 }

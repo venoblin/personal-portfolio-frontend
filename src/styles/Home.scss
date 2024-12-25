@@ -1,7 +1,8 @@
 @import './vars/variables.scss';
 
 .Home {
-  width: 100vw;
+  width: 100%;
+  height: fit-content;
   padding: 0;
   color: $whiteColor;
   background: $bgColor;

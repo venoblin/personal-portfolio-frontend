@@ -153,4 +153,9 @@ section .wrapper {
   .App .NavBar.show-menu .icons-container a {
     margin-left: 0;
   }
+}
+@media (max-width: 900px) {
+  .App .ProjectCard {
+    width: 100%;
+  }
 }/*# sourceMappingURL=App.css.map */

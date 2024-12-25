@@ -1,5 +1,7 @@
 .Home {
-  width: 100vw;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 0;
   color: #dad7da;
   background: #141414;
