@@ -2,17 +2,16 @@ import '../../styles/Projects.css'
 import { useState } from 'react'
 import projects from '../../projects'
 import ProjectCard from '../ProjectCard'
-import RadioButtons from '../RadioButtons'
 
 const Projects = () => {
   const [projectCategory, setProjectCategory] = useState('featured')
   const [isHoverActive, setIsHoverActive] = useState(false)
-  const categories = [
+  const [categories, setCategories] = useState([
     'featured', 
     'web', 
     'games', 
     'tools'
-  ]
+  ])
 
   const switchCategory = (category) => {
     setProjectCategory(category)
@@ -22,7 +21,7 @@ const Projects = () => {
     setIsHoverActive(true)
   }
   
-  const mouseLeaveHandler = (evt) => {
+  const mouseLeaveHandler = () => {
     setIsHoverActive(false)
   }
   
