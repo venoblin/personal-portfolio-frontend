@@ -6,7 +6,7 @@ import RadioButtons from '../RadioButtons'
 
 const Projects = () => {
   const [projectCategory, setProjectCategory] = useState('featured')
-  const [isHoverActive, setIsHoverActive] = useState(true)
+  const [isHoverActive, setIsHoverActive] = useState(false)
   const categories = [
     'featured', 
     'web', 

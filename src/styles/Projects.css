@@ -15,31 +15,20 @@
   text-transform: capitalize;
 }
 
-button.category {
-  display: block;
-  margin-bottom: 0.5rem;
-  background: none;
-  font-weight: 800;
-  transition: color 0.25s ease;
-}
-button.category:hover {
-  color: #dad7da;
-}
-
 span.category {
   display: inline;
   background: #e12c44;
   padding: 0 0.5rem;
   border-radius: 5px 5px 0 0;
   cursor: default;
-  transition: all 0.25s ease;
+  transition: all 0.2s ease;
 }
 span.category svg {
   width: 15px;
   height: 15px;
   margin: auto 0;
   margin-left: 0.5rem;
-  transition: all 0.25s ease;
+  transition: all 0.2s ease;
 }
 span.category.active {
   color: #dad7da;
@@ -55,18 +44,33 @@ span.category.active svg {
 }
 
 .categories {
-  font-size: 0;
-  padding: 0;
-  width: 0;
+  max-height: 0;
+  width: 200px;
   position: absolute;
   top: 0;
   background: #e12c44;
   z-index: 8;
   border-radius: 0 0 5px 5px;
-  transition: all 0.25s ease;
+  overflow: hidden;
+  transition: max-height 0.2s ease;
+}
+.categories button.category {
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid #141414;
+  display: block;
+  background: none;
+  font-weight: 800;
+  transition: color 0.2s ease;
+}
+.categories button.category:hover {
+  color: #dad7da;
+}
+.categories button.category:last-of-type {
+  border: none;
 }
 .categories.active {
-  width: 200px;
+  max-height: 200px;
   font-size: initial;
-  padding: 0.5rem 1.5rem;
 }/*# sourceMappingURL=Projects.css.map */

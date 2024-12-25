@@ -23,7 +23,7 @@ section .wrapper {
 
 .sections {
   padding: 0 0.5rem;
-  margin-top: 34rem;
+  margin-top: 32rem;
   position: relative;
   z-index: 5;
 }
@@ -70,7 +70,7 @@ section .wrapper {
   text-decoration: none;
   text-transform: capitalize;
   color: #dad7da;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 }
 .App .link:hover {
   color: #8b8a8a;
@@ -87,7 +87,7 @@ section .wrapper {
   font-weight: bold;
   background-color: #09BC8A;
   color: #141414;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 .App .btn:hover {
   transform: scale(1.04);
@@ -103,13 +103,13 @@ section .wrapper {
 }
 .App .logo span {
   color: #e12c44;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 }
 .App .icon {
   width: 2.5rem;
   padding: 0.25rem;
   fill: #dad7da;
-  transition: fill 0.3s ease;
+  transition: fill 0.2s ease;
 }
 .App .icon:hover {
   color: #8b8a8a;
