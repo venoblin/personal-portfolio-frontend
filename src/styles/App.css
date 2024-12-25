@@ -211,6 +211,10 @@ section .wrapper {
   .App .sections {
     padding: 0;
   }
+  .App .link,
+  .App .logo {
+    font-size: 1.5em;
+  }
 }
 @media (max-width: 500px) {
   .App h1 {

@@ -210,6 +210,11 @@ section {
     .sections {
       padding: 0;
     }
+
+    .link,
+    .logo {
+      font-size: 1.5em;
+    }
   }
 
   @media (max-width: 500px) {
