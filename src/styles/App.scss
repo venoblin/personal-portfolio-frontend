@@ -175,6 +175,11 @@ section {
   }
 
   @media (max-width: 600px) {
+
+    .sections {
+      margin-top: 30rem;
+    }
+    
     .command {
       font-size: 1.25em;
     }
