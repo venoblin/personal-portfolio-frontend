@@ -208,4 +208,21 @@ section .wrapper {
   .App .sections {
     padding: 0;
   }
+}
+@media (max-width: 500px) {
+  .App h1 {
+    font-size: 1.75em;
+  }
+  .App h2 {
+    font-size: 1.5em;
+  }
+  .App li,
+  .App p,
+  .App input,
+  .App textarea,
+  .App button,
+  .App .btn,
+  .App .link {
+    font-size: 1em;
+  }
 }/*# sourceMappingURL=App.css.map */

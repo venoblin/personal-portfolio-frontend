@@ -206,4 +206,24 @@ section {
       padding: 0;
     }
   }
+
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 1.75em;
+    }
+  
+    h2 {
+      font-size: 1.5em;
+    }
+  
+    li, 
+    p, 
+    input, 
+    textarea, 
+    button,
+    .btn, 
+    .link {
+      font-size: 1em;
+    }
+  }
 }
