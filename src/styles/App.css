@@ -158,4 +158,39 @@ section .wrapper {
   .App .ProjectCard {
     width: 100%;
   }
+  .App .Contact form .upper-form input {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .App .Contact .upper-form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+  }
+}
+@media (max-width: 600px) {
+  .App .command {
+    font-size: 1.25em;
+  }
+  .App section:first-of-type {
+    border-radius: 2.5rem 2.5rem 0 0;
+    padding-top: 4rem;
+  }
+  .App .ProjectCard {
+    border-radius: 5rem;
+  }
+  .App h1 {
+    font-size: 2.5em;
+  }
+  .App h2 {
+    font-size: 2em;
+  }
+  .App li,
+  .App p,
+  .App input,
+  .App textarea,
+  .App button,
+  .App .btn,
+  .App .link {
+    font-size: 1em;
+  }
 }/*# sourceMappingURL=App.css.map */

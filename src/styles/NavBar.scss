@@ -19,9 +19,9 @@
     -webkit-backdrop-filter: blur( 4px );
   }
 
-  .logo {
-    margin-right: 2.5rem;
+  .logo.link {
     margin-left: 0;
+    padding-left: 0;
   }
 
   .links-container {
@@ -31,10 +31,18 @@
   
   .link {
     margin: 0 0.25rem;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   
-  .icons-container a {
-    margin-left: 1rem;
+  .icons-container {
+    display: flex;
+    align-items: center;
+
+    a {
+      display: flex;
+      align-items: center;
+    }
   }
 
   .menu-icon {

@@ -9,16 +9,16 @@
   right: 0;
   left: 0;
   z-index: 10;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 .NavBar.scroll {
   background: rgba(20, 20, 20, 0.95);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
-.NavBar .logo {
-  margin-right: 2.5rem;
+.NavBar .logo.link {
   margin-left: 0;
+  padding-left: 0;
 }
 .NavBar .links-container {
   display: flex;
@@ -26,9 +26,16 @@
 }
 .NavBar .link {
   margin: 0 0.25rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.NavBar .icons-container {
+  display: flex;
+  align-items: center;
 }
 .NavBar .icons-container a {
-  margin-left: 1rem;
+  display: flex;
+  align-items: center;
 }
 .NavBar .menu-icon {
   background-color: transparent;

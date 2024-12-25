@@ -22,10 +22,10 @@ const Home = (props) => {
           <h1 className="intro-heading">
             Hello there!{' '}
             <span className="wrapper">
-              I'm <span className="highlight">Jonathan</span>,
+              I'm <span className="highlight">Jonathan</span>, a
             </span>
             <span className="wrapper">
-              a <span className="highlight">Full-Stack Developer</span>!
+              <span className="highlight"> Full-Stack Developer</span>!
             </span>
           </h1>
           <p className='location'>Located in Wilmington, Delaware 📍</p>

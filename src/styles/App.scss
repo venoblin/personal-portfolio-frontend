@@ -144,5 +144,48 @@ section {
     .ProjectCard {
       width: 100%;
     }
+
+    .Contact form .upper-form input {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .Contact .upper-form {
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .command {
+      font-size: 1.25em;
+    }
+
+    section:first-of-type {
+      border-radius: 2.5rem 2.5rem 0 0;
+      padding-top: 4rem;
+    }
+
+    .ProjectCard {
+      border-radius: 5rem;
+    }
+
+    h1 {
+      font-size: 2.5em;
+    }
+  
+    h2 {
+      font-size: 2em;
+    }
+  
+    li, 
+    p, 
+    input, 
+    textarea, 
+    button,
+    .btn, 
+    .link {
+      font-size: 1em;
+    }
   }
 }
