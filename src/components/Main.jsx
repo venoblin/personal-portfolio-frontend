@@ -5,7 +5,7 @@ import Home from './sections/Home'
 import Projects from './sections/Projects'
 import About from './sections/About'
 import Contact from './sections/Contact'
-import Skills from './Skills'
+import Skills from './sections/Skills'
 
 
 const Main = () => {

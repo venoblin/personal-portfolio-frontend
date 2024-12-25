@@ -1,11 +1,14 @@
 .Home {
-  width: 100%;
+  width: 100vw;
   padding: 0;
-  position: fixed;
   color: #dad7da;
   background: #141414;
+  display: flex;
+  justify-content: center;
   z-index: 1;
   top: 0;
+  left: 0;
+  right: 0;
   padding-top: 6rem;
 }
 .Home .emoji-wrapper {
@@ -38,16 +41,14 @@
 }
 
 .inner-wrapper {
-  transition: all 0.3s ease;
+  position: fixed;
+  width: -moz-max-content;
+  width: max-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.home-wrapper {
   color: #dad7da;
-  min-height: 100%;
-  width: 100%;
+  transition: all 0.2s ease;
 }
 
 .intro-heading {

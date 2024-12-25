@@ -93,11 +93,9 @@ section {
   }
   
   @media (max-width: 1400px) {
-    .emoji-background {
-      display: none;
-    }
-
     .NavBar {
+      justify-content: space-between;
+      padding: 1rem;
       
       .links-container {
         display: none;
@@ -113,7 +111,7 @@ section {
         justify-content: center;
         -webkit-box-shadow:0px 0px 0px 0px black; 
         box-shadow: 0px 0px 0px 0px black;
-        background: rgba( 21, 19, 27, 0.95 );
+        background: rgba( $bgColor, 0.95 );
         backdrop-filter: blur( 4px );
         -webkit-backdrop-filter: blur( 4px );
         
@@ -139,110 +137,6 @@ section {
           }
         }
       }
-    }
-  }
-
-  @media (max-width: 1000px) {
-
-    #contact {
-      form {
-        width: 100%;
-      }
-
-      .upper-form {
-        display: block;
-
-        input {
-          width: 100%;
-          display: block;
-          margin-left: 0;
-          margin-right: 0;
-        }
-      }
-    }
-  }
-  
-
-  @media (max-width: 900px) {
-    #projects .ProjectCard {
-      width: 100%;
-      margin: 0 0 1rem 0;
-    }
-
-    #skills .radio-btns button,
-    #projects .radio-btns button {
-      padding: 1rem 0.5rem; 
-      font-size: 1em; 
-    }
-  }
-
-  @media (max-width: 650px) {
-    section {
-      padding-left: 1rem;
-      padding-right: 1rem;
-      margin-bottom: 2rem;
-    }
-    
-    .Skills-class {
-      
-      button {
-        padding: 1rem;
-        font-size: 1em;
-      }
-
-      .skill-container {
-        justify-content: center;
-      }
-    }
-  }
-
-  @media (max-width: 500px) {
-    h1 {
-      font-size: 3.5em;
-    }
-
-    h2 {
-      font-size: 2.5em;
-    }
-
-    .Home p,
-    p, 
-    .Contact-class form input, 
-    .Contact-class form textarea {
-      font-size: 1.5em;
-    }
-
-    .Home h1 {
-      margin-top: 0.5rem;
-    }
-
-    .Home .btn {
-      margin-top: 1.5rem;
-    }
-
-    .btn {
-      font-size: 1em;
-    }
-    
-    main {
-      padding-top: 5rem;
-    }
-    
-    .NavBar {
-      height: 80px;
-      padding: 1rem;
-    }
-    
-    .logo {
-      font-size: 1em;
-    }
-
-    .menu-icon .icon {
-      width: 2rem;
-    }
-
-    .Home .emoji {
-      max-height: 200px;
     }
   }
 }

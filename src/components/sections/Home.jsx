@@ -13,31 +13,29 @@ const Home = (props) => {
   
   return (
     <section className="Home">
-      <div className='home-wrapper'>
-        <div className='inner-wrapper' ref={innerWrapperRef}>
-          <div className='emoji-wrapper'>
-            <img className="emoji" src={emojiTyping} alt="Emoji typing" />
-          </div>
-          
-          <div>
-            <h1 className="intro-heading">
-              Hello there!{' '}
-              <span className="wrapper">
-                I'm <span className="highlight">Jonathan</span>,
-              </span>
-              <span className="wrapper">
-                a <span className="highlight">Full-Stack Developer</span>!
-              </span>
-            </h1>
-            <p className='location'>Located in Wilmington, Delaware 📍</p>
-            <a
-              className="btn"
-              href="https://www.linkedin.com/in/jonathanvillagomezhernandez/"
-              target="_blank"
-            >
-              Let's Connect!
-            </a>
-          </div>
+      <div className='inner-wrapper' ref={innerWrapperRef}>
+        <div className='emoji-wrapper'>
+          <img className="emoji" src={emojiTyping} alt="Emoji typing" />
+        </div>
+        
+        <div>
+          <h1 className="intro-heading">
+            Hello there!{' '}
+            <span className="wrapper">
+              I'm <span className="highlight">Jonathan</span>,
+            </span>
+            <span className="wrapper">
+              a <span className="highlight">Full-Stack Developer</span>!
+            </span>
+          </h1>
+          <p className='location'>Located in Wilmington, Delaware 📍</p>
+          <a
+            className="btn"
+            href="https://www.linkedin.com/in/jonathanvillagomezhernandez/"
+            target="_blank"
+          >
+            Let's Connect!
+          </a>
         </div>
       </div>
     </section>

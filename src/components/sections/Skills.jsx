@@ -1,5 +1,5 @@
-import '../styles/Skills.css'
-import skills from '../skills';
+import '../../styles/Skills.css'
+import skills from '../../skills';
 
 const Skills = () => {
 
