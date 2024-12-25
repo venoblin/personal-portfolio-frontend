@@ -141,8 +141,11 @@ section {
   }
 
   @media (max-width: 900px) {
-    .ProjectCard {
+    .Projects .ProjectCard {
+      border-radius: 5rem;
       width: 100%;
+      margin-left: 0;
+      margin-right: 0;
     }
 
     .Contact form .upper-form input {
@@ -154,6 +157,21 @@ section {
       grid-template-columns: 1fr;
       grid-template-rows: 2fr;
     }
+
+    .About {
+      padding-bottom: 0;
+      
+      .emoji-wrapper {
+        margin-top: 0.5rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        .emoji {
+          width: 300px;
+          height: auto;
+        }
+      }
+    }
   }
 
   @media (max-width: 600px) {
@@ -164,10 +182,6 @@ section {
     section:first-of-type {
       border-radius: 2.5rem 2.5rem 0 0;
       padding-top: 4rem;
-    }
-
-    .ProjectCard {
-      border-radius: 5rem;
     }
 
     h1 {
@@ -186,6 +200,10 @@ section {
     .btn, 
     .link {
       font-size: 1em;
+    }
+
+    .sections {
+      padding: 0;
     }
   }
 }

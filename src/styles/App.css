@@ -155,8 +155,11 @@ section .wrapper {
   }
 }
 @media (max-width: 900px) {
-  .App .ProjectCard {
+  .App .Projects .ProjectCard {
+    border-radius: 5rem;
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   .App .Contact form .upper-form input {
     margin-right: 0;
@@ -166,6 +169,18 @@ section .wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
   }
+  .App .About {
+    padding-bottom: 0;
+  }
+  .App .About .emoji-wrapper {
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .App .About .emoji-wrapper .emoji {
+    width: 300px;
+    height: auto;
+  }
 }
 @media (max-width: 600px) {
   .App .command {
@@ -174,9 +189,6 @@ section .wrapper {
   .App section:first-of-type {
     border-radius: 2.5rem 2.5rem 0 0;
     padding-top: 4rem;
-  }
-  .App .ProjectCard {
-    border-radius: 5rem;
   }
   .App h1 {
     font-size: 2.5em;
@@ -192,5 +204,8 @@ section .wrapper {
   .App .btn,
   .App .link {
     font-size: 1em;
+  }
+  .App .sections {
+    padding: 0;
   }
 }/*# sourceMappingURL=App.css.map */
