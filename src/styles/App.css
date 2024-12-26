@@ -213,7 +213,7 @@ section .wrapper {
   }
   .App .link,
   .App .logo {
-    font-size: 1.75em;
+    font-size: 1.5em;
   }
 }
 @media (max-width: 500px) {
@@ -222,14 +222,5 @@ section .wrapper {
   }
   .App h2 {
     font-size: 1.5em;
-  }
-  .App li,
-  .App p,
-  .App input,
-  .App textarea,
-  .App button,
-  .App .btn,
-  .App .link {
-    font-size: 1em;
   }
 }/*# sourceMappingURL=App.css.map */
