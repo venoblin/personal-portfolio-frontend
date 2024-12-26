@@ -13,22 +13,31 @@ const Main = () => {
     isScrolling: false,
     currentScrollY: 0
   })
+  const [isMobile, setIsMobile] = useState(false)
   const location = useLocation()
 
   useEffect(() => {
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 50 && location.pathname === '/') {
-          setScrollState({
-            isScrolling: true,
-            currentScrollY: window.scrollY - 50
-          })
-        } else {
-          setScrollState({
-            isScrolling: false,
-            currentScrollY: 0
-          })
-        }
-      })
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50 && location.pathname === '/') {
+        setScrollState({
+          isScrolling: true,
+          currentScrollY: window.scrollY - 50
+        })
+      } else {
+        setScrollState({
+          isScrolling: false,
+          currentScrollY: 0
+        })
+      }
+    })
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth <= 1400) {
+        setIsMobile(true)
+      } else {
+        setIsMobile(false)
+      }
+    })
   }, [])
   
   return (
