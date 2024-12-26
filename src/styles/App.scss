@@ -159,7 +159,6 @@ section {
     }
 
     .About {
-      padding-bottom: 0;
       
       .emoji-wrapper {
         margin-top: 0.5rem;
@@ -178,6 +177,10 @@ section {
 
     .sections {
       margin-top: 30rem;
+
+      section {
+        padding-bottom: 2rem;
+      }
     }
     
     .command {

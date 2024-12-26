@@ -169,9 +169,6 @@ section .wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
   }
-  .App .About {
-    padding-bottom: 0;
-  }
   .App .About .emoji-wrapper {
     margin-top: 0.5rem;
     margin-left: auto;
@@ -185,6 +182,9 @@ section .wrapper {
 @media (max-width: 600px) {
   .App .sections {
     margin-top: 30rem;
+  }
+  .App .sections section {
+    padding-bottom: 2rem;
   }
   .App .command {
     font-size: 1.25em;
