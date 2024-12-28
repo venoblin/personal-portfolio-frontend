@@ -33,6 +33,9 @@ section .wrapper {
   border-radius: 5rem 5rem 0 0;
   padding-top: 4rem;
 }
+.sections section:last-of-type {
+  padding-bottom: 10rem;
+}
 
 .App h1 {
   font-size: 3em;
