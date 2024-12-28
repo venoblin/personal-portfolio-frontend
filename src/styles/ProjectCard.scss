@@ -2,9 +2,7 @@
 
 .ProjectCard {
   min-width: 400px;
-  // border-radius: 5rem;
   background-color: $whiteColor;
-  // border: 5px solid $blackColor;
   position: relative;
   overflow: hidden;
   @include defaultTransition(all);
