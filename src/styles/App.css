@@ -136,7 +136,6 @@ section .wrapper {
 }
 @media (max-width: 900px) {
   .App .Projects .ProjectCard {
-    border-radius: 5rem;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
