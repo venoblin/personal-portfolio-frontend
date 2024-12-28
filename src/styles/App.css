@@ -158,6 +158,9 @@ section .wrapper {
   }
 }
 @media (max-width: 600px) {
+  .App .Projects .projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .App .NavBar {
     padding: 1rem;
   }
