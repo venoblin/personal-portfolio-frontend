@@ -19,6 +19,47 @@
     -webkit-backdrop-filter: blur( 4px );
   }
 
+  &.show-menu {
+    height: 100vh;
+    align-items: flex-start;
+    -webkit-box-shadow:0px 0px 0px 0px black; 
+    box-shadow: 0px 0px 0px 0px black;
+    background: rgba( $bgColor, 0.95 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    position: relative;
+    
+    .links-container {
+      height: fit-content;
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      margin: auto auto;
+      position: absolute;
+      left: 50%;
+      right: 50%;
+      top: 50%;
+      bottom: 50%;
+    }
+
+    .link {
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 0.5rem;
+    }
+
+    .icons-container {
+      width: 100%;
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-evenly;
+      
+      a {
+        margin-left: 0;
+      }
+    }
+  }
+
   .logo.link {
     margin-left: 0;
     padding-left: 0;

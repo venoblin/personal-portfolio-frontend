@@ -124,33 +124,6 @@ section .wrapper {
   .App .NavBar .menu-icon {
     display: block;
   }
-  .App .NavBar.show-menu {
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 0px 0px 0px 0px black;
-    background: rgba(20, 20, 20, 0.95);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-  }
-  .App .NavBar.show-menu .links-container {
-    display: flex;
-    flex-direction: column;
-    margin: 4rem 0;
-  }
-  .App .NavBar.show-menu .link {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .App .NavBar.show-menu .icons-container {
-    width: 100%;
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .App .NavBar.show-menu .icons-container a {
-    margin-left: 0;
-  }
 }
 @media (max-width: 900px) {
   .App .Projects .ProjectCard {

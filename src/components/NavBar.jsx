@@ -1,25 +1,22 @@
 import '../styles/NavBar.css'
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const NavBar = (props) => {
   const [isExpanded, setIsExpanded] = useState(false)
-  const navRef = useRef()
 
-  const showMenu = () => {
-    navRef.current.classList.toggle('show-menu')
+  const toggleMenu = () => {
     document.body.classList.toggle('show-menu')
     setIsExpanded(!isExpanded)
   }
 
   const hideMenu = () => {
-    navRef.current.classList.remove('show-menu')
     document.body.classList.remove('show-menu')
-    setIsExpanded(!isExpanded)
+    setIsExpanded(false)
   }
 
   return (
-    <nav className={props.scrollState.isScrolling ? 'NavBar scroll' : 'NavBar'} ref={navRef}>
+    <nav className={`NavBar${props.scrollState.isScrolling ? ' scroll' : ''}${isExpanded ? ' show-menu' : ''}`}>
       <Link to="/" className="link logo" onClick={hideMenu}>
         Jon <span>/ Web Dev</span>
       </Link>
@@ -59,8 +56,8 @@ const NavBar = (props) => {
           </a>
         </div>
       </div>
-      <button className="menu-icon" onClick={showMenu}>
 
+      <button className="menu-icon" onClick={toggleMenu}>
         {isExpanded ? (
           <svg 
           xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +75,6 @@ const NavBar = (props) => {
             <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
           </svg>
         )}
-        
       </button>
     </nav>
   )

@@ -42,7 +42,7 @@ const Main = () => {
   
   return (
     <div>
-      <NavBar scrollState={scrollState} />
+      <NavBar scrollState={scrollState} isMobile={isMobile} />
 
       <main>
         <Home scrollState={scrollState} />
