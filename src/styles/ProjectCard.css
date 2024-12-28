@@ -1,8 +1,6 @@
 .ProjectCard {
   min-width: 400px;
-  border-radius: 5rem;
   background-color: #dad7da;
-  border: 5px solid #141414;
   position: relative;
   overflow: hidden;
   transition: all 0.2s ease;

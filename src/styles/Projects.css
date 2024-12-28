@@ -2,8 +2,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 5px;
-  margin-top: 1rem;
+  margin-top: 10px;
 }
 .Projects h2 {
   margin-bottom: 0;
