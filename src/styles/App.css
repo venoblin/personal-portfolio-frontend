@@ -186,7 +186,7 @@ section .wrapper {
   }
   .App .link,
   .App .logo {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 }
 @media (max-width: 500px) {
