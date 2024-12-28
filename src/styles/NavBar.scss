@@ -2,10 +2,9 @@
 
 .NavBar {
   width: 100%;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   display: flex;
   justify-content:space-around;
-  align-items: center;
   position: sticky;
   top: 0;
   right: 0;
@@ -27,32 +26,35 @@
     background: rgba( $bgColor, 0.95 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
-    position: relative;
     
     .links-container {
-      height: fit-content;
       width: fit-content;
+      height: fit-content;
+      margin: auto;
+      position: absolute;
       display: flex;
       flex-direction: column;
-      margin: auto auto;
-      position: absolute;
-      left: 50%;
-      right: 50%;
-      top: 50%;
-      bottom: 50%;
+      justify-content: center;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+
+      .link {
+        margin-top: 1rem;
+      }
     }
 
     .link {
       padding-left: 0;
       padding-right: 0;
-      margin-top: 0.5rem;
     }
 
     .icons-container {
       width: 100%;
       margin-top: 2rem;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       
       a {
         margin-left: 0;
@@ -90,5 +92,9 @@
     background-color: transparent;
     cursor: pointer;
     display: none;
+
+    svg {
+      width: 1.75rem;
+    }
   }
 }

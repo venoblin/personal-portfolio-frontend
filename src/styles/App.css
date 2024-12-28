@@ -116,7 +116,6 @@ section .wrapper {
 @media (max-width: 1400px) {
   .App .NavBar {
     justify-content: space-between;
-    padding: 1rem;
   }
   .App .NavBar .links-container {
     display: none;

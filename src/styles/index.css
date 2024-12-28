@@ -29,6 +29,7 @@ body {
 
 body.show-menu {
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 /* width */
