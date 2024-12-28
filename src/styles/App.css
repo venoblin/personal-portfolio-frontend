@@ -157,6 +157,7 @@ section .wrapper {
     margin-top: 30rem;
   }
   .App .sections section {
+    padding: 0 2rem;
     padding-bottom: 2rem;
   }
   .App .command {
