@@ -33,6 +33,7 @@
 }
 .Contact form textarea {
   height: 250px;
+  resize: none;
 }
 .Contact button {
   margin-top: 0.5rem;

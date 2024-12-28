@@ -104,7 +104,7 @@ section .wrapper {
   transition: color 0.2s ease;
 }
 .App .icon {
-  width: 2.5rem;
+  width: 2rem;
   padding: 0.25rem;
   fill: #dad7da;
   transition: fill 0.2s ease;

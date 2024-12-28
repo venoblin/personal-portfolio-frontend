@@ -85,6 +85,11 @@
     a {
       display: flex;
       align-items: center;
+      margin-right: 0.5rem;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
   }
 

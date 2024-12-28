@@ -74,6 +74,10 @@
 .NavBar .icons-container a {
   display: flex;
   align-items: center;
+  margin-right: 0.5rem;
+}
+.NavBar .icons-container a:last-of-type {
+  margin-right: 0;
 }
 .NavBar .menu-icon {
   background-color: transparent;

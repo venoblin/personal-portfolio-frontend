@@ -45,7 +45,7 @@ $bgColor: $blackColor;
 }
 
 @mixin icon() {
-  width: 2.5rem;
+  width: 2rem;
   padding: 0.25rem;
   fill: $whiteColor;
   @include defaultTransition(fill);
