@@ -140,7 +140,6 @@ section .wrapper {
     grid-template-rows: 2fr;
   }
   .App .About .emoji-wrapper {
-    margin-top: 0.5rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -155,9 +154,11 @@ section .wrapper {
   }
   .App .sections {
     margin-top: 30rem;
+    padding-left: 0;
+    padding-right: 0;
   }
   .App .sections section {
-    padding: 0 2rem;
+    padding: 0 1rem;
     padding-bottom: 2rem;
   }
   .App .command {

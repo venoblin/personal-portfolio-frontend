@@ -1,8 +1,8 @@
 @import './vars/variables.scss';
 
 .ProjectCard {
-  width: 400px;
-  border-radius: 10rem;
+  min-width: 400px;
+  border-radius: 5rem;
   background-color: $whiteColor;
   border: 5px solid $blackColor;
   position: relative;

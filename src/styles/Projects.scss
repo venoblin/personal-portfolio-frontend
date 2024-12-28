@@ -3,14 +3,14 @@
 .Projects {
   
   .projects {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 5px;
     margin-top: 1rem;
   }
 
   .ProjectCard {
-    margin: 0.5rem;
   }
 
   h2 {

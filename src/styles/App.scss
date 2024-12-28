@@ -125,7 +125,6 @@ section {
     .About {
       
       .emoji-wrapper {
-        margin-top: 0.5rem;
         margin-left: auto;
         margin-right: auto;
 
@@ -145,9 +144,11 @@ section {
 
     .sections {
       margin-top: 30rem;
+      padding-left: 0;
+      padding-right: 0;
 
       section {
-        padding: 0 2rem;
+        padding: 0 1rem;
         padding-bottom: 2rem;
       }
     }

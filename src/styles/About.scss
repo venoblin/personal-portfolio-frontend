@@ -8,13 +8,16 @@
   
   .emoji-wrapper {
     background: $redColor;
-    border-radius: 30% 70% 67% 33% / 32% 30% 70% 68% ;
-    margin: 0 auto;
+    border-radius: 30% 70% 67% 33% / 32% 30% 70% 68%;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0 auto;
   }
 }
