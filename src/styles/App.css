@@ -16,6 +16,7 @@ section .wrapper {
 }
 .border svg {
   width: 100%;
+  height: 25px;
   fill: #dad7da;
 }
 
@@ -122,6 +123,12 @@ section .wrapper {
   }
   .App .NavBar .menu-icon {
     display: block;
+  }
+}
+@media (max-width: 1200px) {
+  .App .About .emoji-wrapper {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (max-width: 900px) {
