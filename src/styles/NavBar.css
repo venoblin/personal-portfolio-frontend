@@ -86,4 +86,10 @@
 }
 .NavBar .menu-icon svg {
   width: 1.75rem;
+  fill: #dad7da;
+  transition: fill 0.2s ease;
+}
+.NavBar .menu-icon svg:hover {
+  color: #8b8a8a;
+  fill: #8b8a8a;
 }/*# sourceMappingURL=NavBar.css.map */

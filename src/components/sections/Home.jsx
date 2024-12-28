@@ -12,27 +12,26 @@ const Home = (props) => {
   })
   
   return (
-    <section className="Home">
+    <section className='Home'>
       <div className='inner-wrapper' ref={innerWrapperRef}>
         <div className='emoji-wrapper'>
-          <img className="emoji" src={emojiTyping} alt="Emoji typing" />
+          <img className='emoji' src={emojiTyping} alt='Emoji typing' />
         </div>
         
         <div>
-          <h1 className="intro-heading">
+          <h1 className='intro-heading'>
             Hello there!{' '}
-            <span className="wrapper">
-              I'm <span className="highlight">Jonathan</span>, a
+            <span className='wrapper'>
+              I'm <span className='highlight'>Jonathan</span>, a
             </span>
-            <span className="wrapper">
-              <span className="highlight"> Full-Stack Developer</span>!
+            <span className='wrapper'>
+              <span className='highlight'> Full-Stack Developer</span>!
             </span>
           </h1>
           <p className='location'>Located in Wilmington, Delaware 📍</p>
           <a
-            className="btn"
-            href="https://www.linkedin.com/in/jonathanvillagomezhernandez/"
-            target="_blank"
+            className='btn'
+            href='#contact'
           >
             Let's Connect!
           </a>

@@ -97,9 +97,12 @@
     background-color: transparent;
     cursor: pointer;
     display: none;
-
+    
     svg {
       width: 1.75rem;
+      fill: $whiteColor;
+      @include defaultTransition(fill);
+      @include hoverMutedWhite();
     }
   }
 }
