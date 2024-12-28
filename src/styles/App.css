@@ -150,6 +150,9 @@ section .wrapper {
   }
 }
 @media (max-width: 600px) {
+  .App .NavBar {
+    padding: 1rem;
+  }
   .App .sections {
     margin-top: 30rem;
   }
