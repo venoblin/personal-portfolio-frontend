@@ -35,7 +35,7 @@ const projects = [
   },
   {
     title: 'HoverOrb',
-    types: ['featured', 'games'],
+    types: ['featured', 'game'],
     image: hoverOrbPng,
     demo: '',
     repo: 'https://github.com/venoblin/hover-orb',
@@ -44,7 +44,7 @@ const projects = [
   },
   {
     title: 'Web Scraper',
-    types: ['tools'],
+    types: ['tool'],
     image: webScraperPng,
     demo: 'https://github.com/venoblin/web-scraper?tab=readme-ov-file#usage',
     repo: 'https://github.com/venoblin/web-scraper',
@@ -62,7 +62,7 @@ const projects = [
   },
   {
     title: 'Tic-Tac-Toe',
-    types: ['games'],
+    types: ['game'],
     image: ticTacToePng,
     demo: 'http://tic-tac-toe-jvh.surge.sh/',
     repo: 'https://github.com/venoblin/tic-tac-toe',
@@ -71,7 +71,7 @@ const projects = [
   },
   {
     title: 'Download File Sorter',
-    types: ['tools'],
+    types: ['tool'],
     image: downloadFileSorterPng,
     demo: 'https://github.com/venoblin/download-file-sorter?tab=readme-ov-file#installation',
     repo: 'https://github.com/venoblin/download-file-sorter',

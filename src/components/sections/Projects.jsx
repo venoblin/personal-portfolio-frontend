@@ -10,8 +10,8 @@ const Projects = () => {
   const [categories, setCategories] = useState([
     'featured', 
     'web', 
-    'games', 
-    'tools'
+    'game', 
+    'tool'
   ])
 
   const switchCategory = (category) => {
