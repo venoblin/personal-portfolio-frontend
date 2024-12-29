@@ -1,11 +1,12 @@
 import '../../styles/Projects.css'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import projects from '../../projects'
 import ProjectCard from '../ProjectCard'
 
 const Projects = () => {
   const [projectCategory, setProjectCategory] = useState('featured')
   const [isHoverActive, setIsHoverActive] = useState(false)
+  const [isClicked, setIsClicked] = useState(false)
   const [categories, setCategories] = useState([
     'featured', 
     'web', 
@@ -15,14 +16,19 @@ const Projects = () => {
 
   const switchCategory = (category) => {
     setProjectCategory(category)
+    setIsHoverActive(false)
+    setIsClicked(true)
   }
 
   const mouseEnterHandler = () => {
-    setIsHoverActive(true)
+    if (!isClicked) {
+      setIsHoverActive(true)
+    }
   }
   
   const mouseLeaveHandler = () => {
     setIsHoverActive(false)
+    setIsClicked(false)
   }
   
   return (
