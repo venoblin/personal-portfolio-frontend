@@ -4,6 +4,7 @@
   background-color: $whiteColor;
   position: relative;
   overflow: hidden;
+  border: 5px solid $bgColor;
   @include defaultTransition(all);
 
   img {

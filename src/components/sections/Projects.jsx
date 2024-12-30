@@ -12,6 +12,10 @@ const Projects = (props) => {
     'game', 
     'tool'
   ])
+
+  const handleChange = (evt) => {
+    setProjectCategory(evt.target.value);
+  }
   
   return (
     <section className="Projects" id="projects">
@@ -20,7 +24,7 @@ const Projects = (props) => {
         <h2>
           <span>
             <label htmlFor="categories">Choose a category</label>
-            <select id="categories">
+            <select id="categories" onChange={handleChange}>
               {categories.map((category) => (
                 <option value={category} key={category}>{capitalizeStr(category)}</option>
               ))}
