@@ -48,7 +48,7 @@ const Main = () => {
         <Home scrollState={scrollState} />
         <div className='sections'>
           <Skills />
-          <Projects />
+          <Projects isMobile={isMobile} />
           <About />
           <Contact />
           <div className='border'>
