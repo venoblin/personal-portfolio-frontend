@@ -6,15 +6,6 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    margin-top: 10px;
-    border-left: 10px solid $redColor;
-    border-right: 10px solid $redColor;
-    border-bottom: 10px solid $redColor;
-  }
-
-  h2 {
-    margin-bottom: 0;
-    width: 100%;
   }
 }
 
@@ -23,6 +14,7 @@
 }
 
 span.category {
+  position: relative;
   display: inline;
   background: $redColor;
   padding: 0 0.5rem;
@@ -49,8 +41,9 @@ span.category {
 }
 
 .switcher {
-  margin-top: -10px;
-  position: relative;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .categories {

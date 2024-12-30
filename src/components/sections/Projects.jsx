@@ -36,19 +36,21 @@ const Projects = (props) => {
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
                 <path d="M5.143 9.847a1 1 0 0 0 1.715 0l3.999-6.665a1 1 0 0 0-.858-1.515H2.001a1 1 0 0 0-.858 1.515z" />
               </svg>
+              
+              <span className='switcher'>
+                <span className={isHoverActive ? 'categories active' : 'categories'}>
+                  {categories.filter((category) => {
+                    return category !== projectCategory
+                  }).map((category) => (
+                    <button className='category' key={category} onClick={() => switchCategory(category)}>{category}</button>
+                  ))}
+                </span>
+              </span>
+
+
             </span>
           </span> Projects
         </h2>
-
-        <div className='switcher'>
-          <div className={isHoverActive ? 'categories active' : 'categories'}>
-            {categories.filter((category) => {
-              return category !== projectCategory
-            }).map((category) => (
-              <button className='category' key={category} onClick={() => switchCategory(category)}>{category}</button>
-            ))}
-          </div>
-        </div>
 
         <div className="projects">
           {projects.filter((project) => {

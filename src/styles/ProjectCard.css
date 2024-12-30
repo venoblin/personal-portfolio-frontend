@@ -2,7 +2,6 @@
   background-color: #dad7da;
   position: relative;
   overflow: hidden;
-  border: 5px solid #141414;
   transition: all 0.2s ease;
 }
 .ProjectCard img {
