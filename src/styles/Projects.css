@@ -2,12 +2,76 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 0.5rem;
+  margin-top: 10px;
+  border-left: 10px solid #e12c44;
+  border-right: 10px solid #e12c44;
+  border-bottom: 10px solid #e12c44;
 }
-.Projects select {
-  font-size: 0.75em;
+.Projects h2 {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.category {
   text-transform: capitalize;
 }
-.Projects select option {
-  text-transform: capitalize;
+
+span.category {
+  display: inline;
+  background: #e12c44;
+  padding: 0 0.5rem;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+span.category svg {
+  width: 15px;
+  height: 15px;
+  margin: auto 0;
+  margin-left: 0.5rem;
+  transition: all 0.2s ease;
+}
+span.category.active {
+  color: #dad7da;
+}
+span.category.active svg {
+  fill: #dad7da;
+  transform: rotate(180deg);
+}
+
+.switcher {
+  margin-top: -10px;
+  position: relative;
+}
+
+.categories {
+  max-height: 0;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  background: #e12c44;
+  z-index: 8;
+  border-radius: 0 0 5px 5px;
+  overflow: hidden;
+  transition: max-height 0.2s ease;
+}
+.categories button.category {
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid #141414;
+  display: block;
+  background: none;
+  font-weight: 800;
+  transition: color 0.2s ease;
+}
+.categories button.category:hover {
+  color: #dad7da;
+}
+.categories button.category:last-of-type {
+  border: none;
+}
+.categories.active {
+  max-height: 200px;
+  font-size: initial;
 }/*# sourceMappingURL=Projects.css.map */

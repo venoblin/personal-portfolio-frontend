@@ -1,11 +1,11 @@
 import '../../styles/Projects.css'
-import { useState } from 'react'
-import { capitalizeStr } from '../../utils'
+import { useEffect, useState } from 'react'
 import projects from '../../projects'
 import ProjectCard from '../ProjectCard'
 
 const Projects = (props) => {
   const [projectCategory, setProjectCategory] = useState('featured')
+  const [isHoverActive, setIsHoverActive] = useState(false)
   const [categories, setCategories] = useState([
     'featured', 
     'web', 
@@ -13,8 +13,13 @@ const Projects = (props) => {
     'tool'
   ])
 
-  const handleChange = (evt) => {
-    setProjectCategory(evt.target.value);
+  const clickHandler = () => {
+    setIsHoverActive(!isHoverActive)
+  }
+
+  const switchCategory = (category) => {
+    setProjectCategory(category)
+    setIsHoverActive(false)
   }
   
   return (
@@ -22,15 +27,28 @@ const Projects = (props) => {
       
       <div className="wrapper">
         <h2>
-          <span>
-            <label htmlFor="categories">Choose a category</label>
-            <select id="categories" onChange={handleChange}>
-              {categories.map((category) => (
-                <option value={category} key={category}>{capitalizeStr(category)}</option>
-              ))}
-            </select> 
+          <span 
+            className={isHoverActive ? 'category active' : 'category'} 
+            onClick={clickHandler}
+          >
+            {projectCategory}
+            <span className='indicator'>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+                <path d="M5.143 9.847a1 1 0 0 0 1.715 0l3.999-6.665a1 1 0 0 0-.858-1.515H2.001a1 1 0 0 0-.858 1.515z" />
+              </svg>
+            </span>
           </span> Projects
         </h2>
+
+        <div className='switcher'>
+          <div className={isHoverActive ? 'categories active' : 'categories'}>
+            {categories.filter((category) => {
+              return category !== projectCategory
+            }).map((category) => (
+              <button className='category' key={category} onClick={() => switchCategory(category)}>{category}</button>
+            ))}
+          </div>
+        </div>
 
         <div className="projects">
           {projects.filter((project) => {

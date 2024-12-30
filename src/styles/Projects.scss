@@ -6,16 +6,85 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 0.5rem;
+    margin-top: 10px;
+    border-left: 10px solid $redColor;
+    border-right: 10px solid $redColor;
+    border-bottom: 10px solid $redColor;
   }
 
-  select {
-    font-size: 0.75em;
-    text-transform: capitalize;
+  h2 {
+    margin-bottom: 0;
+    width: 100%;
+  }
+}
 
-    option {
-      text-transform: capitalize;
+.category {
+  text-transform: capitalize;
+}
+
+span.category {
+  display: inline;
+  background: $redColor;
+  padding: 0 0.5rem;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  @include defaultTransition(all);
+
+  svg {
+    width: 15px;
+    height: 15px;
+    margin: auto 0;
+    margin-left: 0.5rem;
+    @include defaultTransition(all);
+  }
+
+  &.active {
+    color: $whiteColor;
+
+    svg {
+      fill: $whiteColor;
+      transform: rotate(180deg);
     }
   }
 }
 
+.switcher {
+  margin-top: -10px;
+  position: relative;
+}
+
+.categories {
+  max-height: 0;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  background: $redColor;
+  z-index: 8;
+  border-radius: 0 0 5px 5px;
+  overflow: hidden;
+  @include defaultTransition(max-height);
+  
+  button.category {
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid $bgColor;
+    display: block;
+    background: none;
+    font-weight: 800;
+    @include defaultTransition(color);
+  
+    &:hover {
+      color: $whiteColor;
+    }
+
+    &:last-of-type {
+      border: none;
+    }
+  }
+  
+  &.active {
+    max-height: 200px;
+    font-size: initial;
+  }
+}
