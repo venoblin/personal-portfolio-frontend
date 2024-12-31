@@ -57,6 +57,13 @@ section {
     padding: 0 1rem;
   }
 
+  h3 {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-decoration: underline;
+    color: $redColor;
+  }
+
   li, 
   p, 
   input, 
@@ -216,6 +223,10 @@ section {
   
     h2 {
       font-size: 1.5em;
+    }
+
+    h3 {
+      font-size: 1.25em;
     }
   }
 }

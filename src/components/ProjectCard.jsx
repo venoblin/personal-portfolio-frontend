@@ -3,10 +3,11 @@ import '../styles/ProjectCard.css'
 const ProjectCard = (props) => {
   return (
     <div className="ProjectCard">
-      <img src={props.project.image} alt={`${props.project.title} project`} />
 
       <div className='info'>
-        <p className='title'>{props.project.title}</p>
+        <h3 className='title'>{props.project.title}</h3>
+
+        <p className="desc">{props.project.desc}</p>
 
         <div className="techs">
           {props.project.techs.map((tech) => (
@@ -14,20 +15,24 @@ const ProjectCard = (props) => {
           ))}
         </div>
 
-        <p className="desc">{props.project.desc}</p>
-
-        <div className="links">
-          {props.project.demo.length ? (
-            <a className="btn" href={props.project.demo} target="_blank">
-              Demo
+        <div className='lower-wrapper'>
+          <div className="links">
+            {props.project.demo.length ? (
+              <a className="btn" href={props.project.demo} target="_blank">
+                Demo
+              </a>
+              ) : (
+                ''
+              )
+            }
+            <a className="btn" href={props.project.repo} target="_blank">
+              Repo
             </a>
-            ) : (
-              ''
-            )
-          }
-          <a className="btn" href={props.project.repo} target="_blank">
-            Repo
-          </a>
+          </div>
+
+          <div className='img-wrapper'>
+            <img src={props.project.image} alt={`${props.project.title} project`} />
+          </div>
         </div>
       </div>
     </div>

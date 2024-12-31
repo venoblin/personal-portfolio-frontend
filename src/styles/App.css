@@ -48,6 +48,12 @@ section .wrapper {
   border-bottom: 10px solid #e12c44;
   padding: 0 1rem;
 }
+.App h3 {
+  font-size: 1.75em;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #e12c44;
+}
 .App li,
 .App p,
 .App input,
@@ -209,5 +215,8 @@ section .wrapper {
   }
   .App h2 {
     font-size: 1.5em;
+  }
+  .App h3 {
+    font-size: 1.25em;
   }
 }/*# sourceMappingURL=App.css.map */
