@@ -45,6 +45,8 @@ const Contact = () => {
 
       <div className="wrapper">
       <h2>Contact</h2>
+        <p>Send me an email or fill out the form below!</p>
+
         <div className='email'>
           <h3>villagomezhjonathan@gmail.com</h3>
 
