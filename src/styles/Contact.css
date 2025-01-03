@@ -36,7 +36,7 @@
   flex-direction: column;
   z-index: 2;
   position: relative;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 .Contact form input, .Contact form textarea {
   margin-bottom: 1rem;
