@@ -9,12 +9,34 @@
 .Contact .upper-form input:last-of-type {
   margin-left: 0.25rem;
 }
+.Contact .email {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+.Contact .email h3 {
+  margin-right: 0.5rem;
+}
+.Contact .email .btn {
+  margin-top: 0;
+  padding: 7px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Contact .email svg {
+  fill: #141414;
+  height: 22px;
+  width: 22px;
+}
 .Contact form {
   width: 100%;
   display: flex;
   flex-direction: column;
   z-index: 2;
   position: relative;
+  margin-top: 2rem;
 }
 .Contact form input, .Contact form textarea {
   margin-bottom: 1rem;

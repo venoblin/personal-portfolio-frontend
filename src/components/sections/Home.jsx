@@ -32,12 +32,7 @@ const Home = (props) => {
           <p className='location'>Located in Wilmington, Delaware 📍</p>
 
           <div className='inputs'>
-            <a
-              className='btn'
-              href='#contact'
-            >
-              Let's Connect!
-            </a>
+            <a className='btn' href='#contact'>Let's Connect!</a>
 
             <a className='btn hollow' href={resume} without rel="noopener noreferrer" target="_blank">Download CV</a>
           </div>
