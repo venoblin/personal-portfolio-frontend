@@ -73,7 +73,7 @@ section .wrapper {
   outline: none;
   border: none;
 }
-.App button.hollow {
+.App .btn.hollow {
   border: 3px solid #8b8a8a;
   background: none;
   color: #8b8a8a;

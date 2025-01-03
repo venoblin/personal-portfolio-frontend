@@ -1,5 +1,5 @@
 import '../../styles/About.css'
-import emojiWaving from '../../images/emoji-waving.gif'
+import emojiWaving from '../../assets/images/emoji-waving.gif'
 
 const About = () => {
   return (

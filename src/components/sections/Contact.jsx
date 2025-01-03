@@ -1,5 +1,5 @@
 import '../../styles/Contact.css'
-import emojiWaving from './../../images/emoji-waving.gif'
+import emojiWaving from '../../assets/images/emoji-waving.gif'
 import axios from 'axios'
 import { BACKEND_API } from '../../global'
 import { useState } from 'react'
