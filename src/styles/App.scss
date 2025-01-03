@@ -90,6 +90,11 @@ section {
     border: 3px solid $mutedWhiteColor;
     background: none;
     color: $mutedWhiteColor;
+
+    &.dark {
+      color: $bgColor;
+      border: 3px solid $bgColor;
+    }
   }
 
   .link {
@@ -169,13 +174,19 @@ section {
         grid-template-columns: repeat(1, 1fr);
       }
     }
+
+    .Home {
+      .inputs {
+        flex-direction: column;
+      }
+    }
     
     .NavBar {
       padding: 1rem;
     }
 
     .sections {
-      margin-top: 30rem;
+      margin-top: 34rem;
       padding-left: 0;
       padding-right: 0;
 
@@ -191,7 +202,7 @@ section {
 
     section:first-of-type {
       border-radius: 2.5rem 2.5rem 0 0;
-      padding-top: 4rem;
+      padding-top: 2rem;
     }
 
     h1 {

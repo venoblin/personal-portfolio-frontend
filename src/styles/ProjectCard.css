@@ -39,6 +39,16 @@
   right: 0;
   bottom: 0;
 }
+.ProjectCard .lower-wrapper a {
+  display: flex;
+  align-items: center;
+}
+.ProjectCard .lower-wrapper a svg {
+  margin-left: 0.25rem;
+  width: 25px;
+  height: 25px;
+  fill: #141414;
+}
 .ProjectCard .lower-wrapper .img-wrapper {
   width: 75%;
   margin: 0 auto;

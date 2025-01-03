@@ -46,6 +46,18 @@
     right: 0;
     bottom: 0;
 
+  a {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-left: 0.25rem;
+      width: 25px;
+      height: 25px;
+      fill: $bgColor;
+    }
+  }
+
     .img-wrapper {
       width: 75%;
       margin: 0 auto;

@@ -45,6 +45,7 @@ const Contact = () => {
 
       <div className="wrapper">
       <h2>Contact</h2>
+        <button className='btn hollow'>Click To Copy My Email!</button>
         <form onSubmit={handleSubmit}>
           <div className="upper-form">
             <label htmlFor="name">Name</label>
