@@ -31,6 +31,12 @@
 .Home .btn {
   margin-top: 1rem;
 }
+.Home .inputs {
+  display: flex;
+}
+.Home .inputs a {
+  margin-right: 1rem;
+}
 
 .location {
   margin-top: 5px;

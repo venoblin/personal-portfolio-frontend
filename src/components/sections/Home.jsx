@@ -29,12 +29,17 @@ const Home = (props) => {
             </span>
           </h1>
           <p className='location'>Located in Wilmington, Delaware 📍</p>
-          <a
-            className='btn'
-            href='#contact'
-          >
-            Let's Connect!
-          </a>
+
+          <div className='inputs'>
+            <a
+              className='btn'
+              href='#contact'
+            >
+              Let's Connect!
+            </a>
+
+            <button className='btn hollow'>Download CV</button>
+          </div>
         </div>
       </div>
     </section>

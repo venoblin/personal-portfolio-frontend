@@ -63,7 +63,7 @@ section {
     text-decoration: underline;
     color: $redColor;
   }
-
+  
   li, 
   p, 
   input, 
@@ -84,6 +84,12 @@ section {
     cursor: pointer;
     outline: none;
     border: none;
+  }
+
+  button.hollow {
+    border: 3px solid $mutedWhiteColor;
+    background: none;
+    color: $mutedWhiteColor;
   }
 
   .link {
