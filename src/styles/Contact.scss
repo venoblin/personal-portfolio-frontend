@@ -20,9 +20,16 @@
     width: fit-content;
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: $blackColor;
+    color: $whiteColor;
+    border: 2px solid $mutedWhiteColor;
+    border-radius: 1rem;
 
-    h3 {
-      margin-right: 0.5rem;
+    p {
+      margin-right: 0.75rem;
     }
 
     .btn {
@@ -46,7 +53,6 @@
     flex-direction: column;
     z-index: 2;
     position: relative;
-    margin-top: 1.5rem;
 
     input, textarea {
       margin-bottom: 1rem;
@@ -54,7 +60,6 @@
       background: $blackColor;
       color: $whiteColor;
       outline: none;
-      border: none;
       border: 2px solid $mutedWhiteColor;
       border-radius: 1rem;
       @include defaultTransition(all);

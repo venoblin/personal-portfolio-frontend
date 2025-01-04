@@ -47,7 +47,7 @@ const Contact = () => {
       <h2>Contact</h2>
 
         <div className='email'>
-          <h3>villagomezhjonathan@gmail.com</h3>
+          <p>villagomezhjonathan@gmail.com</p>
 
           <button className='btn'>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

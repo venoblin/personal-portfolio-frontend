@@ -14,9 +14,16 @@
   width: fit-content;
   display: flex;
   align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #141414;
+  color: #dad7da;
+  border: 2px solid #8b8a8a;
+  border-radius: 1rem;
 }
-.Contact .email h3 {
-  margin-right: 0.5rem;
+.Contact .email p {
+  margin-right: 0.75rem;
 }
 .Contact .email .btn {
   margin-top: 0;
@@ -36,7 +43,6 @@
   flex-direction: column;
   z-index: 2;
   position: relative;
-  margin-top: 1.5rem;
 }
 .Contact form input, .Contact form textarea {
   margin-bottom: 1rem;
@@ -44,7 +50,6 @@
   background: #141414;
   color: #dad7da;
   outline: none;
-  border: none;
   border: 2px solid #8b8a8a;
   border-radius: 1rem;
   transition: all 0.2s ease;
