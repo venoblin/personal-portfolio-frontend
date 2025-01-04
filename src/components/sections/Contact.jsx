@@ -40,6 +40,10 @@ const Contact = () => {
     })
   }
 
+  const handleEmailCopy = () => {
+    navigator.clipboard.writeText('villagomezhjonathan@gmail.com')
+  }
+
   return (
     <section className="Contact" id="contact">
 

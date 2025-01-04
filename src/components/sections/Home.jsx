@@ -34,7 +34,7 @@ const Home = (props) => {
           <div className='inputs'>
             <a className='btn' href='#contact'>Let's Connect!</a>
 
-            <a className='btn hollow' href={resume} without rel="noopener noreferrer" target="_blank">Download CV</a>
+            <a className='btn hollow' href={resume} target="_blank">Download CV</a>
           </div>
         </div>
       </div>
