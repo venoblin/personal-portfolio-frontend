@@ -21,6 +21,23 @@
   color: #dad7da;
   border: 2px solid #8b8a8a;
   border-radius: 1rem;
+  position: relative;
+}
+.Contact .email .popup {
+  border-radius: 1rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(20, 20, 20, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 .Contact .email p {
   margin-right: 0.75rem;

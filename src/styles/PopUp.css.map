@@ -1,1 +1,1 @@
-{"version":3,"sources":["PopUp.scss","vars/variables.scss","PopUp.css"],"names":[],"mappings":"AAEA;EACE,kBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,sBAAA;EACA,OAAA;EACA,MAAA;EACA,WAAA;EACA,YAAA;EACA,cCVW;EDWX,oCAAA;EACA,0BAAA;EACA,kCAAA;AEDF;AFGE;EACE,mBAAA;AEDJ","file":"PopUp.css"}
+{"version":3,"sources":["PopUp.scss","PopUp.css"],"names":[],"mappings":"AAEA;EACE,kBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,sBAAA;EACA,OAAA;EACA,MAAA;EACA,WAAA;EACA,YAAA;EACA,iCAAA;EACA,0BAAA;EACA,kCAAA;ACDF;ADGE;EACE,mBAAA;ACDJ","file":"PopUp.css"}

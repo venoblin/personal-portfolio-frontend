@@ -4,3 +4,7 @@ export const capitalizeStr = (str) => {
 
   return capitalized + sliceStr
 }
+
+export const sleep = async (time) => {
+  return new Promise((res) => setTimeout(res, time))
+}

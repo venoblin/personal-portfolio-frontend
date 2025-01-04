@@ -180,6 +180,16 @@ section {
         flex-direction: column;
       }
     }
+
+    .email {
+
+      .btn {
+        svg {
+          width: 15px;
+          height: 15px;
+        }
+      }      
+    }
     
     .NavBar {
       padding: 1rem;

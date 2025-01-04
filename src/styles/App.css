@@ -179,6 +179,10 @@ section .wrapper {
   .App .Home .inputs {
     flex-direction: column;
   }
+  .App .email .btn svg {
+    width: 15px;
+    height: 15px;
+  }
   .App .NavBar {
     padding: 1rem;
   }
