@@ -120,9 +120,11 @@ const Contact = () => {
             onChange={(evt) => handleChange(evt)}
           ></textarea>
 
-          <button className="btn" type="submit">
-            Send!
-          </button>
+          {!isPopUp &&
+            <button className="btn" type="submit">
+              Send!
+            </button>
+          }
 
           {isPopUp && 
             <PopUp 
