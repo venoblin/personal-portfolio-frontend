@@ -9,7 +9,7 @@ Portoflio showcasing my projects!
 <br/>
 <br/>
 <a href="https://www.jonweb.dev/">View Demo</a> .  
-<a href="https://github.com/venoblin/personal-portfolio-backend">Back-end</a>  
+<a href="https://github.com/venoblin/personal-portfolio-backend">Back-End</a>  
 </p>
 </div>
 
