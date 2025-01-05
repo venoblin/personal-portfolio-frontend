@@ -32,9 +32,9 @@ This portfolio is a testament to my continuous learning and growth as a develope
 
 This project was built with the following technologies:
 
-- <img src="https://shields.io/badge/react-black?logo=react&style=for-the-badge" alt="React" />
-- <img src="https://shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=000&style=flat-square" alt="JavaScript" />
-- <img src="https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=Sass&logoColor=white" alt="SASS" />
+- <img src="https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB" alt="React" />
+- <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000" alt="JavaScript" />
+- <img src="https://img.shields.io/badge/Sass-C69?logo=sass&logoColor=fff" alt="SASS" />
 
 
 
