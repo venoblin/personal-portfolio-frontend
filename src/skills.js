@@ -274,7 +274,7 @@ const skills = [
     )
   },
   {
-    name: 'PostgreSQL',
+    name: 'Postgres',
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
