@@ -30,7 +30,7 @@ const projects = [
     image: flixderPng,
     demo: 'https://flixder.netlify.app/',
     repo: 'https://github.com/venoblin/flixder-frontend',
-    techs: ['React', 'SCSS', 'Node.js', 'Express', 'MongoDB'],
+    techs: ['React', 'JavaScript', 'SCSS', 'Node.js', 'Express', 'MongoDB'],
     desc: 'Dating application for movies, gives you a way to find new movies to watch.'
   },
   {
@@ -57,7 +57,7 @@ const projects = [
     image: fitBuddyPng,
     demo: 'https://fitbuddyapp.netlify.app/',
     repo: 'https://github.com/venoblin/fit-buddy',
-    techs: ['Vue', 'SCSS'],
+    techs: ['Vue', 'JavaScript', 'SCSS'],
     desc: 'An application used to set up your workout routine for the week.'
   },
   {
