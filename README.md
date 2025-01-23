@@ -13,11 +13,6 @@ Portoflio showcasing my projects!
 </p>
 </div>
 
-Table of Contents
-
-- [Getting Started](#getting-started)
-  - [Installation](#installation)
-
 ## About The Project
 ![Screenshot](.project-images/portfolio-screenshot.png)
 
