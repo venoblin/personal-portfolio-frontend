@@ -19,7 +19,6 @@ Table of Contents
   - [Installation](#installation)
 
 ## About The Project
-
 ![Screenshot](.project-images/portfolio-screenshot.png)
 
 This project, my personal portfolio, is a culmination of my passion for web development and my desire to showcase my skills and experience in an engaging and interactive way. Built with React, JavaScript, and Sass, it's designed to be a dynamic and responsive platform that adapts seamlessly to any device.
@@ -28,9 +27,7 @@ I focused on creating a clean and modern aesthetic, using a carefully chosen col
 
 This portfolio is a testament to my continuous learning and growth as a developer, and I'm excited to see how it evolves as I take on new challenges and expand my skillset.
 
-
 ### Built With
-
 This project was built with the following technologies:
 
 - <img src="https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB" alt="React" />
