@@ -1,1 +1,10 @@
-/*# sourceMappingURL=Certifications.css.map */
+.cert {
+  width: -moz-max-content;
+  width: max-content;
+}
+.cert img {
+  width: 200px;
+}
+.cert a {
+  margin: 0.5rem auto 0 auto;
+}/*# sourceMappingURL=Certifications.css.map */
