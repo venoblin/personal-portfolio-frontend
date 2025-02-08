@@ -43,14 +43,28 @@ const Skills = () => {
 
           <div className='skill'>
             <h3>Networking</h3>
-            <p>Configuration, routing, switching, access points, firewalls, VPNs, TCP/IP, DNS, DHCP, network security,
-            troubleshooting</p>
+            <ul>
+              <li>Troubleshooting</li>
+              <li>Configuration</li>
+              <li>Routing</li>
+              <li>Switching</li>
+              <li>Access Points</li>
+              <li>Firewalls</li>
+              <li>VPNs, TCP/IP, DNS, and DHCP</li>
+              <li>Network Security</li>
+            </ul>
           </div>
 
           <div className='skill'>
             <h3>Tools</h3>
-            <p>Windows System Tools, Command Prompt, Terminal, TigerVNC, Oracle VirtualBox, Google Workspace (Docs,
-              Sheets, Gmail), Slack, Microsoft Teams, Zoom</p>
+            <ul>
+              <li>Windows System Tools</li>
+              <li>Command Prompt and Terminal</li>
+              <li>TigerVNC</li>
+              <li>Oracle VirtualBox</li>
+              <li>Google Workspace (Docs, Sheets, Gmail)</li>
+              <li>Slack, Microsoft Teams, and Zoom</li>
+            </ul>
           </div>
         </div>
       </div>
