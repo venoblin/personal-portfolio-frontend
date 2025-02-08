@@ -21,6 +21,9 @@ const NavBar = (props) => {
         Jon <span>/ Web Dev</span>
       </Link>
       <div className="links-container">
+        <a className="link" href="#certifications" onClick={hideMenu}>
+          Certifications
+        </a>
         <a className="link" href="#skills" onClick={hideMenu}>
           Skills
         </a>
