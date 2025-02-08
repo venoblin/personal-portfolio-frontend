@@ -5,6 +5,7 @@ import webScraperPng from './assets/images/project-screenshots/web-scraper.png'
 import teamHubPng from './assets/images/project-screenshots/team-hub.png'
 import hoverOrbPng from './assets/images/project-screenshots/hover-orb.png'
 import downloadFileSorterPng from './assets/images/project-screenshots/download-file-sorter.png'
+import scriptsPng from './assets/images/project-screenshots/scripts.png'
 
 const projects = [
   {
@@ -43,15 +44,6 @@ const projects = [
     desc: 'Mobile game where the goal is to keep the ball airbourne without it touching the floor.'
   },
   {
-    title: 'Web Scraper',
-    types: ['featured', 'tool'],
-    image: webScraperPng,
-    demo: 'https://github.com/venoblin/web-scraper?tab=readme-ov-file#usage',
-    repo: 'https://github.com/venoblin/web-scraper',
-    techs: ['Python', 'Selenium', 'BeautifulSoup'],
-    desc: 'Web scraper that returns the data in an organized manner.'
-  },
-  {
     title: 'Fit Buddy',
     types: ['web'],
     image: fitBuddyPng,
@@ -70,13 +62,31 @@ const projects = [
     desc: 'Tic-Tac-Toe game made entirely with JavaScript.'
   },
   {
+    title: 'Scripts',
+    types: ['featured', 'tool'],
+    image: scriptsPng,
+    demo: 'https://github.com/venoblin/scripts?tab=readme-ov-file#usage',
+    repo: 'https://github.com/venoblin/scripts',
+    techs: ['Bash', 'Python'],
+    desc: 'Collection of utility scripts designed to streamline common tasks in a Linux environment.'
+  },
+  {
     title: 'Download File Sorter',
     types: ['featured', 'tool'],
     image: downloadFileSorterPng,
-    demo: 'https://github.com/venoblin/download-file-sorter?tab=readme-ov-file#installation',
+    demo: 'https://github.com/venoblin/download-file-sorter?tab=readme-ov-file#getting-started',
     repo: 'https://github.com/venoblin/download-file-sorter',
     techs: ['Python'],
     desc: 'Sorts files from download directory into user specified directories in a Unix based system.'
+  },
+  {
+    title: 'Web Scraper',
+    types: ['featured', 'tool'],
+    image: webScraperPng,
+    demo: 'https://github.com/venoblin/web-scraper?tab=readme-ov-file#usage',
+    repo: 'https://github.com/venoblin/web-scraper',
+    techs: ['Python', 'Selenium', 'BeautifulSoup'],
+    desc: 'Web scraper that returns the data in an organized manner.'
   }
 ]
 
