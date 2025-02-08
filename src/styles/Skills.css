@@ -1,3 +1,6 @@
 .skill {
   margin-bottom: 2rem;
+}
+.skill:last-of-type {
+  margin-bottom: 0;
 }/*# sourceMappingURL=Skills.css.map */
