@@ -11,15 +11,34 @@ const Skills = () => {
         <div className='all-skills'>
           <div className='skill'>
             <h3>Hardware</h3>
-            <p>Installation, troubleshooting, maintenance, computers, laptops, mobile devices, printers, servers, 
-              storage devices, peripherals</p>
+            <ul>
+              <li>Installation, Troubleshooting, and Maintenance</li>
+              <li>Computers</li>
+              <li>Laptops</li>
+              <li>Mobile Devices</li>
+              <li>Printers</li>
+              <li>Servers</li>
+              <li>Storage Devices</li>
+              <li>Peripherals</li>
+            </ul>
           </div>
           
           <div className='skill'>
             <h3>Software</h3>
-            <p>
-              Troubleshooting, system configuration, Windows, MacOS, Linux, iOS, Android, OS installation, malware
-            removal, virtualization, backup/recovery, scripting (Bash, Python)</p>
+            <ul>
+              <li>Troubleshooting</li>
+              <li>System Configuration</li>
+              <li>Windows</li>
+              <li>MacOS</li>
+              <li>Linux</li>
+              <li>iOS</li>
+              <li>Android</li>
+              <li>OS Installation</li>
+              <li>Malware Removal</li>
+              <li>Virtualization</li>
+              <li>Backup/Recovery</li>
+              <li>Scripting (Bash, Python)</li>
+            </ul>
           </div>
 
           <div className='skill'>
