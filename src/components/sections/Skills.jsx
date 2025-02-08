@@ -26,7 +26,7 @@ const Skills = () => {
           <div className='skill'>
             <h3>Software</h3>
             <ul>
-              <li>Troubleshooting</li>
+              <li>Installation and Troubleshooting</li>
               <li>System Configuration</li>
               <li>Windows</li>
               <li>MacOS</li>
