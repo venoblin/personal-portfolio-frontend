@@ -9,7 +9,7 @@ import downloadFileSorterPng from './assets/images/project-screenshots/download-
 const projects = [
   {
     title: 'TeamHub',
-    types: ['featured', 'web'],
+    types: ['web'],
     image: teamHubPng,
     demo: 'https://teamhubweb.netlify.app',
     repo: 'https://github.com/venoblin/teamhub-frontend',
@@ -26,7 +26,7 @@ const projects = [
   },
   {
     title: 'Flixder',
-    types: ['featured', 'web'],
+    types: ['web'],
     image: flixderPng,
     demo: 'https://flixder.netlify.app/',
     repo: 'https://github.com/venoblin/flixder-frontend',
@@ -35,7 +35,7 @@ const projects = [
   },
   {
     title: 'HoverOrb',
-    types: ['featured', 'game'],
+    types: ['game'],
     image: hoverOrbPng,
     demo: '',
     repo: 'https://github.com/venoblin/hover-orb',
@@ -44,7 +44,7 @@ const projects = [
   },
   {
     title: 'Web Scraper',
-    types: ['tool'],
+    types: ['featured', 'tool'],
     image: webScraperPng,
     demo: 'https://github.com/venoblin/web-scraper?tab=readme-ov-file#usage',
     repo: 'https://github.com/venoblin/web-scraper',
@@ -71,7 +71,7 @@ const projects = [
   },
   {
     title: 'Download File Sorter',
-    types: ['tool'],
+    types: ['featured', 'tool'],
     image: downloadFileSorterPng,
     demo: 'https://github.com/venoblin/download-file-sorter?tab=readme-ov-file#installation',
     repo: 'https://github.com/venoblin/download-file-sorter',
