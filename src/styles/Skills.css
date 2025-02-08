@@ -1,11 +1,14 @@
 .all-skills {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 
 .skill {
-  margin-bottom: 2rem;
-  margin-right: 2rem;
+  padding: 1rem 2rem 2rem 2rem;
+  border-radius: 10px;
+  background: #141414;
+  color: #dad7da;
 }
 .skill h3 {
   text-align: center;
