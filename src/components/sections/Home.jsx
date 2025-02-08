@@ -1,6 +1,6 @@
 import '../../styles/Home.css'
 import emojiTyping from '../../assets/images/emoji-typing.gif'
-import resume from '../../assets/documents/JonathanVillagomezSWE.pdf'
+import resume from '../../assets/documents/JonathanVillagomezResume.pdf'
 import { useEffect, useRef } from 'react'
 
 const Home = (props) => {
