@@ -1,7 +1,18 @@
+.all-skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .skill {
   margin-bottom: 2rem;
+  margin-right: 2rem;
+
+  h3 {
+    text-align: center;
+  }
 
   &:last-of-type {
     margin-bottom: 0;
+    margin-right: 0;
   }
 }

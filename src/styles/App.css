@@ -54,6 +54,9 @@ section .wrapper {
   text-decoration: underline;
   color: #e12c44;
 }
+.App ul {
+  list-style-position: inside;
+}
 .App li,
 .App p,
 .App input,

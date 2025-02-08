@@ -1,6 +1,16 @@
+.all-skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .skill {
   margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+.skill h3 {
+  text-align: center;
 }
 .skill:last-of-type {
   margin-bottom: 0;
+  margin-right: 0;
 }/*# sourceMappingURL=Skills.css.map */
