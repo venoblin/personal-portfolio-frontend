@@ -15,4 +15,10 @@
 
 .about-me {
   max-width: 700px;
+}
+.about-me p {
+  background-color: #141414;
+  color: #dad7da;
+  padding: 2rem;
+  border-radius: 10px;
 }/*# sourceMappingURL=About.css.map */
