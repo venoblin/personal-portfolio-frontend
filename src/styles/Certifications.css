@@ -1,10 +1,7 @@
-.Certifications {
-  display: flex;
-}
-
 .all-certs {
-  display: flex;
-  justify-content: center;
+  background: #141414;
+  padding: 2rem;
+  border-radius: 10px;
 }
 
 .cert {
