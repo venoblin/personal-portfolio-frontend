@@ -18,7 +18,7 @@ const NavBar = (props) => {
   return (
     <nav className={`NavBar${props.scrollState.isScrolling ? ' scroll' : ''}${isExpanded ? ' show-menu' : ''}`}>
       <Link to="/" className="link logo" onClick={hideMenu}>
-        Jon <span>/ Web Dev</span>
+        Jon <span>/ IT</span>
       </Link>
       <div className="links-container">
         <a className="link" href="#certifications" onClick={hideMenu}>
