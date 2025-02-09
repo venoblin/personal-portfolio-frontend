@@ -13,7 +13,7 @@ const Home = (props) => {
   })
   
   return (
-    <section className='Home'>
+    <section className='Home' id='home'>
       <div className='inner-wrapper' ref={innerWrapperRef}>
         <div className='emoji-wrapper'>
           <img className='emoji' src={emojiTyping} alt='Emoji typing' />
