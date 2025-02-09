@@ -176,6 +176,9 @@ section .wrapper {
   }
 }
 @media (max-width: 600px) {
+  .App .all-skills {
+    grid-template-columns: 1fr;
+  }
   .App .Projects .projects {
     grid-template-columns: repeat(1, 1fr);
   }

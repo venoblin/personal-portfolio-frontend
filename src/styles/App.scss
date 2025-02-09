@@ -172,6 +172,10 @@ section {
   }
 
   @media (max-width: 600px) {
+    .all-skills {
+      grid-template-columns: 1fr;
+    }
+    
     .Projects {
   
       .projects {
