@@ -145,11 +145,10 @@ section .wrapper {
   .App .NavBar .menu-icon {
     display: block;
   }
-}
-@media (max-width: 1200px) {
-  .App .About .emoji-wrapper {
-    margin-left: auto;
-    margin-right: auto;
+  .App .About .about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
   }
 }
 @media (max-width: 900px) {
@@ -166,13 +165,13 @@ section .wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
   }
-  .App .About .emoji-wrapper {
-    margin-left: auto;
-    margin-right: auto;
+  .App .About .about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
-  .App .About .emoji-wrapper .emoji {
-    width: 300px;
-    height: auto;
+  .App .About .emoji {
+    height: 325px;
   }
 }
 @media (max-width: 600px) {
