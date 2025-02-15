@@ -5,7 +5,7 @@ section {
   margin: 0 auto 0 auto;
   width: 100%;
   color: $blackColor;
-  background: $whiteColor;
+  background: #282727;
 
   .wrapper {
     max-width: 1300px;
@@ -20,7 +20,7 @@ section {
   svg {
   width: 100%;
   height: 25px;
-  fill: $whiteColor;
+  fill: #282727;
   }
 }
 
@@ -55,6 +55,7 @@ section {
     margin-bottom: 1rem;
     border-bottom: 10px solid $redColor;
     padding: 0 1rem;
+    color: $whiteColor;
   }
 
   h3 {
