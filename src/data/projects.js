@@ -63,27 +63,27 @@ const projects = [
   },
   {
     title: 'Scripts',
-    types: ['featured', 'tool'],
+    types: ['featured'],
     image: scriptsPng,
-    demo: 'https://github.com/venoblin/scripts?tab=readme-ov-file#usage',
+    demo: '',
     repo: 'https://github.com/venoblin/scripts',
     techs: ['Bash', 'Python'],
     desc: 'Collection of utility scripts designed to streamline common tasks in a Linux environment.'
   },
   {
     title: 'Download File Sorter',
-    types: ['featured', 'tool'],
+    types: ['featured'],
     image: downloadFileSorterPng,
-    demo: 'https://github.com/venoblin/download-file-sorter?tab=readme-ov-file#getting-started',
+    demo: '',
     repo: 'https://github.com/venoblin/download-file-sorter',
     techs: ['Python'],
     desc: 'Sorts files from download directory into user specified directories in a Unix based system.'
   },
   {
     title: 'Web Scraper',
-    types: ['featured', 'tool'],
+    types: ['featured'],
     image: webScraperPng,
-    demo: 'https://github.com/venoblin/web-scraper?tab=readme-ov-file#usage',
+    demo: '',
     repo: 'https://github.com/venoblin/web-scraper',
     techs: ['Python', 'Selenium', 'BeautifulSoup'],
     desc: 'Web scraper that returns the data in an organized manner.'

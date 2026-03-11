@@ -7,7 +7,7 @@ const Projects = (props) => {
   const [projectCategory, setProjectCategory] = useState('featured')
   const [isHoverActive, setIsHoverActive] = useState(false)
 
-  const categories = ['featured', 'web', 'game', 'tool']
+  const categories = ['featured', 'web', 'game']
 
   const clickHandler = () => {
     setIsHoverActive(!isHoverActive)
@@ -21,40 +21,44 @@ const Projects = (props) => {
   return (
     <section className="Projects" id="projects">
       <div className="wrapper">
-        <h2>
-          <span
-            className={isHoverActive ? 'category active' : 'category'}
-            onClick={clickHandler}
-          >
-            {projectCategory}
-            <span className="indicator">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
-                <path d="M5.143 9.847a1 1 0 0 0 1.715 0l3.999-6.665a1 1 0 0 0-.858-1.515H2.001a1 1 0 0 0-.858 1.515z" />
-              </svg>
+        <div className="switcher-wrapper">
+          <h2 className="no-select">
+            <span
+              className={isHoverActive ? 'category active' : 'category'}
+              onClick={categories.length > 1 && clickHandler}
+            >
+              {projectCategory}
 
-              <span className="switcher">
-                <span
-                  className={isHoverActive ? 'categories active' : 'categories'}
-                >
-                  {categories
-                    .filter((category) => {
-                      return category !== projectCategory
-                    })
-                    .map((category) => (
-                      <button
-                        className="category"
-                        key={category}
-                        onClick={() => switchCategory(category)}
-                      >
-                        {category}
-                      </button>
-                    ))}
+              {categories.length > 1 && (
+                <span className="indicator">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+                    <path d="M5.143 9.847a1 1 0 0 0 1.715 0l3.999-6.665a1 1 0 0 0-.858-1.515H2.001a1 1 0 0 0-.858 1.515z" />
+                  </svg>
                 </span>
-              </span>
+              )}
+            </span>{' '}
+            Projects
+          </h2>
+          <span className="switcher">
+            <span
+              className={isHoverActive ? 'categories active' : 'categories'}
+            >
+              {categories
+                .filter((category) => {
+                  return category !== projectCategory
+                })
+                .map((category) => (
+                  <button
+                    className="category"
+                    key={category}
+                    onClick={() => switchCategory(category)}
+                  >
+                    {category}
+                  </button>
+                ))}
             </span>
-          </span>{' '}
-          Projects
-        </h2>
+          </span>
+        </div>
 
         <div className="projects">
           {projects
