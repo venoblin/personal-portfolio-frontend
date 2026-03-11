@@ -14,11 +14,9 @@ export const AppProvider = (props) => {
     }
   }, [])
 
-  useEffect()
-
   return (
-    <AppContext.provider values={{ type, setType }}>
+    <AppContext.Provider value={{ type, setType }}>
       {props.children}
-    </AppContext.provider>
+    </AppContext.Provider>
   )
 }
