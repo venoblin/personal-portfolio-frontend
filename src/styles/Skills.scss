@@ -1,16 +1,16 @@
-@import './vars/variables.scss';
+@import "./vars/variables.scss";
 
 .all-skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  gap: 1rem;
+  gap: 0rem;
+  background: $bgColor;
+  color: $whiteColor;
+  border-radius: 10px;
 }
 
 .skill {
   padding: 2rem;
-  border-radius: 10px;
-  background: $bgColor;
-  color: $whiteColor;
 
   .skill-header {
     display: flex;

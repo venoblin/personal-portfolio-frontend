@@ -1,14 +1,14 @@
 .all-skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  gap: 1rem;
+  gap: 0rem;
+  background: #141414;
+  color: #dad7da;
+  border-radius: 10px;
 }
 
 .skill {
   padding: 2rem;
-  border-radius: 10px;
-  background: #141414;
-  color: #dad7da;
 }
 .skill .skill-header {
   display: flex;
