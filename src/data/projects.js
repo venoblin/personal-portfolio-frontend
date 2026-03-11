@@ -1,11 +1,11 @@
-import flixderPng from './assets/images/project-screenshots/flixder.png'
-import fitBuddyPng from './assets/images/project-screenshots/fit-buddy.png'
-import ticTacToePng from './assets/images/project-screenshots/tic-tac-toe.png'
-import webScraperPng from './assets/images/project-screenshots/web-scraper.png'
-import teamHubPng from './assets/images/project-screenshots/team-hub.png'
-import hoverOrbPng from './assets/images/project-screenshots/hover-orb.png'
-import downloadFileSorterPng from './assets/images/project-screenshots/download-file-sorter.png'
-import scriptsPng from './assets/images/project-screenshots/scripts.png'
+import flixderPng from '../assets/images/project-screenshots/flixder.png'
+import fitBuddyPng from '../assets/images/project-screenshots/fit-buddy.png'
+import ticTacToePng from '../assets/images/project-screenshots/tic-tac-toe.png'
+import webScraperPng from '../assets/images/project-screenshots/web-scraper.png'
+import teamHubPng from '../assets/images/project-screenshots/team-hub.png'
+import hoverOrbPng from '../assets/images/project-screenshots/hover-orb.png'
+import downloadFileSorterPng from '../assets/images/project-screenshots/download-file-sorter.png'
+import scriptsPng from '../assets/images/project-screenshots/scripts.png'
 
 const projects = [
   {
