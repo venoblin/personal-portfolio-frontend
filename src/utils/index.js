@@ -8,3 +8,16 @@ export const capitalizeStr = (str) => {
 export const sleep = async (time) => {
   return new Promise((res) => setTimeout(res, time))
 }
+
+export const storageGet = (key) => {
+  const item = localStorage.getItem(key)
+  return JSON.parse(item)
+}
+
+export const storageSet = (key, item) => {
+  localStorage.setItem(key, JSON.stringify(item))
+}
+
+export const storageRemove = (key) => {
+  localStorage.removeItem(key)
+}
