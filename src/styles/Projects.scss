@@ -7,6 +7,10 @@
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 1rem;
   }
+
+  h2 .category:hover {
+    color: $whiteColor;
+  }
 }
 
 .category {

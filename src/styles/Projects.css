@@ -4,6 +4,9 @@
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 1rem;
 }
+.Projects h2 .category:hover {
+  color: #dad7da;
+}
 
 .category {
   text-transform: capitalize;

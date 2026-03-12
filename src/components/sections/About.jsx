@@ -1,6 +1,5 @@
 import '../../styles/About.css'
 import emojiWaving from '../../assets/images/emoji-waving.gif'
-import about from '../../data/about'
 
 const About = () => {
   return (
@@ -9,7 +8,7 @@ const About = () => {
         <h2>About Me</h2>
 
         <div className="about-wrapper">
-          <div className="about-me">{about.it}</div>
+          <div className="about-me">About me</div>
 
           <div className="emoji wrapper">
             <div className="emoji-container">

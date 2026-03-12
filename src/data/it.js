@@ -1,5 +1,5 @@
-const about = {
-  it: (
+const it = {
+  aboutMe: (
     <p>
       Hi, I'm Jonathan, a CompTIA A+ certified IT professional. My love for
       fixing things, my natural curiosity about how things work, and my passion
@@ -14,4 +14,4 @@ const about = {
   )
 }
 
-export default about
+export default it
