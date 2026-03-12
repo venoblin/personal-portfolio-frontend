@@ -63,7 +63,7 @@ const projects = [
   },
   {
     title: 'Scripts',
-    types: ['featured'],
+    types: ['tools'],
     image: scriptsPng,
     demo: '',
     repo: 'https://github.com/venoblin/scripts',
@@ -72,16 +72,16 @@ const projects = [
   },
   {
     title: 'Download File Sorter',
-    types: ['featured'],
+    types: ['tools'],
     image: downloadFileSorterPng,
     demo: '',
     repo: 'https://github.com/venoblin/download-file-sorter',
     techs: ['Python'],
-    desc: 'Sorts files from download directory into user specified directories in a Unix based system.'
+    desc: 'Sorts files from download directory into user specified directories in a Linux based system.'
   },
   {
     title: 'Web Scraper',
-    types: ['featured'],
+    types: ['tools'],
     image: webScraperPng,
     demo: '',
     repo: 'https://github.com/venoblin/web-scraper',

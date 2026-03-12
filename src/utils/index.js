@@ -1,3 +1,5 @@
+import projects from '../data/projects'
+
 export const capitalizeStr = (str) => {
   const capitalized = str.slice(0, 1).toUpperCase()
   const sliceStr = str.slice(1, str.length)
@@ -20,4 +22,9 @@ export const storageSet = (key, item) => {
 
 export const storageRemove = (key) => {
   localStorage.removeItem(key)
+}
+export const findProjects = (type) => {
+  return projects.filter((project) => {
+    return project.types.some((t) => t.toLowerCase() === type.toLowerCase())
+  })
 }

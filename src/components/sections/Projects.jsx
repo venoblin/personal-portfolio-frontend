@@ -1,6 +1,6 @@
 import '../../styles/Projects.css'
 import { useState } from 'react'
-import projects from '../../data/projects'
+import it from '../../data/it'
 import ProjectCard from '../ProjectCard'
 
 const Projects = (props) => {
@@ -61,13 +61,10 @@ const Projects = (props) => {
         </div>
 
         <div className="projects">
-          {projects
+          {it.projects
             .filter((project) => {
-              return (
-                projectCategory === 'all' ||
-                project.types.some(
-                  (t) => t.toLowerCase() === projectCategory.toLowerCase()
-                )
+              return project.types.some(
+                (t) => t.toLowerCase() === projectCategory.toLowerCase()
               )
             })
             .map((project) => (
