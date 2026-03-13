@@ -20,10 +20,10 @@ const Skills = () => {
               </p>
 
               <div className="all-techs">
-                {appContext.portfolioContent?.techStack.map((skill) => (
-                  <div className="tech" key={skill.name}>
-                    {skill.svg}
-                    <p className="name">{skill.name}</p>
+                {appContext.portfolioContent?.techStack.map((t) => (
+                  <div className="tech" key={t.name}>
+                    {t.svg}
+                    <p className="name">{t.name}</p>
                   </div>
                 ))}
               </div>

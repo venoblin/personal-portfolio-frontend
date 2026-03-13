@@ -27,7 +27,7 @@ const fullStack = {
   ),
   projects: foundProjects,
   certifications: null,
-  techStack: techStack,
+  techStack: [...Object.values(techStack).map((v) => v)],
   skills: [
     {
       svg: (

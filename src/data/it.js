@@ -1,6 +1,7 @@
 import { findProjects } from '../utils'
 import certifications from './certifications'
 import resume from '../assets/documents/JonathanVillagomezITResume.pdf'
+import techStack from './teckStack'
 
 const foundProjects = findProjects(['tools'])
 
@@ -27,7 +28,7 @@ const it = {
   ),
   projects: foundProjects,
   certifications: certifications,
-  techStack: null,
+  techStack: [techStack.python],
   skills: [
     {
       svg: (
