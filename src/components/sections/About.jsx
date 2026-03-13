@@ -1,14 +1,18 @@
 import '../../styles/About.css'
 import emojiWaving from '../../assets/images/emoji-waving.gif'
+import { useContext } from 'react'
+import { AppContext } from '../../contexts/AppContext'
 
 const About = () => {
+  const appContext = useContext(AppContext)
+
   return (
     <section className="About" id="about">
       <div className="wrapper">
         <h2>About Me</h2>
 
         <div className="about-wrapper">
-          <div className="about-me">About me</div>
+          <div className="about-me">{appContext.portfolioContent?.aboutMe}</div>
 
           <div className="emoji wrapper">
             <div className="emoji-container">

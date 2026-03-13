@@ -1,5 +1,4 @@
 import { findProjects } from '../utils'
-import certifications from './certifications'
 import resume from '../assets/documents/JonathanVillagomezFullStackResume.pdf'
 import techStack from './teckStack'
 
@@ -27,7 +26,7 @@ const fullStack = {
     </p>
   ),
   projects: foundProjects,
-  certifications: certifications,
+  certifications: null,
   techStack: techStack,
   skills: [
     {

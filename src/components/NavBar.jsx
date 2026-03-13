@@ -33,9 +33,11 @@ const NavBar = (props) => {
         <a className="link" href="#about" onClick={hideMenu}>
           About
         </a>
-        <a className="link" href="#certifications" onClick={hideMenu}>
-          Certifications
-        </a>
+        {appContext.portfolioContent?.certifications && (
+          <a className="link" href="#certifications" onClick={hideMenu}>
+            Certifications
+          </a>
+        )}
         <a className="link" href="#contact" onClick={hideMenu}>
           Contact
         </a>

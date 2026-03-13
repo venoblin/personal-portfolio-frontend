@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import NavBar from './NavBar'
 import Home from './sections/Home'
@@ -7,8 +7,10 @@ import About from './sections/About'
 import Contact from './sections/Contact'
 import Skills from './sections/Skills'
 import Certifications from './sections/Certifications'
+import { AppContext } from '../contexts/AppContext'
 
 const Main = () => {
+  const appContext = useContext(AppContext)
   const [scrollState, setScrollState] = useState({
     isScrolling: false,
     currentScrollY: 0
@@ -42,15 +44,16 @@ const Main = () => {
 
   return (
     <div>
-      <NavBar scrollState={scrollState} isMobile={isMobile} />
+      <NavBar scrollState={scrollState} />
 
       <main>
         <Home scrollState={scrollState} />
         <div className="sections">
           <Skills />
-          <Projects isMobile={isMobile} />
+          <Projects />
           <About />
-          <Certifications />
+
+          {appContext.portfolioContent?.certifications && <Certifications />}
           <Contact />
           <div className="border">
             <div style={{ overflow: 'hidden' }}>
