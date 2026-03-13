@@ -2,7 +2,7 @@ import { findProjects } from '../utils'
 import certifications from './certifications'
 import resume from '../assets/documents/JonathanVillagomezITResume.pdf'
 
-const foundProjects = findProjects('tools')
+const foundProjects = findProjects(['tools'])
 
 const it = {
   heading: 'IT',

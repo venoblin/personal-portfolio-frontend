@@ -23,8 +23,14 @@ export const storageSet = (key, item) => {
 export const storageRemove = (key) => {
   localStorage.removeItem(key)
 }
-export const findProjects = (type) => {
+export const findProjects = (types) => {
   return projects.filter((project) => {
-    return project.types.some((t) => t.toLowerCase() === type.toLowerCase())
+    return project.types.some((t) => {
+      for (let type of types) {
+        if (t.toLowerCase() === type.toLowerCase()) {
+          return t
+        }
+      }
+    })
   })
 }

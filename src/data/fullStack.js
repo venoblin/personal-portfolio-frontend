@@ -2,7 +2,7 @@ import { findProjects } from '../utils'
 import resume from '../assets/documents/JonathanVillagomezFullStackResume.pdf'
 import techStack from './teckStack'
 
-const foundProjects = findProjects('web')
+const foundProjects = findProjects(['web', 'tools'])
 
 const fullStack = {
   heading: 'Dev',

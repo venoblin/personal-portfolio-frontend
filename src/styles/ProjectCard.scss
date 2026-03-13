@@ -1,11 +1,11 @@
-@import './vars/variables.scss';
+@import "./vars/variables.scss";
 
 .ProjectCard {
   color: $whiteColor;
   background-color: $bgColor;
   overflow: hidden;
   position: relative;
-  border-radius: 4rem;
+  border-radius: 10px;
   height: 575px;
   padding: 2rem 2rem 20rem 2rem;
   @include defaultTransition(all);
@@ -26,7 +26,7 @@
     flex-wrap: wrap;
     font-size: 0.75em;
     color: $mutedWhiteColor;
-    
+
     p {
       margin-right: 0.5rem;
       margin-bottom: 0.5rem;
@@ -46,17 +46,17 @@
     right: 0;
     bottom: 0;
 
-  a {
-    display: flex;
-    align-items: center;
+    a {
+      display: flex;
+      align-items: center;
 
-    svg {
-      margin-left: 0.25rem;
-      width: 25px;
-      height: 25px;
-      fill: $bgColor;
+      svg {
+        margin-left: 0.25rem;
+        width: 25px;
+        height: 25px;
+        fill: $bgColor;
+      }
     }
-  }
 
     .img-wrapper {
       width: 75%;

@@ -3,7 +3,7 @@
   background-color: #141414;
   overflow: hidden;
   position: relative;
-  border-radius: 4rem;
+  border-radius: 10px;
   height: 575px;
   padding: 2rem 2rem 20rem 2rem;
   transition: all 0.2s ease;
