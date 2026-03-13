@@ -1,13 +1,14 @@
 import { findProjects } from '../utils'
 import certifications from './certifications'
-import resume from '../assets/documents/JonathanVillagomezITResume.pdf'
+import resume from '../assets/documents/JonathanVillagomezFullStackResume.pdf'
+import techStack from './teckStack'
 
-const foundProjects = findProjects('tools')
+const foundProjects = findProjects('web')
 
-const it = {
+const fullStack = {
   homeHeader: (
     <span className="wrapper">
-      an <span className="highlight">IT Professional</span>!
+      a <span className="highlight">Full-Stack Developer</span>!
     </span>
   ),
   resume: resume,
@@ -26,7 +27,7 @@ const it = {
   ),
   projects: foundProjects,
   certifications: certifications,
-  techStack: null,
+  techStack: techStack,
   skills: [
     {
       svg: (
@@ -105,4 +106,4 @@ const it = {
   ]
 }
 
-export default it
+export default fullStack

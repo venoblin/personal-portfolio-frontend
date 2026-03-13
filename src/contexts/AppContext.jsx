@@ -1,15 +1,18 @@
 import { useState, useEffect, createContext } from 'react'
 import { storageGet, storageSet } from '../utils'
+import content from '../data'
 
 export const AppContext = createContext()
 
 export const AppProvider = (props) => {
   const [portfolioType, setPortfolioType] = useState(null)
+  const [portfolioContent, setPortfolioContent] = useState(null)
   const queryParams = new URLSearchParams(window.location.search)
 
   const setType = (type) => {
     storageSet('portfolioType', type)
-    setType(type)
+    setPortfolioType(type)
+    setPortfolioContent(content[type])
   }
 
   useEffect(() => {
@@ -17,6 +20,7 @@ export const AppProvider = (props) => {
 
     if (type && type !== null) {
       setPortfolioType(type)
+      setPortfolioContent(content[type])
     }
   }, [])
 
@@ -25,11 +29,11 @@ export const AppProvider = (props) => {
 
     if (foundType && foundType.length > 0) {
       switch (foundType) {
-        case 'devops':
-          setType('devops')
+        case 'devOps':
+          setType('devOps')
           break
-        case 'fullstack':
-          setType('fullstack')
+        case 'fullStack':
+          setType('fullStack')
           break
         case 'it':
           setType('it')
@@ -40,17 +44,17 @@ export const AppProvider = (props) => {
         case 'swe':
           setType('swe')
           break
-        case 'sysadmin':
-          setType('sysadmin')
+        case 'sysAdmin':
+          setType('sysAdmin')
           break
         default:
-          setType('landingpage')
+          setType('landingPage')
       }
     }
   }, [])
 
   return (
-    <AppContext.Provider value={{ portfolioType, setPortfolioType }}>
+    <AppContext.Provider value={{ portfolioType, portfolioContent }}>
       {props.children}
     </AppContext.Provider>
   )

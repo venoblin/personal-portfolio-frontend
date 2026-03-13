@@ -1,9 +1,10 @@
 import '../../styles/Home.css'
 import emojiTyping from '../../assets/images/emoji-typing.gif'
-import resume from '../../assets/documents/JonathanVillagomezITResume.pdf'
-import { useEffect, useRef } from 'react'
+import { useContext, useEffect, useRef } from 'react'
+import { AppContext } from '../../contexts/AppContext'
 
 const Home = (props) => {
+  const appContext = useContext(AppContext)
   const innerWrapperRef = useRef()
 
   useEffect(() => {
@@ -26,11 +27,9 @@ const Home = (props) => {
           <h1 className="intro-heading">
             Hello there!{' '}
             <span className="wrapper">
-              I'm <span className="highlight">Jonathan</span>, an
+              I'm <span className="highlight">Jonathan</span>,
             </span>
-            <span className="wrapper">
-              <span className="highlight"> IT Professional</span>!
-            </span>
+            {appContext.portfolioContent?.homeHeader}
           </h1>
           <p className="location">Located in Wilmington, Delaware 📍</p>
 
@@ -39,7 +38,11 @@ const Home = (props) => {
               Let's Connect!
             </a>
 
-            <a className="btn hollow" href={resume} target="_blank">
+            <a
+              className="btn hollow"
+              href={appContext.portfolioContent?.resume}
+              target="_blank"
+            >
               Download CV
             </a>
           </div>
