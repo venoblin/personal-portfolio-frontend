@@ -5,6 +5,7 @@ import resume from '../assets/documents/JonathanVillagomezITResume.pdf'
 const foundProjects = findProjects('tools')
 
 const it = {
+  heading: 'IT',
   homeHeader: (
     <span className="wrapper">
       an <span className="highlight">IT Professional</span>!

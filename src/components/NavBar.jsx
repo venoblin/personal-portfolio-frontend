@@ -1,8 +1,9 @@
+import { AppContext } from '../contexts/AppContext'
 import '../styles/NavBar.css'
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useContext, useState } from 'react'
 
 const NavBar = (props) => {
+  const appContext = useContext(AppContext)
   const [isExpanded, setIsExpanded] = useState(false)
 
   const toggleMenu = () => {
@@ -20,7 +21,7 @@ const NavBar = (props) => {
       className={`NavBar${props.scrollState.isScrolling ? ' scroll' : ''}${isExpanded ? ' show-menu' : ''}`}
     >
       <a className="link logo" href="#home" onClick={hideMenu}>
-        Jon <span>/ IT</span>
+        Jon <span>/ {appContext.portfolioContent?.heading}</span>
       </a>
       <div className="links-container">
         <a className="link" href="#skills" onClick={hideMenu}>

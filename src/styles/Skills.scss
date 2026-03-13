@@ -1,5 +1,13 @@
 @import "./vars/variables.scss";
 
+.skills-wrapper div {
+  margin-bottom: 1rem;
+}
+
+.skills-wrapper div:last-of-type {
+  margin-bottom: 0;
+}
+
 .all-skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
@@ -35,5 +43,43 @@
   &:last-of-type {
     margin-bottom: 0;
     margin-right: 0;
+  }
+}
+
+.Skills {
+  .tech {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  p.command {
+    font-size: 1.75em;
+
+    .keyword {
+      color: $mutedWhiteColor;
+    }
+
+    .name {
+      color: $redColor;
+    }
+  }
+
+  .all-techs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .code-block {
+    color: $whiteColor;
+    background: $blackColor;
+    padding: 1rem;
+    border-radius: 10px;
   }
 }

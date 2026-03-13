@@ -6,6 +6,7 @@ import techStack from './teckStack'
 const foundProjects = findProjects('web')
 
 const fullStack = {
+  heading: 'Dev',
   homeHeader: (
     <span className="wrapper">
       a <span className="highlight">Full-Stack Developer</span>!

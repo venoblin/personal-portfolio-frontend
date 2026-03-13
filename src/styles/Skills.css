@@ -1,3 +1,11 @@
+.skills-wrapper div {
+  margin-bottom: 1rem;
+}
+
+.skills-wrapper div:last-of-type {
+  margin-bottom: 0;
+}
+
 .all-skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
@@ -29,4 +37,34 @@
 .skill:last-of-type {
   margin-bottom: 0;
   margin-right: 0;
+}
+
+.Skills .tech {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+.Skills .tech svg {
+  width: 2rem;
+  height: 2rem;
+}
+.Skills p.command {
+  font-size: 1.75em;
+}
+.Skills p.command .keyword {
+  color: #8b8a8a;
+}
+.Skills p.command .name {
+  color: #e12c44;
+}
+.Skills .all-techs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Skills .code-block {
+  color: #dad7da;
+  background: #141414;
+  padding: 1rem;
+  border-radius: 10px;
 }/*# sourceMappingURL=Skills.css.map */
