@@ -6,6 +6,7 @@ import teamHubPng from '../assets/images/project-screenshots/team-hub.png'
 import hoverOrbPng from '../assets/images/project-screenshots/hover-orb.png'
 import downloadFileSorterPng from '../assets/images/project-screenshots/download-file-sorter.png'
 import scriptsPng from '../assets/images/project-screenshots/scripts.png'
+import ficPng from '../assets/images/project-screenshots/fic.png'
 
 const projects = [
   {
@@ -60,6 +61,15 @@ const projects = [
     repo: 'https://github.com/venoblin/tic-tac-toe',
     techs: ['JavaScript', 'CSS'],
     desc: 'Tic-Tac-Toe game made entirely with JavaScript.'
+  },
+  {
+    title: 'File Integrity Checker',
+    types: ['tools'],
+    image: ficPng,
+    demo: '',
+    repo: 'https://github.com/venoblin/file-integrity-checker',
+    techs: ['Python', 'SQLite'],
+    desc: 'A lightweight security tool that monitors file systems for unauthorized changes by comparing SHA256 file hashes against a local SQLite baseline.'
   },
   {
     title: 'Scripts',
