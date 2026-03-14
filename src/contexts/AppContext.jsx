@@ -21,6 +21,8 @@ export const AppProvider = (props) => {
     if (type && type !== null) {
       setPortfolioType(type)
       setPortfolioContent(content[type])
+    } else {
+      setType('fullStack')
     }
   }, [])
 
@@ -47,8 +49,11 @@ export const AppProvider = (props) => {
         case 'sysAdmin':
           setType('sysAdmin')
           break
+        case 'network':
+          setType('network')
+          break
         default:
-          setType('landingPage')
+          setType('fullStack')
       }
     }
   }, [])
