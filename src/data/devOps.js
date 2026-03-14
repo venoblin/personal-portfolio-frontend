@@ -65,7 +65,7 @@ const swe = {
         'Apache, Nginx',
         'RESTful APIs',
         'WireGuard',
-        'TCP/IP, DNS, DHCP, VPN'
+        'TCP/IP, DNS, DHCP, VPN (WireGuard)'
       ]
     },
     {

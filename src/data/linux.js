@@ -1,29 +1,31 @@
 import { findProjects } from '../utils'
-import certifications from './certifications'
-import resume from '../assets/documents/JonathanVillagomezITResume.pdf'
+import resume from '../assets/documents/JonathanVillagomezLinuxResume.pdf'
 import techStack from './teckStack'
+import certifications from './certifications'
 
 const foundProjects = findProjects(['tools'])
 
-const it = {
-  heading: 'IT',
+const linux = {
+  heading: 'Linux',
   homeHeader: (
     <span className="wrapper">
-      an <span className="highlight">IT Professional</span>!
+      a <span className="highlight">Linux Engineer</span>!
     </span>
   ),
   resume: resume,
   aboutMe: (
     <p>
-      Hi, I'm Jonathan, a CompTIA A+ certified IT professional. My love for
-      fixing things, my natural curiosity about how things work, and my passion
-      for technology led me to pursue a career in IT. Outside of IT, I enjoy
-      spending time with friends and family, staying active through workouts,
-      and exploring the Star Wars universe. But even in my free time, I often
-      find myself tinkering with technology and learning new things. I believe
-      that continuous learning is essential in the ever-evolving world of IT,
-      and I'm committed to staying up-to-date with the latest trends and
-      technologies.
+      Hi, I'm Jonathan. I'm a Linux Systems Engineer who lives in the command
+      line and loves architecting secure, automated infrastructure. My journey
+      into tech started with a natural curiosity for how physical systems
+      operate, leading me from managing Tier IV data center hardware to
+      administering heterogeneous Linux environments. Today, I leverage my deep
+      hardware knowledge alongside Bash and Python scripting to maintain OS
+      health, automate patching, and deploy reliable server architectures. When
+      I’m not SSHing into a server, you can usually find me getting a workout
+      in, watching a boxing match, catching up on Star Wars lore, or playing
+      video games. I’m a lifelong learner, always tinkering with my Debian and
+      Raspberry Pi homelab, looking for the next system optimization challenge.
     </p>
   ),
   projects: foundProjects,
@@ -38,16 +40,11 @@ const it = {
     {
       svg: (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M2 21q-.425 0-.712-.288T1 20t.288-.712T2 19h20q.425 0 .713.288T23 20t-.288.713T22 21zm2-3q-.825 0-1.412-.587T2 16V5q0-.825.588-1.412T4 3h16q.825 0 1.413.588T22 5v11q0 .825-.587 1.413T20 18zm0-2h16V5H4zm0 0V5z"></path>
+          <path d="M12.444 20.246L6.533 14.36q-.074-.081-.11-.175q-.036-.095-.036-.186q0-.182.13-.34q.131-.159.361-.159q.103 0 .199.037t.17.11l5.91 5.91q.174.193.443.184q.27-.01.442-.183l5.308-5.308h-2.812q-.212 0-.356-.144t-.143-.357t.143-.356t.357-.143h3.692q.343 0 .575.232t.233.576v3.692q0 .213-.145.356t-.356.144t-.356-.144t-.143-.356v-2.812l-5.308 5.308q-.221.22-.513.34t-.614.12q-.302 0-.608-.12q-.307-.12-.552-.34M3.77 10.731q-.343 0-.575-.232t-.232-.576V6.231q0-.213.144-.356t.356-.144t.356.144t.144.356v2.811L9.27 3.735q.243-.24.547-.35t.608-.11q.324 0 .617.11t.515.35l5.911 5.886q.074.081.11.175t.036.186q0 .182-.13.34q-.131.159-.362.159q-.102 0-.198-.037t-.17-.11l-5.91-5.911q-.174-.192-.443-.182q-.27.009-.442.182L4.65 9.731h2.812q.212 0 .356.144t.144.357t-.144.356t-.356.143z"></path>
         </svg>
       ),
-      header: 'Hardware',
-      list: [
-        'Installation, Troubleshooting, and Maintenance',
-        'Desktops, Laptops, Servers',
-        'Storage Arrays & Network Devices',
-        'Fiber & Copper Cabling'
-      ]
+      header: 'DevOps & Automation',
+      list: ['CI/CD', 'Docker', 'Infrastructure Automation, Cron']
     },
     {
       svg: (
@@ -55,12 +52,8 @@ const it = {
           <path d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm0-2h16V8H4zm4.675-5l-1.9-1.9q-.3-.3-.288-.7t.313-.7q.3-.275.7-.287t.7.287l2.6 2.6q.3.3.3.7t-.3.7l-2.6 2.6q-.275.275-.687.288T6.8 16.3q-.275-.275-.275-.7t.275-.7zM13 17q-.425 0-.712-.288T12 16t.288-.712T13 15h4q.425 0 .713.288T18 16t-.288.713T17 17z"></path>
         </svg>
       ),
-      header: 'Software & OS',
-      list: [
-        'Windows, macOS, Linux',
-        'OS Installation, System Configuration, Virtualization',
-        'Backup & Recovery'
-      ]
+      header: 'Infrastructure & OS',
+      list: ['Linux (Debian/RHEL)', 'Virtualization (VirtualBox/KVM)']
     },
     {
       svg: (
@@ -68,11 +61,11 @@ const it = {
           <path d="M5.5 22q-1.45 0-2.475-1.025T2 18.5t1.025-2.475T5.5 15q.45 0 .875.112t.8.313L11 11.6V8.85q-1.1-.325-1.8-1.237T8.5 5.5q0-1.45 1.025-2.475T12 2t2.475 1.025T15.5 5.5q0 1.2-.7 2.113T13 8.85v2.75l3.85 3.825q.375-.2.788-.312T18.5 15q1.45 0 2.475 1.025T22 18.5t-1.025 2.475T18.5 22t-2.475-1.025T15 18.5q0-.45.112-.875t.313-.8L12 13.4l-3.425 3.425q.2.375.313.8T9 18.5q0 1.45-1.025 2.475T5.5 22m13-2q.625 0 1.063-.437T20 18.5t-.437-1.062T18.5 17t-1.062.438T17 18.5t.438 1.063T18.5 20M12 7q.625 0 1.063-.437T13.5 5.5t-.437-1.062T12 4t-1.062.438T10.5 5.5t.438 1.063T12 7M5.5 20q.625 0 1.063-.437T7 18.5t-.437-1.062T5.5 17t-1.062.438T4 18.5t.438 1.063T5.5 20"></path>
         </svg>
       ),
-      header: 'Networking',
+      header: 'Web & Networking',
       list: [
-        'Troubleshooting & Configuration ',
-        'TCP/IP, DNS, DHCP, VPN (WireGuard)',
-        'Routing, Switching, Firewalls, Network Security'
+        'Apache, Nginx',
+        'RESTful APIs',
+        'TCP/IP, DNS, DHCP, VPN (WireGuard)'
       ]
     },
     {
@@ -83,9 +76,8 @@ const it = {
       ),
       header: 'Tools & Productivity',
       list: [
+        'Git/GitHub',
         'ServiceNow, Jira',
-        'Docker, Oracle VirtualBox',
-        'TigerVNC, Remmina',
         'Microsoft Office, Google Workspace',
         'Microsoft Teams, Zoom, Slack'
       ]
@@ -93,4 +85,4 @@ const it = {
   ]
 }
 
-export default it
+export default linux

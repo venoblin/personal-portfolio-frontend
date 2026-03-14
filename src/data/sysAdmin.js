@@ -50,7 +50,7 @@ const sysAdmin = {
         'Docker',
         'Apache/Nginx',
         'Virtualization',
-        'TCP/IP, DNS, DHCP, VPN'
+        'TCP/IP, DNS, DHCP, VPN (WireGuard)'
       ]
     },
     {
