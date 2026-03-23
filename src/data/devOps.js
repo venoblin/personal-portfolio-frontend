@@ -1,5 +1,4 @@
 import { findProjects } from '../utils'
-import resume from '../assets/documents/JonathanVillagomezDevOpsResume.pdf'
 import techStack from './teckStack'
 import certifications from './certifications'
 
@@ -12,7 +11,8 @@ const swe = {
       a <span className="highlight">DevOps Engineer</span>!
     </span>
   ),
-  resume: resume,
+  resume:
+    'https://docs.google.com/document/d/1ZRwh1WUPxo-IeXNu85WtehVqQiyvlBpIAN2V94DoiwE/edit?usp=sharing',
   aboutMe: (
     <p>
       Hi, I'm Jonathan. I'm a DevOps Engineer who thrives on bridging the gap
