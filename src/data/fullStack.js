@@ -1,5 +1,4 @@
 import { findProjects } from '../utils'
-import resume from '../assets/documents/JonathanVillagomezFullStackResume.pdf'
 import techStack from './teckStack'
 
 const foundProjects = findProjects(['web', 'tools'])
@@ -11,7 +10,8 @@ const fullStack = {
       a <span className="highlight">Full-Stack Developer</span>!
     </span>
   ),
-  resume: resume,
+  resume:
+    'https://docs.google.com/document/d/1LJ5ZV9VbhKUoe1wu2OvBS6wC2p95eo7ZkLAyZJDVuBU/edit?usp=sharing',
   aboutMe: (
     <p>
       Hi, I'm Jonathan. I’m a Full-Stack Developer who loves building scalable
