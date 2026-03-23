@@ -1,5 +1,4 @@
 import { findProjects } from '../utils'
-import resume from '../assets/documents/JonathanVillagomezLinuxResume.pdf'
 import techStack from './teckStack'
 import certifications from './certifications'
 
@@ -12,7 +11,8 @@ const linux = {
       a <span className="highlight">Linux Engineer</span>!
     </span>
   ),
-  resume: resume,
+  resume:
+    'https://docs.google.com/document/d/1L3--O2ktp9Y9nZPP_63D7I378UABWA9hm1iKq-RhEys/edit?usp=sharing',
   aboutMe: (
     <p>
       Hi, I'm Jonathan. I'm a Linux Systems Engineer who lives in the command
