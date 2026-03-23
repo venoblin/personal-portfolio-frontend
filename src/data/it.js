@@ -1,6 +1,5 @@
 import { findProjects } from '../utils'
 import certifications from './certifications'
-import resume from '../assets/documents/JonathanVillagomezITResume.pdf'
 import techStack from './teckStack'
 
 const foundProjects = findProjects(['tools'])
@@ -12,7 +11,8 @@ const it = {
       an <span className="highlight">IT Professional</span>!
     </span>
   ),
-  resume: resume,
+  resume:
+    'https://docs.google.com/document/d/1uH-cI7AXzC4JZIKSRRAlGJaW09CO3Kkk2kIsaN6nU9c/edit?usp=sharing',
   aboutMe: (
     <p>
       Hi, I'm Jonathan, a CompTIA A+ certified IT professional. My love for
