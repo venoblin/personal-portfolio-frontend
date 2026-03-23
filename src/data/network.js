@@ -1,5 +1,4 @@
 import { findProjects } from '../utils'
-import resume from '../assets/documents/JonathanVillagomezNetworkResume.pdf'
 import techStack from './teckStack'
 import certifications from './certifications'
 
@@ -12,7 +11,8 @@ const network = {
       a <span className="highlight">Network Engineer</span>!
     </span>
   ),
-  resume: resume,
+  resume:
+    'https://docs.google.com/document/d/1M0xTLlFF67IKzOOAe4r390pZCLGlIl7c4gFUksEUJ8M/edit?usp=sharing',
   aboutMe: (
     <p>
       Hi, I'm Jonathan. I'm a Network Engineer who specializes in building and

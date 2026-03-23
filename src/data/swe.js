@@ -1,5 +1,4 @@
 import { findProjects } from '../utils'
-import resume from '../assets/documents/JonathanVillagomezSWEResume.pdf'
 import techStack from './teckStack'
 
 const foundProjects = findProjects(['web', 'tools', 'game'])
@@ -11,7 +10,8 @@ const swe = {
       a <span className="highlight">Software Engineer</span>!
     </span>
   ),
-  resume: resume,
+  resume:
+    'https://docs.google.com/document/d/1Hpj4aOHzjeQRXKVrDnCPxP1uS-ZMuBrbcdMG_wlaSHs/edit?usp=sharing',
   aboutMe: (
     <p>
       Hi, I'm Jonathan. I am a Software Engineer who loves building scalable
