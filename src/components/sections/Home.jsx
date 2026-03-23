@@ -40,10 +40,11 @@ const Home = (props) => {
 
             <a
               className="btn hollow"
+              rel="noreferrer"
               href={appContext.portfolioContent?.resume}
               target="_blank"
             >
-              Download CV
+              View CV
             </a>
           </div>
         </div>

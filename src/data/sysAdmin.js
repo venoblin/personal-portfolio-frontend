@@ -1,5 +1,4 @@
 import { findProjects } from '../utils'
-import resume from '../assets/documents/JonathanVillagomezSysAdminResume.pdf'
 import techStack from './teckStack'
 import certifications from './certifications'
 
@@ -12,7 +11,8 @@ const sysAdmin = {
       a <span className="highlight">System Administrator</span>!
     </span>
   ),
-  resume: resume,
+  resume:
+    'https://docs.google.com/document/d/17nK_pEI6ZpABzr0WSVPixkELz5bIwyzh8EsQEANBNcs/edit?usp=sharing',
   aboutMe: (
     <p>
       Hi, I'm Jonathan. I'm a System Administrator who specializes in keeping
