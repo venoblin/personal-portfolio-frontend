@@ -22,7 +22,7 @@ export const AppProvider = (props) => {
       setPortfolioType(type)
       setPortfolioContent(content[type])
     } else {
-      setType('fullStack')
+      setType('infra')
     }
   }, [])
 
@@ -31,6 +31,9 @@ export const AppProvider = (props) => {
 
     if (foundType && foundType.length > 0) {
       switch (foundType) {
+        case 'infra':
+          setType('infra')
+          break
         case 'devOps':
           setType('devOps')
           break

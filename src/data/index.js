@@ -5,6 +5,7 @@ import devOps from './devOps'
 import sysAdmin from './sysAdmin'
 import linux from './linux'
 import network from './network'
+import infra from './infra'
 
 const content = {
   it: it,
@@ -13,7 +14,8 @@ const content = {
   devOps: devOps,
   sysAdmin: sysAdmin,
   linux: linux,
-  network: network
+  network: network,
+  infra: infra
 }
 
 export default content
